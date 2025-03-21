@@ -1,7 +1,7 @@
 import HeroSection from '@/components/customComponents/AgenticAIBanner'
-import LifeAtFuturenese from '@/components/customComponents/LifeAtAgenticAi'
+
 import CardLayout from '@/components/customComponents/LifeAtAgenticAi'
-import LifeAtAgenticAi from '@/components/customComponents/LifeAtAgenticAi'
+
 
 import NameCalculator from '@/components/customComponents/NameCalculator'
 import ProjectsSection from '@/components/customComponents/ProjectSection'
@@ -13,6 +13,6 @@ export default function Home() {
    <HeroSection /> 
    <CardLayout />
    <ProjectsSection/>  
-    <NameCalculator />
+    {/* <NameCalculator /> */}
    </>  )
 }
