@@ -1,6 +1,6 @@
 import HeroSection from '@/components/customComponents/AgenticAIBanner'
 
-import CardLayout from '@/components/customComponents/LifeAtAgenticAi'
+// import CardLayout from '@/components/customComponents/LifeAtAgenticAi'
 
 
 // import NameCalculator from '@/components/customComponents/NameCalculator'
@@ -13,11 +13,13 @@ import Footer from '@/components/customComponents/Footer'
 import ContactForm from '@/components/customComponents/landingpage/Contact'
 
 import AIRoadmap from "@/components/customComponents/landingpage/Roadmap"
+import App from '@/components/customComponents/CourseModule'
 export default function Home() {
   return (
    <>
    <HeroSection /> 
-   <CardLayout />
+   <App />
+   {/* <CardLayout /> */}
    <TimelineDemo />
    <ProjectsSection/>  
    {/* <CardLayout /> */}
