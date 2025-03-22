@@ -13,7 +13,7 @@ export default function ContactForm() {
   const [experience, setExperience] = useState<string>("0-3yrs")
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-4">
+    <div className="h-full bg-black text-white flex flex-col items-center justify-center p-4">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2">Contact Us Today</h1>
         <p className="text-gray-300">

@@ -211,7 +211,7 @@ const AIRoadmap: React.FC = () => {
       
 
   return (
-    <div className="bg-black text-white min-h-screen p-6 md:p-8">
+    <div className="bg-black text-white h-full p-6 md:p-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-2xl font-bold mb-2">View our curriculum</h1>
