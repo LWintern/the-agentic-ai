@@ -1,43 +1,106 @@
-
 "use client"
 import React from 'react';
-import '../../app/glow.css';
+import { BookOpen, Users, Award, Check } from 'lucide-react';
 
-const Footer = () => {
+const  Footer= () => {
   return (
-    <footer className="relative bg-black/40 border-t border-gray-800/60 py-12 glow-effect">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">About Us</h3>
-            <p className="text-gray-400 text-sm">Empowering your journey in AI & Data Science with cutting-edge tools and knowledge.</p>
+    <div className="bg-black min-h-screen flex items-center justify-center p-6">
+      <div className="max-w-6xl w-full mx-auto">
+        {/* Feature Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          {/* Learning Card */}
+          <div className="bg-gray-900/80 rounded-lg p-5 border border-gray-800">
+            <div className="flex items-center mb-3">
+              <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center mr-2">
+                <BookOpen size={16} className="text-gray-400" />
+              </div>
+              <h3 className="text-white font-medium">Learning</h3>
+            </div>
+            <p className="text-gray-400 text-sm">
+              Access in-depth learning programs across data science and artificial intelligence.
+            </p>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">Home</a></li>
-              <li><a href="#" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">Features</a></li>
-              <li><a href="#" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">Documentation</a></li>
-            </ul>
+
+          {/* Community Card */}
+          <div className="bg-gray-900/80 rounded-lg p-5 border border-gray-800">
+            <div className="flex items-center mb-3">
+              <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center mr-2">
+                <Users size={16} className="text-gray-400" />
+              </div>
+              <h3 className="text-white font-medium">Community</h3>
+            </div>
+            <p className="text-gray-400 text-sm">
+              Network with a global community of data scientists and AI enthusiasts.
+            </p>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">Connect</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">GitHub</a></li>
-              <li><a href="#" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">Twitter</a></li>
-              <li><a href="#" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">Discord</a></li>
-            </ul>
+
+          {/* Outcomes Card */}
+          <div className="bg-gray-900/80 rounded-lg p-5 border border-gray-800">
+            <div className="flex items-center mb-3">
+              <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center mr-2">
+                <Award size={16} className="text-gray-400" />
+              </div>
+              <h3 className="text-white font-medium">Outcomes</h3>
+            </div>
+            <p className="text-gray-400 text-sm">
+              Gain a guaranteed outcome of becoming job ready through the program.
+            </p>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-gray-800/60 text-center">
-          <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} The Agentic AI. All rights reserved.</p>
+
+        {/* Main CTA Card */}
+        <div className="bg-gray-900/80 rounded-lg p-6 border border-gray-800">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Left Section - CTA */}
+            <div className="flex flex-col justify-center">
+              <h2 className="text-white text-2xl font-semibold leading-tight mb-6">
+                Get ready to kick off your journey in AI & Data Science
+              </h2>
+              
+              <div className="mb-4">
+                <button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors">
+                  Apply Now
+                </button>
+              </div>
+              
+              <div className="text-xs text-gray-400">
+                <p>Applications close on March 31st, 2025</p>
+                <p className="mt-1">Only a limited number of spots are available</p>
+              </div>
+            </div>
+
+            {/* Right Section - Checklist */}
+            <div className="flex flex-col justify-center">
+              <p className="text-gray-300 mb-4">What's inspiring you?</p>
+              
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <div className="mt-1 mr-2 flex-shrink-0">
+                    <Check size={16} className="text-white bg-purple-600 rounded-sm p-0.5" />
+                  </div>
+                  <span className="text-sm text-gray-300">Join a global community</span>
+                </li>
+                
+                <li className="flex items-start">
+                  <div className="mt-1 mr-2 flex-shrink-0">
+                    <Check size={16} className="text-white bg-purple-600 rounded-sm p-0.5" />
+                  </div>
+                  <span className="text-sm text-gray-300">Learn at your own pace</span>
+                </li>
+                
+                <li className="flex items-start">
+                  <div className="mt-1 mr-2 flex-shrink-0">
+                    <Check size={16} className="text-white bg-purple-600 rounded-sm p-0.5" />
+                  </div>
+                  <span className="text-sm text-gray-300">Live mentorship</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
-
-
-}
+};
 
 export default Footer;
-
