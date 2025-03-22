@@ -16,10 +16,10 @@ export default function Home() {
   return (
    <>
    <HeroSection /> 
-   <CardLayout />
-   <ProjectsSection/>  
+   {/* <CardLayout /> */}
+   {/* <ProjectsSection/>   */}
     {/* <NameCalculator /> */}
-    <Levels />
+    {/* <Levels /> */}
     <AIRoadmap />
     <ContactForm />
     <Footer />
