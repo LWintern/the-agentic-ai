@@ -10,6 +10,8 @@ import Levels from "@/components/customComponents/landingpage/Levels"
 import Footer from '@/components/customComponents/Footer'
 
 import ContactForm from '@/components/customComponents/landingpage/Contact'
+
+import AIRoadmap from "@/components/customComponents/landingpage/Roadmap"
 export default function Home() {
   return (
    <>
@@ -18,6 +20,7 @@ export default function Home() {
    <ProjectsSection/>  
     {/* <NameCalculator /> */}
     <Levels />
+    <AIRoadmap />
     <ContactForm />
     <Footer />
    </>  )
