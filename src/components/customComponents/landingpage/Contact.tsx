@@ -11,6 +11,7 @@ import Link from "next/link"
 
 export default function ContactForm() {
   const [experience, setExperience] = useState<string>("0-3yrs")
+  const [whatsappUpdates, setWhatsappUpdates] = useState(false)
 
   return (
     <div className="h-full bg-black text-white flex flex-col items-center justify-center p-4">
@@ -25,7 +26,9 @@ export default function ContactForm() {
         {/* Form Section */}
         <Card className="flex-1 bg-zinc-900/50 border-zinc-800 text-white">
           <CardHeader className="text-center">
-            <h2 className="text-2xl font-bold">Upskill, Reskill, Thrive</h2>
+            <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              Upskill, Reskill, Thrive
+            </h2>
           </CardHeader>
 
           <CardContent className="space-y-6">
@@ -46,20 +49,20 @@ export default function ContactForm() {
                   Phone Number
                 </label>
                 <div className="flex">
-                  <div className="flex items-center bg-zinc-800 border border-r-0 border-zinc-700 rounded-l-md px-2">
+                  <div className="flex items-center bg-zinc-800/50 border border-r-0 border-zinc-700 rounded-l-md px-3 py-2">
                     <Image
-                      src="/placeholder.svg?height=20&width=30"
+                      src="/assets/India.jpg"
                       alt="India flag"
                       width={24}
                       height={16}
-                      className="mr-1"
+                      className="mr-2"
                     />
                     <span className="text-sm text-zinc-400">+91</span>
                   </div>
                   <Input
                     id="phoneNumber"
                     placeholder="Your Phone Number"
-                    className="bg-zinc-800 border-zinc-700 text-white placeholder:text-zinc-500 rounded-l-none"
+                    className="bg-zinc-800/50 border-zinc-700 text-white placeholder:text-zinc-500 rounded-l-none"
                   />
                 </div>
               </div>
@@ -87,8 +90,8 @@ export default function ContactForm() {
                     size="sm"
                     className={`rounded-full px-4 ${
                       experience === exp
-                        ? "bg-indigo-600 text-white border-indigo-600"
-                        : "bg-zinc-800 text-zinc-300 border-zinc-700 hover:bg-zinc-700"
+                        ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white border-transparent"
+                        : "bg-zinc-800/50 text-zinc-300 border-zinc-700 hover:bg-zinc-700"
                     }`}
                     onClick={() => setExperience(exp)}
                   >
@@ -98,43 +101,26 @@ export default function ContactForm() {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <Checkbox id="terms" className="border-zinc-600 data-[state=checked]:bg-indigo-600" />
-                <label htmlFor="terms" className="text-sm text-zinc-300">
-                  I Agree to the{" "}
-                  <Link href="#" className="text-blue-400 hover:underline">
-                    Terms & Conditions
-                  </Link>
-                </label>
-              </div>
-
-              <div className="flex items-center space-x-2">
-                <Checkbox id="whatsapp" className="border-zinc-600 data-[state=checked]:bg-indigo-600" />
-                <label htmlFor="whatsapp" className="text-sm text-zinc-300">
-                  Send WhatsApp Updates
-                </label>
-              </div>
-            </div>
-
-            <div className="py-2">
-              <div className="border border-zinc-700 rounded p-4 bg-zinc-800/50 w-fit">
-                {/* This is just a placeholder for the reCAPTCHA */}
-                <div className="flex items-center gap-2">
-                  <Checkbox id="captcha" className="border-zinc-600" />
-                  <label htmlFor="captcha" className="text-sm text-zinc-300">
-                    I'm not a robot
-                  </label>
-                </div>
-                <div className="flex justify-end mt-2">
-                  <Image src="/placeholder.svg?height=40&width=60" alt="reCAPTCHA logo" width={60} height={40} />
-                </div>
-              </div>
+            <div className="flex items-center space-x-2">
+              <Checkbox
+                id="whatsapp"
+                checked={whatsappUpdates}
+                onCheckedChange={(checked) => setWhatsappUpdates(checked as boolean)}
+                className="border-zinc-700 data-[state=checked]:bg-indigo-600"
+              />
+              <label
+                htmlFor="whatsapp"
+                className="text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              >
+                Send WhatsApp Updates
+              </label>
             </div>
           </CardContent>
 
           <CardFooter>
-            <Button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-6">Join the program now!!</Button>
+            <Button className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-6">
+              Join the program now!!
+            </Button>
           </CardFooter>
         </Card>
 
