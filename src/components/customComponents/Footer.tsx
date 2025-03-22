@@ -72,7 +72,7 @@ const  Footer= () => {
 
             {/* Right Section - Checklist */}
             <div className="flex flex-col justify-center">
-              <p className="text-gray-300 mb-4">What's inspiring you?</p>
+              <p className="text-gray-300 mb-4">What&apos;s inspiring you?</p>
               
               <ul className="space-y-3">
                 <li className="flex items-start">

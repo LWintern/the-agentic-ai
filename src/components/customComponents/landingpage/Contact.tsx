@@ -128,7 +128,7 @@ export default function ContactForm() {
         <div className="flex-1 lg:max-w-xs space-y-8 pt-8">
           <div>
             <h2 className="text-2xl font-bold mb-4">Get Expert Guidance</h2>
-            <p className="text-gray-400">Need support? We've got your back anytime!</p>
+            <p className="text-gray-400">Need support? We&apos;ve got your back anytime!</p>
           </div>
 
           <div className="space-y-6">
@@ -155,7 +155,7 @@ export default function ContactForm() {
                 >
                   customersupport@analyticsvidhya.com
                 </a>
-                <p className="text-sm text-gray-400">You'll hear back in 24 hours</p>
+                <p className="text-sm text-gray-400">You&apos;ll hear back in 24 hours</p>
               </div>
             </div>
           </div>
