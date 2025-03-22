@@ -4,8 +4,9 @@ import { BookOpen, Users, Award, Check } from 'lucide-react';
 
 const  Footer= () => {
   return (
-    <div className="bg-black h-full flex items-center justify-center p-6">
-      <div className="max-w-6xl w-full mx-auto">
+    <div className="bg-black h-full flex items-center justify-center p-6 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-blue-900/20 blur-3xl"></div>
+      <div className="max-w-6xl w-full mx-auto relative z-10">
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           {/* Learning Card */}
