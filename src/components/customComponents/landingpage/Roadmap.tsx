@@ -98,19 +98,37 @@ const AIRoadmap: React.FC = () => {
           title: "Foundation in ML & Deep Learning",
           capsules: [
             {
-              name: "Foundation in Machine Learning",
+              name: "What is Machine Learning?",
               outcome: "ML fundamentals, data handling, and model training",
               badge: "ML Explorer",
               icon: "🔮" // Placeholder icons
             },
             {
-              name: "Advanced ML Techniques",
+              name: "ML vs. Traditional Programming",
               outcome: "Hyperparameter tuning, EDA, evaluation metrics",
               badge: "ML Practitioner",
               icon: "📊"
             },
             {
-              name: "Deep Learning with Neural Networks",
+              name: "Supervised, Unsupervised, and Reinforcement Learning",
+              outcome: "CNNs, RNNs, and LSTMs",
+              badge: "Deep Learning Pro",
+              icon: "🧠"
+            },
+            {
+              name: "Applications of ML",
+              outcome: "CNNs, RNNs, and LSTMs",
+              badge: "Deep Learning Pro",
+              icon: "🧠"
+            },
+            {
+              name: "Types of Datasets",
+              outcome: "CNNs, RNNs, and LSTMs",
+              badge: "Deep Learning Pro",
+              icon: "🧠"
+            },
+            {
+              name: "ML Lifecycle",
               outcome: "CNNs, RNNs, and LSTMs",
               badge: "Deep Learning Pro",
               icon: "🧠"

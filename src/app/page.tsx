@@ -20,8 +20,8 @@ export default function Home() {
    <HeroSection /> 
    <App />
    {/* <CardLayout /> */}
-   <TimelineDemo />
-   <ProjectsSection/>  
+   {/* <TimelineDemo /> */}
+   {/* <ProjectsSection/>   */}
    {/* <CardLayout /> */}
    {/* <ProjectsSection/>   */}
     {/* <NameCalculator /> */}
