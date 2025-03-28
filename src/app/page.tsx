@@ -16,18 +16,20 @@ import AIRoadmap from "@/components/customComponents/landingpage/Roadmap"
 import App from '@/components/customComponents/CourseModule'
 // import Projects from '@/components/customComponents/project/Projects'
 import ProgramsSection from '@/components/customComponents/project/Programs'
+import Navbar from '@/components/customComponents/Navbar'
 export default function Home() {
   return (
    <>
+   <Navbar />
    <HeroSection /> 
-   <App />
+   {/* <App /> */}
    {/* <CardLayout /> */}
    <TimelineDemo />
    {/* <ProjectsSection/>   */}
    {/* <CardLayout /> */}
    {/* <ProjectsSection/>   */}
     {/* <NameCalculator /> */}
-    {/* <Levels /> */}
+    <Levels />
     <AIRoadmap />
     {/* <Projects /> */}
     <ProgramsSection />
