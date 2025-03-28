@@ -17,6 +17,9 @@ import App from '@/components/customComponents/CourseModule'
 import Navbar from '@/components/customComponents/navbar/Navbar'
 import FactAndFigures from '@/components/customComponents/Faq'
 import FAQ from '@/components/customComponents/Faq'
+// import Projects from '@/components/customComponents/project/Projects'
+import ProgramsSection from '@/components/customComponents/project/Programs'
+// import Navbar from '@/components/customComponents/Navbar'
 export default function Home() {
   return (
    <>
@@ -33,6 +36,8 @@ export default function Home() {
     {/* <NameCalculator /> */}
     <Levels />
     <AIRoadmap />
+    {/* <Projects /> */}
+    <ProgramsSection />
     <ContactForm />
     <Footer />
    </>  )
