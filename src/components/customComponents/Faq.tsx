@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import { faqData } from '../../../data/faq';
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleCard = (index) => {
+  const toggleCard = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
