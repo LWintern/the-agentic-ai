@@ -40,7 +40,7 @@ export default function Home() {
     {/* <AIRoadmap /> */}
     {/* <Projects /> */}
     <ProgramsSection />
-    <AIJOB />
+    {/* <AIJOB /> */}
     <ContactForm />
     <Footer />
    </>  )

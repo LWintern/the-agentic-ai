@@ -17,9 +17,10 @@ export default function ContactForm() {
     <div className="w-full bg-black">
     <div className="h-full max-w-5xl mx-auto text-white flex flex-col items-center justify-center p-4">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-2">Contact Us Today</h1>
+        <h1 className="text-3xl font-bold mb-2"> Connect with Us: Begin Your AI Warrior Journey
+        </h1>
         <p className="text-gray-300">
-          Take the first step towards a future of innovation & excellence with Analytics Vidhya
+          Take the first step towards mastering AI and innovation with LW India. Your transformation into an AI Warrior starts here!
         </p>
       </div>
 
@@ -28,7 +29,7 @@ export default function ContactForm() {
         <Card className="flex-1 bg-zinc-900/50 border-zinc-800 text-white">
           <CardHeader className="text-center">
             <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-              Upskill, Reskill, Thrive
+            Upskill, Reskill, Rise as a Warrior
             </h2>
           </CardHeader>
 
@@ -120,7 +121,7 @@ export default function ContactForm() {
 
           <CardFooter>
             <Button className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-6">
-              Join the program now!!
+             Submit Your Query
             </Button>
           </CardFooter>
         </Card>
@@ -154,7 +155,8 @@ export default function ContactForm() {
                   href="mailto:customersupport@analyticsvidhya.com"
                   className="text-indigo-400 font-medium hover:underline break-all"
                 >
-                  customersupport@analyticsvidhya.com
+                  support@lwindia.com 
+
                 </a>
                 <p className="text-sm text-gray-400">You&apos;ll hear back in 24 hours</p>
               </div>
