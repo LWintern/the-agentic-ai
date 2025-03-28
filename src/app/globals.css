@@ -75,6 +75,14 @@
 }
 
 
+.gradient-border {
+  border-width: 2px; /* Adjust the border width as needed */
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #7e22ce, #db2777);
+}
+
+
 
 @layer base {
   * {
