@@ -187,7 +187,7 @@ export default function ContactForm() {
             </CardContent>
           <CardFooter>
             <Button className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-6">
-              Join the program now!!
+              Submit Your Query
             </Button>
           </CardFooter>
         </Card>
@@ -218,10 +218,10 @@ export default function ContactForm() {
               </div>
               <div>
                 <a
-                  href="mailto:customersupport@analyticsvidhya.com"
+                  href="mailto:support@lwindia.com "
                   className="text-indigo-400 font-medium hover:underline break-all"
                 >
-                  customersupport@analyticsvidhya.com
+                  support@lwindia.com 
                 </a>
                 <p className="text-sm text-gray-400">You&apos;ll hear back in 24 hours</p>
               </div>
