@@ -71,9 +71,9 @@ const HeroSection: React.FC = () => {
           </form>
         </div>
 
-        <div className="mt-8 text-sm text-gray-400">
+        {/* <div className="mt-8 text-sm text-gray-400">
           2d • 11h • 35m • 50s
-        </div>
+        </div> */}
       </main>
 
       <div className="absolute top-6 right-6 px-4 py-2 bg-yellow-400 text-black rounded-lg font-semibold">

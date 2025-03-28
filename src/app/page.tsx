@@ -16,17 +16,20 @@ import AIRoadmap from "@/components/customComponents/landingpage/Roadmap"
 import App from '@/components/customComponents/CourseModule'
 import Navbar from '@/components/customComponents/navbar/Navbar'
 import FactAndFigures from '@/components/customComponents/Faq'
-
+import Journey from '@/components/customComponents/Journey'
 // import Projects from '@/components/customComponents/project/Projects'
 import ProgramsSection from '@/components/customComponents/project/Programs'
 
 import AIJOB from "@/components/customComponents/Market/AIJOB"
+import { GiJourney } from 'react-icons/gi'
 // import Navbar from '@/components/customComponents/Navbar'
 export default function Home() {
   return (
    <>
    <Navbar />
    <HeroSection /> 
+   <Journey/>
+   
    
    {/* <App /> */}
    {/* <CardLayout /> */}
@@ -40,7 +43,7 @@ export default function Home() {
     {/* <AIRoadmap /> */}
     {/* <Projects /> */}
     <ProgramsSection />
-    <AIJOB />
+    {/* <AIJOB /> */}
     <ContactForm />
     <Footer />
    </>  )
