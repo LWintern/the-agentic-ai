@@ -382,7 +382,7 @@ const tracks = [
     <CardFooter className="mt-auto">
       <Button
         variant="outline"
-        className="w-full bg-gradient-to-r from-purple-600 to-pink-600"
+        className="w-full text-white font-bold hover:text-white bg-gradient-to-r from-purple-600 to-pink-600"
       >
         Apply now
       </Button>
