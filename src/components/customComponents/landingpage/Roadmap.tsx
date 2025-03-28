@@ -92,140 +92,122 @@ const ModuleSection: React.FC<ModuleSectionProps> = ({ moduleData }) => {
 };
 
 const AIRoadmap: React.FC = () => {
-    const roadmapData = [
+  const roadmapData = [
+    {
+      level: 1,
+      title: "Foundation in Machine Learning",
+      capsules: [
         {
-          level: 1,
-          title: "Foundation in ML & Deep Learning",
-          capsules: [
-            {
-              name: "What is Machine Learning?",
-              outcome: "ML fundamentals, data handling, and model training",
-              badge: "ML Explorer",
-              icon: "🔮" // Placeholder icons
-            },
-            {
-              name: "ML vs. Traditional Programming",
-              outcome: "Hyperparameter tuning, EDA, evaluation metrics",
-              badge: "ML Practitioner",
-              icon: "📊"
-            },
-            {
-              name: "Supervised, Unsupervised, and Reinforcement Learning",
-              outcome: "CNNs, RNNs, and LSTMs",
-              badge: "Deep Learning Pro",
-              icon: "🧠"
-            },
-            {
-              name: "Applications of ML",
-              outcome: "CNNs, RNNs, and LSTMs",
-              badge: "Deep Learning Pro",
-              icon: "🧠"
-            },
-            {
-              name: "Types of Datasets",
-              outcome: "CNNs, RNNs, and LSTMs",
-              badge: "Deep Learning Pro",
-              icon: "🧠"
-            },
-            {
-              name: "ML Lifecycle",
-              outcome: "CNNs, RNNs, and LSTMs",
-              badge: "Deep Learning Pro",
-              icon: "🧠"
-            }
-          ]
+          name: "Foundation in Machine Learning",
+          outcome: "ML fundamentals, data handling, and model training",
+          badge: "ML Explorer",
+          icon: "🔮"
         },
         {
-          level: 2,
-          title: "Computer Vision",
-          capsules: [
-            {
-              name: "Computer Vision Fundamentals",
-              outcome: "Image processing, CNNs, OpenCV",
-              badge: "Vision Novice",
-              icon: "👁️"
-            },
-            {
-              name: "Advanced Computer Vision",
-              outcome: "Object detection, GANs, Style Transfer",
-              badge: "Vision Expert",
-              icon: "🔍"
-            }
-          ]
+          name: "Advanced ML Techniques",
+          outcome: "Hyperparameter tuning, EDA, evaluation metrics",
+          badge: "ML Practitioner",
+          icon: "📊"
         },
         {
-          level: 3,
-          title: "Natural Language Processing",
-          capsules: [
-            {
-              name: "NLP Fundamentals",
-              outcome: "Text processing, tokenization, NER",
-              badge: "NLP Explorer",
-              icon: "📝"
-            },
-            {
-              name: "Advanced NLP Techniques",
-              outcome: "LLMs, Transformers, LangChain",
-              badge: "NLP Specialist",
-              icon: "🔤"
-            }
-          ]
-        },
-        {
-          level: 4,
-          title: "Generative AI",
-          capsules: [
-            {
-              name: "Generative AI Basics",
-              outcome: "GANs, VAEs, and StyleGAN",
-              badge: "GenAI Innovator",
-              icon: "🎨"
-            },
-            {
-              name: "Advanced Generative Models",
-              outcome: "Prompt engineering, Pix2Pix, CycleGAN",
-              badge: "GenAI Master",
-              icon: "✨"
-            }
-          ]
-        },
-        {
-          level: 5,
-          title: "Agentic AI & Autonomous Systems",
-          capsules: [
-            {
-              name: "Agentic AI & Autonomous Systems",
-              outcome: "Agents, LLM integration, autonomy",
-              badge: "Agentic AI Explorer",
-              icon: "🤖"
-            },
-            {
-              name: "Advanced Agentic AI",
-              outcome: "Multi-agent systems, fine-tuning",
-              badge: "Agentic AI Architect",
-              icon: "⚙️"
-            }
-          ]
-        },
-        {
-          level: 6,
-          title: "AI Ops & MLOps",
-          capsules: [
-            {
-              name: "AI Ops & MLOps",
-              outcome: "Model deployment, DevOps, CI/CD",
-              badge: "AI Ops Specialist",
-              icon: "🔄"
-            },
-            {
-              name: "Cloud & MLOps Integration",
-              outcome: "AWS, Docker, Kubernetes, OpenShift",
-              badge: "Cloud AI Engineer",
-              icon: "☁️"
-            }
-          ]
+          name: "Deep Learning with Neural Networks",
+          outcome: "CNNs, RNNs, and LSTMs",
+          badge: "Deep Learning Pro",
+          icon: "🧠"
         }
-      ];
+      ]
+    },
+    {
+      level: 2,
+      title: "Computer Vision",
+      capsules: [
+        {
+          name: "Computer Vision Fundamentals",
+          outcome: "Image processing, CNNs, OpenCV",
+          badge: "Vision Novice",
+          icon: "👁️"
+        },
+        {
+          name: "Advanced Computer Vision",
+          outcome: "Object detection, GANs, Style Transfer",
+          badge: "Vision Expert",
+          icon: "🔍"
+        }
+      ]
+    },
+    {
+      level: 3,
+      title: "Natural Language Processing",
+      capsules: [
+        {
+          name: "NLP Fundamentals",
+          outcome: "Text processing, tokenization, NER",
+          badge: "NLP Explorer",
+          icon: "💬"
+        },
+        {
+          name: "Advanced NLP Techniques",
+          outcome: "LLMs, Transformers, LangChain",
+          badge: "NLP Specialist",
+          icon: "📖"
+        }
+      ]
+    },
+    {
+      level: 4,
+      title: "Generative AI",
+      capsules: [
+        {
+          name: "Generative AI Basics",
+          outcome: "GANs, VAEs, and StyleGAN",
+          badge: "GenAI Innovator",
+          icon: "🎨"
+        },
+        {
+          name: "Advanced Generative Models",
+          outcome: "Prompt engineering, Pix2Pix, CycleGAN",
+          badge: "GenAI Master",
+          icon: "🖌️"
+        }
+      ]
+    },
+    {
+      level: 5,
+      title: "Agentic AI",
+      capsules: [
+        {
+          name: "Agentic AI & Autonomous Systems",
+          outcome: "Agents, LLM integration, autonomy",
+          badge: "Agentic AI Explorer",
+          icon: "🤖"
+        },
+        {
+          name: "Advanced Agentic AI",
+          outcome: "Multi-agent systems, fine-tuning",
+          badge: "Agentic AI Architect",
+          icon: "🏗️"
+        }
+      ]
+    },
+    {
+      level: 6,
+      title: "AI Operations",
+      capsules: [
+        {
+          name: "AI Ops & MLOps",
+          outcome: "Model deployment, DevOps, CI/CD",
+          badge: "AI Ops Specialist",
+          icon: "⚙️"
+        },
+        {
+          name: "Cloud & MLOps Integration",
+          outcome: "AWS, Docker, Kubernetes, OpenShift",
+          badge: "Cloud AI Engineer",
+          icon: "☁️"
+        }
+      ]
+    }
+  ];
       
 
   return (
