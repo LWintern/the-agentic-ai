@@ -14,15 +14,19 @@ import ContactForm from '@/components/customComponents/landingpage/Contact'
 
 import AIRoadmap from "@/components/customComponents/landingpage/Roadmap"
 import App from '@/components/customComponents/CourseModule'
-import Navbar from '@/components/customComponents/Navbar'
+import Navbar from '@/components/customComponents/navbar/Navbar'
+import FactAndFigures from '@/components/customComponents/Faq'
+import FAQ from '@/components/customComponents/Faq'
 export default function Home() {
   return (
    <>
    <Navbar />
    <HeroSection /> 
+   <FAQ />
    {/* <App /> */}
    {/* <CardLayout /> */}
    <TimelineDemo />
+    
    {/* <ProjectsSection/>   */}
    {/* <CardLayout /> */}
    {/* <ProjectsSection/>   */}

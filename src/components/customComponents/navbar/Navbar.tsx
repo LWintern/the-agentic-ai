@@ -1,18 +1,21 @@
+// Navbar.tsx
+
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import { List, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-// import LOGO from "../../../public/assets/logo2.webp";
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import Link from 'next/link'; // Import Link from next/link
+import Link from 'next/link';
+import { ProgramCard, SideCategories } from './NavbarComponents';
+import {roadmapData }  from '../../../../data/navbar';
+import { RoadmapLevel, Capsule, RouteConfig } from '../../../../types/navbar';
 
 // Navigation Items
 const NAV_ITEMS = [
   { href: "#Projects", text: "Item1" },
-
   { href: "#Placement", text: "Item2" },
   { href: "#Benefits", text: "Item3" },
   { href: "#JAZBAA", text: "Item4" },
@@ -20,10 +23,6 @@ const NAV_ITEMS = [
 ];
 
 // Route Configuration
-interface RouteConfig {
-  buttonText: string;
-}
-
 const ROUTE_CONFIG: Record<string, RouteConfig> = {
   '/students': {
     buttonText: 'Enquire Now'
@@ -50,7 +49,10 @@ const Navbar: React.FC = () => {
   const router = useRouter();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<string>('Level 1');
   const menuRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const getRouteConfig = (currentPath: string): RouteConfig => {
     return ROUTE_CONFIG[currentPath] || ROUTE_CONFIG.default;
@@ -64,8 +66,8 @@ const Navbar: React.FC = () => {
     };
 
     const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setMobileMenuOpen(false);
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownOpen(false);
       }
     };
 
@@ -88,20 +90,22 @@ const Navbar: React.FC = () => {
 
   const handleNavClick = (href: string) => {
     closeMobileMenu();
+    setDropdownOpen(!isDropdownOpen);
     document.querySelector(href)?.scrollIntoView({
       behavior: 'smooth'
     });
   };
 
-  // const handleEnquiryClick = () => {
-  //   router.push('/application-form');
-  //   closeMobileMenu();
-  // };
+  const handleCategorySelect = (category: string) => {
+    setSelectedCategory(category);
+  };
+
+  const selectedLevel = roadmapData.find(level => level.level === selectedCategory);
 
   return (
     <header
       className={cn(
-        "sticky top-0 z-50  w-full transition-colors duration-300",
+        "sticky top-0 z-50 w-full transition-colors duration-300",
         scrolled ? "bg-black shadow-lg" : "bg-black"
       )}
     >
@@ -133,16 +137,14 @@ const Navbar: React.FC = () => {
                 >
                   {item.text}
                 </a>
-              
               </li>
             ))}
-              <a
-                  href="/application-form"
-                  className="text-white hover:text-[#ff0000] transition-colors duration-200"
-                 
-                >
-                  Apply Now
-                </a>
+            <a
+              href="/application-form"
+              className="text-white hover:text-[#ff0000] transition-colors duration-200"
+            >
+              Apply Now
+            </a>
           </ul>
         </nav>
 
@@ -177,7 +179,6 @@ const Navbar: React.FC = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
-            
             transition={{ duration: 0.2 }}
             className="lg:hidden absolute right-4 top-full bg-black w-64 shadow-lg z-10 rounded-lg border border-gray-800"
           >
@@ -204,7 +205,7 @@ const Navbar: React.FC = () => {
                   </motion.li>
                 ))}
               </ul>
-              
+
               {/* Mobile CTA Button */}
               <Link
                 href="/application-form"
@@ -213,6 +214,38 @@ const Navbar: React.FC = () => {
               >
                 {buttonText}
               </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Dropdown Component */}
+      <AnimatePresence>
+        {isDropdownOpen && selectedLevel && (
+          <motion.div
+            ref={dropdownRef}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="absolute top-full left-36 transform -translate-x-1/2 w-4/5 bg-black shadow-lg z-20 rounded-lg"
+          >
+            <div className="container mx-auto p-4">
+              <div className="flex">
+                <SideCategories
+                  categories={roadmapData.map(level => level.level)}
+                  selectedCategory={selectedCategory}
+                  onCategorySelect={handleCategorySelect}
+                />
+                <div className="flex-1 flex flex-wrap gap-4">
+                  {selectedLevel.capsules.map((capsule, index) => (
+                    <ProgramCard
+                      key={index}
+                      {...capsule} // Spread the capsule object to pass all properties
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </motion.div>
         )}
