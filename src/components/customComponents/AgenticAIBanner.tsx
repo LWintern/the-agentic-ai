@@ -58,14 +58,7 @@ const HeroSection: React.FC = () => {
               placeholder="Your Email Id"
               className="w-full px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none"
             />
-            {/* <div className="flex items-center gap-2 text-sm">
-              <input type="checkbox" id="terms" className="rounded bg-black/50 border-gray-600" />
-              <label htmlFor="terms">I Agree to the <a href="#" className="text-purple-400">Terms & Conditions</a></label>
-            </div> */}
-            {/* <div className="flex items-center gap-2 text-sm">
-              <input type="checkbox" id="whatsapp" className="rounded bg-black/50 border-gray-600" />
-              <label htmlFor="whatsapp">Send WhatsApp Updates</label>
-            </div> */}
+           
             <button
               type="submit"
               className="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity"
