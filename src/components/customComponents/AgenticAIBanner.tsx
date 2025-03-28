@@ -74,7 +74,9 @@ const HeroSection: React.FC = () => {
         </div>
       </main>
 
-    
+      <div className="absolute top-6 right-6 px-4 py-2 bg-yellow-400 text-black rounded-lg font-semibold">
+        AI Breakthrough Offer →
+      </div>
     </section>
   );
 };
