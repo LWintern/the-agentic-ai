@@ -14,7 +14,8 @@ export default function ContactForm() {
   const [whatsappUpdates, setWhatsappUpdates] = useState(false)
 
   return (
-    <div className="h-full bg-black text-white flex flex-col items-center justify-center p-4">
+    <div className="w-full bg-black">
+    <div className="h-full max-w-5xl mx-auto text-white flex flex-col items-center justify-center p-4">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2">Contact Us Today</h1>
         <p className="text-gray-300">
@@ -161,6 +162,7 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }
