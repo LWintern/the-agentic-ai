@@ -367,7 +367,7 @@ const tracks = [
         {tracks.map((track, index) => (
   <Card 
     key={index} 
-    className="bg-black border border-gray-800 rounded-lg overflow-hidden flex flex-col min-h-[320px]"
+    className="bg-black border border-gray-800 rounded-lg overflow-hidden flex flex-col min-h-[290px]"
   >
     <div className="flex-grow">
       <CardHeader className="pb-2">
