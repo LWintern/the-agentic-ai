@@ -90,6 +90,7 @@ export default function ContactForm() {
             </CardHeader>
 
             <CardContent className="space-y-8">
+
               <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
@@ -182,7 +183,8 @@ export default function ContactForm() {
                     Send WhatsApp Updates
                   </label>
                 </div>
-
+                </form>
+            </CardContent>
           <CardFooter>
             <Button className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-6">
               Join the program now!!
