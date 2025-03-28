@@ -10,7 +10,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { ProgramCard, SideCategories } from './NavbarComponents';
-import {roadmapData }  from '../../../../data/navbar';
+import { roadmapData } from '../../../../data/navbar';
 import { RoadmapLevel, Capsule, RouteConfig } from '../../../../types/navbar';
 
 // Navigation Items
@@ -224,16 +224,16 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full left-36 transform -translate-x-1/2 w-4/5 bg-black shadow-lg z-20 rounded-lg"
+            className="absolute top-full md:left-40 lg:left-40 left-0 transform -translate-x-1/2 w-full sm:w-4/5 bg-black shadow-lg z-20 rounded-lg"
           >
             <div className="container mx-auto p-4">
-              <div className="flex">
+              <div className="flex flex-col sm:flex-row">
                 <SideCategories
                   categories={roadmapData.map(level => level.level)}
                   selectedCategory={selectedCategory}
                   onCategorySelect={handleCategorySelect}
                 />
-                <div className="flex-1 flex flex-wrap gap-4">
+                <div className="flex-1 flex flex-wrap gap-4 mt-4 sm:mt-0 ">
                   {selectedLevel.capsules.map((capsule, index) => (
                     <ProgramCard
                       key={index}
