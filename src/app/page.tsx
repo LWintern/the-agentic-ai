@@ -20,12 +20,12 @@ export default function Home() {
    <HeroSection /> 
    <App />
    {/* <CardLayout /> */}
-   {/* <TimelineDemo /> */}
+   <TimelineDemo />
    {/* <ProjectsSection/>   */}
    {/* <CardLayout /> */}
    {/* <ProjectsSection/>   */}
     {/* <NameCalculator /> */}
-    {/* <Levels /> */}
+    <Levels />
     <AIRoadmap />
     <ContactForm />
     <Footer />
