@@ -11,16 +11,17 @@ const HeroSection: React.FC = () => {
       
       <main className="flex flex-col items-center text-center z-10 px-4">
         <h1 className="text-5xl md:text-5xl pt-20 font-bold tracking-wider">
-          Agentic AI <span className="text-[#FF3366]">Pioneer</span> Program
+        AI Warrior : The <span className="text-[#FF3366]">MasterStroke </span> Program
         </h1>
-        <p className="mt-4 text-xl text-gray-300">Master AI Agents, Build the Future!</p>
+        <p className="mt-4 text-xl text-gray-300"> 12 AI Capsules: The Brahmastra Training of AI
+        </p>
 
         <div className="flex flex-wrap justify-center gap-8 mt-12">
           {[
-            { count: '50+', label: 'Projects' },
-            { count: '10+', label: 'Hours of Live Workshops Quarterly' },
-            { count: '75+', label: 'Mentorships' },
+            { count: '36+', label: 'Hands On Projects' },
+            { count: '12+', label: 'Capsule Programs' },
             { count: '150+', label: 'Hours of learning' },
+            { count: '12+', label: 'Badges Earned' },
           ].map((item, index) => (
             <div key={index} className="text-center">
               <p className="text-3xl font-bold">{item.count}</p>
@@ -30,7 +31,8 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div className="mt-12 w-full max-w-md backdrop-blur-lg bg-black/30 p-6 rounded-lg border border-gradient">
-          <h2 className="text-2xl font-bold mb-6">Become an Agentic AI Expert</h2>
+          <h2 className="text-2xl font-bold mb-6">Become an AI Warrior 
+          </h2>
           <form className="space-y-4">
             <input
               type="text"
@@ -64,7 +66,7 @@ const HeroSection: React.FC = () => {
               type="submit"
               className="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
-              Download Brochure
+              Get a Call Back
             </button>
           </form>
         </div>
