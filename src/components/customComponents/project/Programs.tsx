@@ -365,7 +365,7 @@ const tracks = [
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {tracks.map((track, index) => (
-            <Card key={index} className="bg-black border border-gray-800 rounded-lg overflow-hidden">
+            <Card key={index} className="bg-black border border-gray-800  rounded-lg overflow-hidden">
               <CardHeader className="pb-2">
                 <p className="text-sm text-gray-400">TRACK {track.number}</p>
                 <CardTitle className={`text-2xl font-bold ${track.titleColor}`}>{track.title}</CardTitle>

@@ -32,7 +32,7 @@ export default function Home() {
    {/* <CardLayout /> */}
    <TimelineDemo />
     
-   <ProjectsSection/>  
+   {/* <ProjectsSection/>   */}
    {/* <CardLayout /> */}
    {/* <ProjectsSection/>   */}
     {/* <NameCalculator /> */}
