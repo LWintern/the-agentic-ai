@@ -14,19 +14,23 @@ import ContactForm from '@/components/customComponents/landingpage/Contact'
 
 import AIRoadmap from "@/components/customComponents/landingpage/Roadmap"
 import App from '@/components/customComponents/CourseModule'
+// import Projects from '@/components/customComponents/project/Projects'
+import ProgramsSection from '@/components/customComponents/project/Programs'
 export default function Home() {
   return (
    <>
    <HeroSection /> 
    <App />
    {/* <CardLayout /> */}
-   {/* <TimelineDemo /> */}
+   <TimelineDemo />
    {/* <ProjectsSection/>   */}
    {/* <CardLayout /> */}
    {/* <ProjectsSection/>   */}
     {/* <NameCalculator /> */}
     {/* <Levels /> */}
     <AIRoadmap />
+    {/* <Projects /> */}
+    <ProgramsSection />
     <ContactForm />
     <Footer />
    </>  )
