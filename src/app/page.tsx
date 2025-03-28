@@ -18,7 +18,7 @@ export default function Home() {
   return (
    <>
    <HeroSection /> 
-   <App />
+   {/* <App /> */}
    {/* <CardLayout /> */}
    <TimelineDemo />
    {/* <ProjectsSection/>   */}
