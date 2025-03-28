@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card"
 export default function AIJOB() {
   return (
     <div className="w-full bg-black mx-auto">
-    <div className="w-full bg-black max-w-6xl mx-auto p-4">
+    <div className="w-full bg-black max-w-5xl mx-auto p-4">
       <Card className="overflow-hidden rounded-3xl border-0 bg-black text-white">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left side with text */}
