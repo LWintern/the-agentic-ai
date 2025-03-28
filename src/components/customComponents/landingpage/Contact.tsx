@@ -205,8 +205,8 @@ export default function ContactForm() {
                   <Phone className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <a href="tel:+919354711240" className="text-indigo-400 font-medium hover:underline">
-                    +91-9354711240
+                  <a href="tel:+919653775333" className="text-indigo-400 font-medium hover:underline">
+                    +91-9653775333
                   </a>
                   <p className="text-sm text-gray-400">10AM - 7PM (IST) Mon-Sun</p>
                 </div>
