@@ -12,7 +12,7 @@ const tracks = [
     number: "01",
     title: "Price Prediction",
     titleColor: "text-orange-300",
-    experience: "1-3 years of experience",
+    experience: "",
     description: "Predicting house prices using Linear Regression based on square footage, bedrooms, location, and other factors.",
   },
   {
@@ -20,7 +20,7 @@ const tracks = [
     number: "02",
     title: "Spam Detection",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Classifying emails as spam or not spam using a Logistic Regression model.",
   },
   {
@@ -28,7 +28,7 @@ const tracks = [
     number: "03",
     title: "Customer Segmentation",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Grouping customers based on purchasing behavior using K-Means Clustering.",
   },
   {
@@ -36,7 +36,7 @@ const tracks = [
     number: "04",
     title: "Anomaly Detection",
     titleColor: "text-amber-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Detecting fraudulent credit card transactions using PCA for dimensionality reduction.",
   },
   // Continuing with all remaining tracks (5-43)
@@ -45,7 +45,7 @@ const tracks = [
     number: "05",
     title: "AutoML Tuning",
     titleColor: "text-orange-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Automating model selection and hyperparameter tuning using AutoML frameworks.",
   },
   {
@@ -53,7 +53,7 @@ const tracks = [
     number: "06",
     title: "Stock Forecasting",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Predicting stock prices using time-series models like ARIMA and LSTM.",
   },
   {
@@ -61,7 +61,7 @@ const tracks = [
     number: "07",
     title: "Fake News Detection",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Classifying news articles as fake or real using ensemble learning techniques.",
   },
   {
@@ -69,7 +69,7 @@ const tracks = [
     number: "08",
     title: "Car Simulation",
     titleColor: "text-amber-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Training an autonomous vehicle to navigate using Reinforcement Learning.",
   },
   {
@@ -77,7 +77,7 @@ const tracks = [
     number: "09",
     title: "Expression Recognition",
     titleColor: "text-orange-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Recognizing human emotions from facial images using Convolutional Neural Networks.",
   },
   {
@@ -85,7 +85,7 @@ const tracks = [
     number: "10",
     title: "Traffic Sign Recognition",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Identifying and classifying traffic signs from images to aid autonomous driving systems.",
   },
   {
@@ -93,7 +93,7 @@ const tracks = [
     number: "11",
     title: "Medical Classification",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Classifying medical images (e.g., X-rays, MRIs) into diagnostic categories using deep learning.",
   },
   {
@@ -101,7 +101,7 @@ const tracks = [
     number: "12",
     title: "Object Detection",
     titleColor: "text-amber-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Detecting and tracking objects in video streams by integrating CNN models with OpenCV.",
   },
   {
@@ -109,7 +109,7 @@ const tracks = [
     number: "13",
     title: "Real-Time Detection",
     titleColor: "text-orange-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Building a real-time object detection system using YOLO (You Only Look Once) and OpenCV.",
   },
   {
@@ -117,7 +117,7 @@ const tracks = [
     number: "14",
     title: "Style Transfer",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Transforming images into artistic masterpieces using deep learning-based style transfer.",
   },
   {
@@ -125,7 +125,7 @@ const tracks = [
     number: "15",
     title: "Face Generation",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Generating realistic human faces using Generative Adversarial Networks (GANs).",
   },
   {
@@ -133,7 +133,7 @@ const tracks = [
     number: "16",
     title: "Image Translation",
     titleColor: "text-amber-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Converting images between different domains without paired datasets using CycleGAN.",
   },
   {
@@ -141,7 +141,7 @@ const tracks = [
     number: "17",
     title: "Sentiment Analysis",
     titleColor: "text-orange-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Building a robust sentiment analysis model using ensemble learning techniques.",
   },
   {
@@ -149,7 +149,7 @@ const tracks = [
     number: "18",
     title: "Resume Parsing",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Extracting key information from resumes using NER models.",
   },
   {
@@ -157,7 +157,7 @@ const tracks = [
     number: "19",
     title: "Text Summarization",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Developing an extractive and abstractive text summarization tool for news.",
   },
   {
@@ -165,7 +165,7 @@ const tracks = [
     number: "20",
     title: "Speech Transcription",
     titleColor: "text-amber-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Building an ASR (Automatic Speech Recognition) system with enhanced readability.",
   },
   {
@@ -173,7 +173,7 @@ const tracks = [
     number: "21",
     title: "Chatbot Development",
     titleColor: "text-orange-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Creating conversational AI agents using transformer-based language models.",
   },
   {
@@ -181,7 +181,7 @@ const tracks = [
     number: "22",
     title: "Fake News BERT",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Developing an NLP-based classifier to detect fake news articles.",
   },
   {
@@ -189,7 +189,7 @@ const tracks = [
     number: "23",
     title: "Essay Scoring",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Building an AI-powered system to grade essays based on linguistic and structural features.",
   },
   {
@@ -197,7 +197,7 @@ const tracks = [
     number: "24",
     title: "QA System",
     titleColor: "text-amber-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Developing a QA system that retrieves answers from a knowledge graph using GNNs.",
   },
   {
@@ -205,7 +205,7 @@ const tracks = [
     number: "25",
     title: "Text Generation",
     titleColor: "text-orange-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Generating human-like text using a pre-trained transformer model.",
   },
   {
@@ -213,7 +213,7 @@ const tracks = [
     number: "26",
     title: "VAE Detection",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Detecting anomalies in images or time-series data using VAEs.",
   },
   {
@@ -221,7 +221,7 @@ const tracks = [
     number: "27",
     title: "Music Generation",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Creating AI-generated music using Generative Adversarial Networks.",
   },
   {
@@ -229,7 +229,7 @@ const tracks = [
     number: "28",
     title: "Image Super-Resolution",
     titleColor: "text-amber-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Enhancing low-resolution images using a Super-Resolution GAN (SRGAN).",
   },
   {
@@ -237,7 +237,7 @@ const tracks = [
     number: "29",
     title: "Text-to-Image",
     titleColor: "text-orange-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Generating high-quality images from text prompts using a diffusion model.",
   },
   {
@@ -245,7 +245,7 @@ const tracks = [
     number: "30",
     title: "Custom Chatbot",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Developing a chatbot with memory and personality using LLMs.",
   },
   {
@@ -253,7 +253,7 @@ const tracks = [
     number: "31",
     title: "Text-to-Video",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Synthesizing short video clips from text descriptions.",
   },
   {
@@ -261,7 +261,7 @@ const tracks = [
     number: "32",
     title: "Research Assistant",
     titleColor: "text-amber-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Creating an autonomous research agent that gathers and summarizes online information.",
   },
   {
@@ -269,7 +269,7 @@ const tracks = [
     number: "33",
     title: "AI Personal Assistant",
     titleColor: "text-orange-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Developing a personal AI assistant with long-term memory using LangChain.",
   },
   {
@@ -277,7 +277,7 @@ const tracks = [
     number: "34",
     title: "Task Planner",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Automating task planning and scheduling using AI optimization techniques.",
   },
   {
@@ -285,7 +285,7 @@ const tracks = [
     number: "35",
     title: "Document Analyzer",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Creating an AI-powered agent that reads, summarizes, and answers questions from documents.",
   },
   {
@@ -293,7 +293,7 @@ const tracks = [
     number: "36",
     title: "Research Agent",
     titleColor: "text-amber-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Building an autonomous agent that conducts literature reviews and summarizes findings.",
   },
   {
@@ -301,7 +301,7 @@ const tracks = [
     number: "37",
     title: "AI Task Manager",
     titleColor: "text-orange-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Creating an autonomous agent that breaks down and manages tasks.",
   },
   {
@@ -309,7 +309,7 @@ const tracks = [
     number: "38",
     title: "Code Generator",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Developing an AI-powered agent that writes and improves code autonomously.",
   },
   {
@@ -317,7 +317,7 @@ const tracks = [
     number: "39",
     title: "Data Analyst",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Creating an autonomous agent that processes and visualizes data.",
   },
   {
@@ -325,7 +325,7 @@ const tracks = [
     number: "40",
     title: "AI Deployment",
     titleColor: "text-amber-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Containerizing and deploying a machine learning model using Docker and FastAPI.",
   },
   {
@@ -333,7 +333,7 @@ const tracks = [
     number: "41",
     title: "Model Deployment",
     titleColor: "text-orange-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Deploying an AI model on Kubernetes with auto-scaling and load balancing.",
   },
   {
@@ -341,7 +341,7 @@ const tracks = [
     number: "42",
     title: "ML - CI/CD",
     titleColor: "text-purple-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Automating model deployment with GitHub Actions and version control.",
   },
   {
@@ -349,7 +349,7 @@ const tracks = [
     number: "43",
     title: "Model Retraining",
     titleColor: "text-green-300",
-    experience: "3-5 years of experience",
+    experience: "",
     description: "Building an MLOps pipeline to retrain and deploy ML models automatically.",
   },
 ];
@@ -358,9 +358,9 @@ const tracks = [
     <section className="w-full bg-black text-white py-16 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-sm uppercase tracking-wider mb-2">PROGRAMS</h2>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Ready To Join The Family?</h1>
-          <p className="text-lg">Choose a track where you know you'll shine!</p>
+          <h2 className="text-sm uppercase tracking-wider mb-2">AI Warrior Projects:</h2>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4"> Sharpen Your Skills with 36+ Battles</h1>
+          <p className="text-lg">Master AI by working on 36+ real-world projects—building, innovating, and solving challenges to prepare for the fast-moving industry.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

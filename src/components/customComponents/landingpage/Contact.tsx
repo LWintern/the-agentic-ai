@@ -51,14 +51,14 @@ export default function ContactForm() {
                 </label>
                 <div className="flex">
                   <div className="flex items-center bg-zinc-800/50 border border-r-0 border-zinc-700 rounded-l-md px-3 py-2">
-                    <Image
+                    {/* <Image
                       src="/assets/India.jpg"
                       alt="India flag"
                       width={24}
                       height={16}
                       className="mr-2"
-                    />
-                    <span className="text-sm text-zinc-400">+91</span>
+                    /> */}
+                    
                   </div>
                   <Input
                     id="phoneNumber"

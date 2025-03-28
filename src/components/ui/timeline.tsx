@@ -134,7 +134,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         The AI Warrior Training Path: 12 Capsules, 6 Levels, One Masterstroke
         </h2>
         <p className="text-neutral-300 dark:text-neutral-300 mx-auto text-center text-sm md:text-base max-w-lg">
-        Line below the title : Unveil your AI journey step by step—mastering 12 powerful capsules across 6 levels, transforming from a learner to an AI Warrior.
+         Unveil your AI journey step by step—mastering 12 powerful capsules across 6 levels, transforming from a learner to an AI Warrior.
 
         </p>
       </div>
