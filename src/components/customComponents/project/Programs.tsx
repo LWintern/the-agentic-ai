@@ -356,7 +356,7 @@ const tracks = [
 
   return (
     <section className="w-full bg-black text-white py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-sm uppercase tracking-wider mb-2">AI Warrior Projects:</h2>
           <h1 className="text-4xl md:text-5xl font-bold mb-4"> Sharpen Your Skills with 36+ Battles</h1>
