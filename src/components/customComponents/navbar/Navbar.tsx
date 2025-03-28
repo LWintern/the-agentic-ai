@@ -15,11 +15,7 @@ import { RoadmapLevel, Capsule, RouteConfig } from '../../../../types/navbar';
 
 // Navigation Items
 const NAV_ITEMS = [
-  { href: "#Projects", text: "Item1" },
-  { href: "#Placement", text: "Item2" },
-  { href: "#Benefits", text: "Item3" },
-  { href: "#JAZBAA", text: "Item4" },
-  { href: "#Preivous", text: "Item5" },
+  { href: "#Projects", text: "Levels" },
 ];
 
 // Route Configuration
