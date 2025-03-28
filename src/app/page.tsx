@@ -16,7 +16,7 @@ import AIRoadmap from "@/components/customComponents/landingpage/Roadmap"
 import App from '@/components/customComponents/CourseModule'
 import Navbar from '@/components/customComponents/navbar/Navbar'
 import FactAndFigures from '@/components/customComponents/Faq'
-import FAQ from '@/components/customComponents/Faq'
+
 // import Projects from '@/components/customComponents/project/Projects'
 import ProgramsSection from '@/components/customComponents/project/Programs'
 
@@ -27,7 +27,7 @@ export default function Home() {
    <>
    <Navbar />
    <HeroSection /> 
-   <FAQ />
+   
    {/* <App /> */}
    {/* <CardLayout /> */}
    <TimelineDemo />
@@ -36,8 +36,8 @@ export default function Home() {
    {/* <CardLayout /> */}
    {/* <ProjectsSection/>   */}
     {/* <NameCalculator /> */}
-    <Levels />
-    <AIRoadmap />
+    {/* <Levels /> */}
+    {/* <AIRoadmap /> */}
     {/* <Projects /> */}
     <ProgramsSection />
     <AIJOB />
