@@ -17,6 +17,7 @@ import App from '@/components/customComponents/CourseModule'
 // import Projects from '@/components/customComponents/project/Projects'
 import ProgramsSection from '@/components/customComponents/project/Programs'
 import Navbar from '@/components/customComponents/Navbar'
+import AIJOB from "@/components/customComponents/Market/AIJOB"
 export default function Home() {
   return (
    <>
@@ -33,6 +34,7 @@ export default function Home() {
     <AIRoadmap />
     {/* <Projects /> */}
     <ProgramsSection />
+    <AIJOB />
     <ContactForm />
     <Footer />
    </>  )
