@@ -28,7 +28,7 @@ export const roadmapData = [
           name: "Deep Learning with Neural Networks",
           outcome: "CNNs, RNNs, and LSTMs",
           badge: "Deep Learning Pro",
-          duration: "1 month",
+          duration: "8 hrs",
           price: "5500",
           images: [
             "https://via.placeholder.com/500",
