@@ -7,7 +7,7 @@ export const roadmapData = [
           outcome: "ML fundamentals, data handling, and model training",
           badge: "ML Explorer",
           duration: "8 hrs",
-          price: "999",
+          price: "999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -18,7 +18,7 @@ export const roadmapData = [
           outcome: "Hyperparameter tuning, EDA, evaluation metrics",
           badge: "ML Practitioner",
           duration: "14 hrs",
-          price: "2500",
+          price: "2500 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -29,7 +29,7 @@ export const roadmapData = [
           outcome: "CNNs, RNNs, and LSTMs",
           badge: "Deep Learning Pro",
           duration: "8 hrs",
-          price: "5500",
+          price: "5500 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -45,7 +45,7 @@ export const roadmapData = [
           outcome: "Image processing, CNNs, OpenCV",
           badge: "Vision Novice",
           duration: "8 hrs",
-          price: "1299",
+          price: "1299 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -56,7 +56,7 @@ export const roadmapData = [
           outcome: "Object detection, GANs, Style Transfer",
           badge: "Vision Expert",
           duration: "8 hrs",
-          price: "2999",
+          price: "2999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -72,7 +72,7 @@ export const roadmapData = [
           outcome: "Text processing, tokenization, NER",
           badge: "NLP Explorer",
           duration: "12 hrs",
-          price: "1999",
+          price: "1999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -83,7 +83,7 @@ export const roadmapData = [
           outcome: "LLMs, Transformers, LangChain",
           badge: "NLP Specialist",
           duration: "12 hrs",
-          price: "2999",
+          price: "2999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -99,7 +99,7 @@ export const roadmapData = [
           outcome: "GANs, VAEs, and StyleGAN",
           badge: "GenAI Innovator",
           duration: "8 hrs",
-          price: "1999",
+          price: "1999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -110,7 +110,7 @@ export const roadmapData = [
           outcome: "Prompt engineering, Pix2Pix, CycleGAN",
           badge: "GenAI Master",
           duration: "8 hrs",
-          price: "2999",
+          price: "2999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -126,7 +126,7 @@ export const roadmapData = [
           outcome: "Agents, LLM integration, autonomy",
           badge: "Agentic AI Explorer",
           duration: "12 hrs",
-          price: "2400",
+          price: "2400 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -137,7 +137,7 @@ export const roadmapData = [
           outcome: "Multi-agent systems, fine-tuning",
           badge: "Agentic AI Architect",
           duration: "8 hrs",
-          price: "2999",
+          price: "2999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -153,7 +153,7 @@ export const roadmapData = [
           outcome: "Model deployment, DevOps, CI/CD",
           badge: "AI Ops Specialist",
           duration: "15 hrs",
-          price: "12999",
+          price: "12999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -164,7 +164,7 @@ export const roadmapData = [
           outcome: "AWS, Docker, Kubernetes, OpenShift",
           badge: "Cloud AI Engineer",
           duration: "14 hrs",
-          price: "9999",
+          price: "9999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -180,7 +180,7 @@ export const roadmapData = [
           outcome: "After completing all levels",
           badge: "AI Master Practitioner",
           duration: "1 month",
-          price: "5500",
+          price: "5500 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",

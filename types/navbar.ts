@@ -13,6 +13,7 @@ export interface Program {
   
   export interface RouteConfig {
     buttonText: string;
+    href: string;
   }
 
   // types.ts

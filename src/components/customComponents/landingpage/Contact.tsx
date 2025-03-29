@@ -70,7 +70,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="w-full bg-black">
+    <div className="w-full bg-black" id="contact">
       <div className="h-full max-w-5xl mx-auto text-white flex flex-col items-center justify-center p-4">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold mb-2"> Connect with Us: Begin Your AI Warrior Journey
