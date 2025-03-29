@@ -94,109 +94,144 @@ const ModuleSection: React.FC<ModuleSectionProps> = ({ moduleData }) => {
 const AIRoadmap: React.FC = () => {
  
   const roadmapData: ModuleData[] = [
-    {
-      level: 1,
-      title: "Introduction to Machine Learning",
-      capsules: [
-        {
-          name: "What is Machine Learning?",
-          outcome: ["ML vs. Traditional Programming", "Supervised, Unsupervised, and Reinforcement Learning"],
-          badge: " ML Explorer",
-          icon: "🎓"
-        },
-        {
-          name: "Applications of ML",
-          outcome: ["Healthcare", "Finance", "E-commerce", "and more"],
-          badge: " ML Explorer",
-          icon: "🌟"
-        },
-        {
-          name: "Types of Datasets",
-          outcome: ["Structured vs. Unstructured", "Labeled vs. Unlabeled data"],
-          badge: "ML Explorer",
-          icon: "📊"
-        },
-        {
-          name: "ML Explorer",
-          outcome: ["Data Collection → Preprocessing → Model Training → Evaluation → Deployment"],
-          badge: "ML Explorer",
-          icon: "🔄"
-        }
-      ]
-    },
-    {
-      level: 2,
-      title: "Data Preprocessing",
-      capsules: [
-        {
-          name: "Data Cleaning",
-          outcome: ["Handling missing values (Imputation Techniques)", "Dealing with outliers"],
-          badge: "ML Explorer",
-          icon: "🧹"
-        },
-        {
-          name: "Feature Engineering",
-          outcome: ["One-Hot Encoding", "Feature Scaling (Standardization & Normalization)"],
-          badge: "ML Explorer",
-          icon: "⚙️"
-        },
-        {
-          name: "Splitting Data",
-          outcome: ["Train-test split", "K-Fold Cross-Validation"],
-          badge: "ML Explorer",
-          icon: "✂️"
-        }
-      ]
-    },
-    {
-      level: 3,
-      title: "Supervised Learning",
-      capsules: [
-        {
-          name: "Linear Regression",
-          outcome: ["Concepts: Line of best fit", "Cost function, gradient descent", "Implementation in Python (scikit-learn)"],
-          badge: "ML Explorer",
-          icon: "📈"
-        },
-        {
-          name: "Classification Models",
-          outcome: ["Logistic Regression", "Decision Trees", "Random Forest"],
-          badge: "ML Explorer",
-          icon: "🎯"
-        },
-        {
-          name: "Model Evaluation",
-          outcome: ["Accuracy, Precision, Recall, F1-Score", "Confusion Matrix"],
-          badge: "ML Explorer",
-          icon: "📊"
-        }
-      ]
-    },
-    {
-      level: 4,
-      title: "Unsupervised Learning",
-      capsules: [
-        {
-          name: "Clustering",
-          outcome: ["K-means clustering", "Hierarchical clustering"],
-          badge: "ML Explorer",
-          icon: "🔮"
-        },
-        {
-          name: "Dimensionality Reduction",
-          outcome: ["Principal Component Analysis (PCA)"],
-          badge: "ML Explorer",
-          icon: "📉"
-        },
-        {
-          name: "Applications",
-          outcome: ["Customer segmentation", "Anomaly detection"],
-          badge: "ML Explorer",
-          icon: "💡"
-        }
-      ]
-       
-    }
+      {
+        "level": 1,
+        "title": "Advanced NLP Models",
+        "capsules": [
+          {
+            "name": "Recurrent Neural Networks (RNN)",
+            "outcome": [
+              "Sequence modeling",
+              "LSTM & GRU",
+              "Memory-based NLP models"
+            ],
+            "badge": "NLP Expert",
+            "icon": "🔄"
+          },
+          {
+            "name": "Bi-LSTM",
+            "outcome": [
+              "Improved sequence processing"
+            ],
+            "badge": "NLP Expert",
+            "icon": "🔁"
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Transformer Models",
+        "capsules": [
+          {
+            "name": "What are Transformers?",
+            "outcome": [
+              "Self-attention mechanism",
+              "Encoder-Decoder architecture"
+            ],
+            "badge": "NLP Expert",
+            "icon": "⚡"
+          },
+          {
+            "name": "Popular Transformer Models",
+            "outcome": [
+              "BERT",
+              "GPT-2 and GPT-3"
+            ],
+            "badge": "NLP Expert",
+            "icon": "🤖"
+          },
+          {
+            "name": "Hugging Face Library",
+            "outcome": [
+              "Fine-tuning pre-trained transformer models"
+            ],
+            "badge": "NLP Expert",
+            "icon": "📚"
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "title": "Text Generation",
+        "capsules": [
+          {
+            "name": "Text Summarization",
+            "outcome": [
+              "Abstractive and Extractive methods"
+            ],
+            "badge": "NLP Expert",
+            "icon": "📑"
+          },
+          {
+            "name": "Text Generation with GPT",
+            "outcome": [
+              "Prompt engineering"
+            ],
+            "badge": "NLP Expert",
+            "icon": "💬"
+          },
+          {
+            "name": "Language Translation",
+            "outcome": [
+              "Seq2Seq models"
+            ],
+            "badge": "NLP Expert",
+            "icon": "🌍"
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "title": "NLP Pipelines",
+        "capsules": [
+          {
+            "name": "Sentiment Analysis Pipeline",
+            "outcome": [
+              "Text Classification with Transformers"
+            ],
+            "badge": "NLP Expert",
+            "icon": "😊😡"
+          },
+          {
+            "name": "Custom NER Pipeline",
+            "outcome": [
+              "Named Entity Recognition with custom models"
+            ],
+            "badge": "NLP Expert",
+            "icon": "🏷️"
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "title": "Graph Neural Networks (GNNs) for NLP",
+        "capsules": [
+          {
+            "name": "Introduction to Graph-Based Learning",
+            "outcome": [
+              "Understanding Graph Neural Networks"
+            ],
+            "badge": "NLP Expert",
+            "icon": "🔗"
+          },
+          {
+            "name": "Graph Convolutional Networks (GCN)",
+            "outcome": [
+              "Applying GCN in NLP tasks"
+            ],
+            "badge": "NLP Expert",
+            "icon": "🌐"
+          },
+          {
+            "name": "Applications in Knowledge Graphs & NLP",
+            "outcome": [
+              "Graph-based text representation"
+            ],
+            "badge": "NLP Expert",
+            "icon": "📖"
+          }
+        ]
+      }
   ];
 
   return (
