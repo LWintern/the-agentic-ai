@@ -200,6 +200,7 @@ export const roadmapData = [
           name: "Completion",
           outcome: "After completing all levels",
           badge: "AI Master Practitioner",
+          badgeLink: "https://example.com",
           duration: "1 month",
           price: "5500 +Taxes",
           images: [
