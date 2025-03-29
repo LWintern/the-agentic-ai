@@ -1,4 +1,4 @@
-import Hero from "@/components/CoursePage/Hero";
+import Hero from "@/components/agenticaiautonomoussystems/CoursePage/Hero";
 
 // import AIRoadmap from "@/components/customComponents/";
 import AIRoadmap from "../../components/agenticaiautonomoussystems/CoursePage/Roadmap";

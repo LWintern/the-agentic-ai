@@ -96,106 +96,115 @@ const AIRoadmap: React.FC = () => {
   const roadmapData: ModuleData[] = [
     {
       level: 1,
-      title: "Introduction to Machine Learning",
+      title: "Introduction to Agentic AI",
       capsules: [
         {
-          name: "What is Machine Learning?",
-          outcome: ["ML vs. Traditional Programming", "Supervised, Unsupervised, and Reinforcement Learning"],
-          badge: " ML Explorer",
-          icon: "🎓"
+          name: "What is Agentic AI?",
+          outcome: [
+            "Definition and characteristics of autonomous agents",
+            "Difference between traditional AI and Agentic AI"
+          ],
+          badge: " Agentic AI Explorer",
+          icon: "🤖"
         },
         {
-          name: "Applications of ML",
-          outcome: ["Healthcare", "Finance", "E-commerce", "and more"],
-          badge: " ML Explorer",
-          icon: "🌟"
-        },
-        {
-          name: "Types of Datasets",
-          outcome: ["Structured vs. Unstructured", "Labeled vs. Unlabeled data"],
-          badge: "ML Explorer",
-          icon: "📊"
-        },
-        {
-          name: "ML Explorer",
-          outcome: ["Data Collection → Preprocessing → Model Training → Evaluation → Deployment"],
-          badge: "ML Explorer",
-          icon: "🔄"
+          name: "Applications of Agentic AI",
+          outcome: [
+            "Autonomous task execution (e.g., AutoGPT)",
+            "AI-powered personal assistants",
+            "Automated research agents"
+          ],
+          badge: " Agentic AI Explorer",
+          icon: "🚀"
         }
       ]
     },
     {
       level: 2,
-      title: "Data Preprocessing",
+      title: "LangChain Basics",
       capsules: [
         {
-          name: "Data Cleaning",
-          outcome: ["Handling missing values (Imputation Techniques)", "Dealing with outliers"],
-          badge: "ML Explorer",
-          icon: "🧹"
+          name: "Introduction to LangChain",
+          outcome: [
+            "What is LangChain?",
+            "Key components: Chains, Memory, Agents"
+          ],
+          badge: " Agentic AI Explorer",
+          icon: "⛓️"
         },
         {
-          name: "Feature Engineering",
-          outcome: ["One-Hot Encoding", "Feature Scaling (Standardization & Normalization)"],
-          badge: "ML Explorer",
-          icon: "⚙️"
+          name: "Building Simple Agents",
+          outcome: [
+            "Creating a basic agent",
+            "Adding memory for context awareness"
+          ],
+          badge: " Agentic AI Explorer",
+          icon: "🏗️"
         },
         {
-          name: "Splitting Data",
-          outcome: ["Train-test split", "K-Fold Cross-Validation"],
-          badge: "ML Explorer",
-          icon: "✂️"
+          name: "Data Flow in LangChain",
+          outcome: [
+            "How LangChain handles input, output, and agent interactions"
+          ],
+          badge: " Agentic AI Explorer",
+          icon: "🔄"
         }
       ]
     },
     {
       level: 3,
-      title: "Supervised Learning",
+      title: "Memory & Persistence",
       capsules: [
         {
-          name: "Linear Regression",
-          outcome: ["Concepts: Line of best fit", "Cost function, gradient descent", "Implementation in Python (scikit-learn)"],
-          badge: "ML Explorer",
-          icon: "📈"
+          name: "Agent Memory Types",
+          outcome: [
+            "Short-term memory (Session-based)",
+            "Long-term memory (Vector databases)"
+          ],
+          badge: " Agentic AI Explorer",
+          icon: "🧠"
         },
         {
-          name: "Classification Models",
-          outcome: ["Logistic Regression", "Decision Trees", "Random Forest"],
-          badge: "ML Explorer",
-          icon: "🎯"
-        },
-        {
-          name: "Model Evaluation",
-          outcome: ["Accuracy, Precision, Recall, F1-Score", "Confusion Matrix"],
-          badge: "ML Explorer",
-          icon: "📊"
+          name: "Memory Management",
+          outcome: [
+            "Storing conversation history",
+            "Using embeddings for context recall"
+          ],
+          badge: " Agentic AI Explorer",
+          icon: "🗃️"
         }
       ]
     },
     {
       level: 4,
-      title: "Unsupervised Learning",
+      title: "Basic Planning Models",
       capsules: [
         {
-          name: "Clustering",
-          outcome: ["K-means clustering", "Hierarchical clustering"],
-          badge: "ML Explorer",
-          icon: "🔮"
+          name: "What is Planning in AI?",
+          outcome: [
+            "Planning vs. reasoning"
+          ],
+          badge: " Agentic AI Explorer",
+          icon: "📝"
         },
         {
-          name: "Dimensionality Reduction",
-          outcome: ["Principal Component Analysis (PCA)"],
-          badge: "ML Explorer",
-          icon: "📉"
+          name: "Simple Planning Models",
+          outcome: [
+            "Goal-oriented planning",
+            "Decision trees for task execution"
+          ],
+          badge: " Agentic AI Explorer",
+          icon: "🌳"
         },
         {
-          name: "Applications",
-          outcome: ["Customer segmentation", "Anomaly detection"],
-          badge: "ML Explorer",
-          icon: "💡"
+          name: "Implementing Basic Planners",
+          outcome: [
+            "Using LangChain's planner module"
+          ],
+          badge: " Agentic AI Explorer",
+          icon: "⚙️"
         }
       ]
-       
     }
   ];
 

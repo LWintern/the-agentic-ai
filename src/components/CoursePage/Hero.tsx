@@ -22,14 +22,14 @@ export default function Hero() {
 
         {/* Main heading */}
         <h1 className="text-[3.5rem] leading-[1.1] sm:text-7xl font-bold mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-transparent">
-        
-        Agentic AI & {" "}
-          <span className="block"> Autonomous Systems </span>
+       
+        Foundation in  {" "}
+          <span className="block">  Machine Learning </span>
         </h1>
 
         {/* Subheading */}
         <p className="text-xl mb-6 text-zinc-200/90">
-        Agents, LLM integration, autonomy
+        ML fundamentals, data handling, and model training
 
 
         </p>
