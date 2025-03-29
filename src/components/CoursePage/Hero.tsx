@@ -2,10 +2,12 @@ import { Button } from "@/components/ui/button"
 
 export default function Hero() {
   return (
-    <div className="relative w-full min-h-[80vh] bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black">
-      {/* Purple gradient overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(120,_50,_150,_0.05),_transparent_50%)]" />
-      
+    <div className="relative w-full min-h-[50vh] bg-gradient-to-br from-purple-900/30 via-black to-pink-900/30">
+      {/* Background Gradients */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-black to-pink-900/30"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-purple-600 rounded-full filter blur-[120px] opacity-20 -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-600 rounded-full filter blur-[120px] opacity-20 -z-10"></div> 
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-800 rounded-full filter blur-[150px] opacity-10 -z-10"></div>
       <div className="relative mx-auto max-w-6xl px-6 pt-24 pb-20">
         {/* Announcement text */}
         <div className="mb-10">

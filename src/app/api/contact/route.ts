@@ -20,8 +20,14 @@ interface ResponseData {
 
 export async function POST(request: NextRequest) {
   // Retrieve and validate environment variables
-  const smtpUser: string = process.env.SMTP_USER || "linuxworld.certificates@gmail.com";
-  const smtpPass: string = process.env.EMAIL_PASS || "vkaa fbfm qdfk whws";
+  // crfn nino pkub dlgh
+  // tonystark83033@gmail.com
+  // const smtpUser: string = process.env.SMTP_USER || "linuxworld.certificates@gmail.com";
+  // const smtpPass: string = process.env.EMAIL_PASS || "vkaa fbfm qdfk whws";
+
+  const smtpUser: string = process.env.SMTP_USER || "crfn nino pkub dlgh";
+  const smtpPass: string = process.env.EMAIL_PASS || "tonystark83033@gmail.com";
+
   const smtpHost: string = "smtp.gmail.com";
   const smtpPort: number = 587;
   const recipientEmail: string = "bhupesh7750@example.com";
