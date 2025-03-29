@@ -1,6 +1,6 @@
 export const roadmapData = [
     {
-      level: "Level 1",
+      level: "Srishti",
       capsules: [
         {
           name: "Foundation in Machine Learning",
@@ -38,7 +38,7 @@ export const roadmapData = [
       ],
     },
     {
-      level: "Level 2",
+      level: "Drishti",
       capsules: [
         {
           name: "Computer Vision Fundamentals",
@@ -65,7 +65,7 @@ export const roadmapData = [
       ],
     },
     {
-      level: "Level 3",
+      level: "Vaani",
       capsules: [
         {
           name: "NLP Fundamentals",
@@ -92,7 +92,7 @@ export const roadmapData = [
       ],
     },
     {
-      level: "Level 4",
+      level: "Maya Nirmaan",
       capsules: [
         {
           name: "Generative AI Basics",
@@ -119,7 +119,7 @@ export const roadmapData = [
       ],
     },
     {
-      level: "Level 5",
+      level: "Prana",
       capsules: [
         {
           name: "Agentic AI & Autonomous Systems",
@@ -146,7 +146,7 @@ export const roadmapData = [
       ],
     },
     {
-      level: "Level 6",
+      level: "Moksha",
       capsules: [
         {
           name: "AI Ops & MLOps",

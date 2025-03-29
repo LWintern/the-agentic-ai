@@ -32,7 +32,7 @@ export function TimelineDemo() {
                   </p>
                   <p className="text-md md:text-md font-medium mb-4 text-gray-300 flex flex-col md:flex-row">
   <span className="px-2 mt-2 border  bg-gray-800 rounded-lg  gradient-border ">Duration: {capsule.duration}</span>
-  <span className="px-2 mt-2 md:mt-0 md:ml-20 md:mr-10 mr-48 bg-gray-800 gradient-border border rounded-lg">
+  <span className="px-2 mt-2 mb-2 md:mt-0 md:ml-20 md:mr-10  bg-gray-800 gradient-border border rounded-lg">
     Price: ₹ {capsule.price}
   </span>
 </p>
