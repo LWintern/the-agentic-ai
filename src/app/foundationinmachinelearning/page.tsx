@@ -13,8 +13,9 @@ export default function Home() {
    <AIRoadmap/>
    <ProgramsSection/>
    {/* todo add project section */}
+   <CertificateDisplay/>
    <ContactForm/>
-    <CertificateDisplay/>
+   
    {/* <FAQ/> */}
 
    </> 
