@@ -182,7 +182,7 @@ export default function ContactForm() {
                     Send WhatsApp Updates
                   </label>
                 </div>
-                <CardFooter className="flex justify-center">
+                <CardFooter className="flex justify-center ">
                   <Button type="submit" className="w-1/3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-6">
                     Submit Your Query
                   </Button>

@@ -27,7 +27,7 @@ import CertificateMainPage from "@/components/customComponents/landingpage/cert"
 export default function Home() {
   return (
    <>
-   <Navbar />
+   {/* <Navbar /> */}
    <HeroSection /> 
    
    
