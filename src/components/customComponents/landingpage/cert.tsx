@@ -97,7 +97,7 @@ const CertificateMainPage: React.FC = () => {
                   <div className="relative bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg p-0.5 border-2 border-zinc-700">
                     <div className="relative bg-zinc-900 rounded-lg overflow-hidden">
                       <Image
-                        src={defaultCertificate}
+                        src="/assets/Main Page.jpg"
                         alt="Certificate"
                         width={300}
                         height={400}
