@@ -43,6 +43,7 @@ export function TimelineDemo() {
 
                   <div className="flex justify-between items-center text-gray-300">
                     <span className="px-3 py-1 bg-gray-800 border gradient-border rounded-lg">Duration: {capsule.duration}</span>
+                    
                     <span className="px-3 py-1 bg-gray-800 border gradient-border rounded-lg">Price: ₹ {capsule.price}</span>
                   </div>
                 </div>
