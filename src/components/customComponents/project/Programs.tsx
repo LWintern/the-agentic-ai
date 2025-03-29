@@ -380,12 +380,12 @@ const tracks = [
             </CardContent>
           </div>
           <CardFooter className="mt-auto">
-            {/* <Button
+            <Button
               variant="outline"
               className="w-full text-white font-bold hover:text-white bg-gradient-to-r from-purple-600 to-pink-600"
             >
               Know More
-            </Button> */}
+            </Button>
           </CardFooter>
         </Card>
       ))}
