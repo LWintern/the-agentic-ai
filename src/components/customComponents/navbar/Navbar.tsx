@@ -68,8 +68,9 @@ const Navbar: React.FC = () => {
         setDropdownOpen(false);
       }
     };
-
+// todo remove window object and use UseRef insted
     window.addEventListener("scroll", handleScroll);
+    // remove native , event listiner and react, event listiner
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
@@ -89,6 +90,7 @@ const Navbar: React.FC = () => {
   const handleNavClick = (href: string) => {
     closeMobileMenu();
     setDropdownOpen(!isDropdownOpen);
+    // todo remote href
     document.querySelector(href)?.scrollIntoView({
       behavior: 'smooth'
     });
@@ -141,7 +143,7 @@ const Navbar: React.FC = () => {
               href="#timeline"
               className="text-white hover:text-[#ff0000] transition-colors duration-200"
             >
-              AI Worrior Projects
+              AI Warrior Projects
             </a>
           </ul>
         </nav>
