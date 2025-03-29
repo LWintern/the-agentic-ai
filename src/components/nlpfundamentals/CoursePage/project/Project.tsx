@@ -9,35 +9,35 @@ const tracks = [
   // First 4 tracks with specific colors as requested
   {
     id: 1,
-    number: "Agentic AI Specialist",
+    number: "Sentiment Analysis",
     title: "Research Agent",
     titleColor: "text-orange-300",
     experience: "",
-    description: "Building an AI agent that autonomously researches and summarizes topics.",
+    description: "Building a robust sentiment analysis model using ensemble learning techniques.",
   },
   {
     id: 2,
     number: "Agentic AI Specialist",
-    title: "AI Task Manager",
+    title: "Resume Parsing",
     titleColor: "text-purple-300",
     experience: "",
-    description: "Creating an autonomous agent that breaks down and manages tasks.",
+    description: "Extracting key information from resumes using NER models.",
   },
   {
     id: 3,
     number: "Agentic AI Specialist",
-    title: "Code Generator",
+    title: "Text Summarization ",
     titleColor: "text-green-300",
     experience: "",
-    description: "Developing an AI-powered agent that writes and improves code autonomously.",
+    description: "Developing an extractive and abstractive text summarization tool for news.",
   },
   {
     id: 4,
     number: "Agentic AI Specialist",
-    title: "Data Analyst",
+    title: "Speech Transcription ",
     titleColor: "text-amber-300",
     experience: "",
-    description: "Creating an autonomous agent that processes and visualizes data.",
+    description: "Building an ASR (Automatic Speech Recognition) system with enhanced readability.",
   },
   // Continuing with all remaining tracks (5-43)
   // {
