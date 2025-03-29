@@ -1,6 +1,45 @@
-import React from 'react';
+"use client"
+
+import React, { useState } from 'react';
 
 const HeroSection: React.FC = () => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    phoneNumber: '',
+    email: '',
+  });
+
+  const [message, setMessage] = useState('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/contact2', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setMessage('Your request has been submitted successfully!');
+        setFormData({ fullName: '', phoneNumber: '', email: '' });
+      } else {
+        setMessage('Failed to submit your request. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setMessage('An error occurred. Please try again later.');
+    }
+  };
+
   return (
     <section className="bg-black text-white py-6 flex flex-col items-center justify-center relative overflow-hidden">
       {/* Background Gradients */}
@@ -33,9 +72,12 @@ const HeroSection: React.FC = () => {
         <div className="mt-12 w-full max-w-md backdrop-blur-lg bg-black/30 p-6 rounded-lg border border-gradient">
           <h2 className="text-2xl font-bold mb-6">Become an AI Warrior 
           </h2>
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <input
               type="text"
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleChange}
               placeholder="Your Full Name"
               className="w-full px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none"
               aria-label="Full Name"
@@ -43,14 +85,19 @@ const HeroSection: React.FC = () => {
             <div className="flex gap-4">
               <div className="flex-1">
                 <select
+                  name="countryCode"
                   className="w-full px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none"
                   aria-label="Country Code"
+                  onChange={handleChange}
                 >
                   <option value="+91">🇮🇳 +91</option>
                 </select>
               </div>
               <input
                 type="tel"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
                 placeholder="Your Phone Number"
                 className="flex-[2] px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none"
                 aria-label="Phone Number"
@@ -58,6 +105,9 @@ const HeroSection: React.FC = () => {
             </div>
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Your Email Id"
               className="w-full px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none"
               aria-label="Email"
@@ -69,16 +119,9 @@ const HeroSection: React.FC = () => {
               Get a Call Back
             </button>
           </form>
+          {message && <p className="mt-4 text-center text-sm text-gray-400">{message}</p>}
         </div>
-
-        {/* <div className="mt-8 text-sm text-gray-400">
-          2d • 11h • 35m • 50s
-        </div> */}
       </main>
-
-      {/* <div className="absolute top-6 right-6 px-4 py-2 bg-yellow-400 text-black rounded-lg font-semibold">
-        AI Breakthrough Offer →
-      </div> */}
     </section>
   );
 };

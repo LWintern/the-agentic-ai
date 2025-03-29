@@ -1,62 +1,30 @@
-// Navbar.tsx
+// components/Navbar.tsx
 
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import { List, X } from "lucide-react";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { ProgramCard, SideCategories } from './NavbarComponents';
-import { roadmapData } from '../../../../data/navbar';
-import { RoadmapLevel, Capsule, RouteConfig } from '../../../../types/navbar';
+import { roadmapData } from '../../../../data/navbar'; // Adjust the path as necessary
+import { RoadmapLevel } from '../../../../types/navbar';
 
 // Navigation Items
 const NAV_ITEMS = [
   { href: "#Projects", text: "AI Training Programs" },
 ];
 
-// Route Configuration
-const ROUTE_CONFIG: Record<string, RouteConfig> = {
-  '/students': {
-    buttonText: '#contact',
-    href:"#contact"
-  },
-  'default': {
-    buttonText: 'Enquire Now',
-    href:"#contact"
-  }
-};
-
-// Animation Variants
-const menuVariants = {
-  hidden: { opacity: 0, y: -10 },
-  visible: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -10 }
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, x: -10 },
-  visible: { opacity: 1, x: 0 }
-};
-
 const Navbar: React.FC = () => {
   const pathname = usePathname();
-  const router = useRouter();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState<string>('Level 1');
+  const [selectedCategory, setSelectedCategory] = useState<string>('Srishti');
   const menuRef = useRef<HTMLDivElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
-
-  const getRouteConfig = (currentPath: string): RouteConfig => {
-    return ROUTE_CONFIG[currentPath] || ROUTE_CONFIG.default;
-  };
-
-  const { buttonText } = getRouteConfig(pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,9 +36,8 @@ const Navbar: React.FC = () => {
         setDropdownOpen(false);
       }
     };
-// todo remove window object and use UseRef insted
+
     window.addEventListener("scroll", handleScroll);
-    // remove native , event listiner and react, event listiner
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
@@ -90,7 +57,6 @@ const Navbar: React.FC = () => {
   const handleNavClick = (href: string) => {
     closeMobileMenu();
     setDropdownOpen(!isDropdownOpen);
-    // todo remote href
     document.querySelector(href)?.scrollIntoView({
       behavior: 'smooth'
     });
@@ -103,12 +69,7 @@ const Navbar: React.FC = () => {
   const selectedLevel = roadmapData.find(level => level.level === selectedCategory);
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-50 w-full transition-colors duration-300",
-        scrolled ? "bg-black shadow-lg" : "bg-black"
-      )}
-    >
+    <header className={`sticky top-0 z-50 w-full transition-colors duration-300 ${scrolled ? "bg-black shadow-lg" : "bg-black"}`}>
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
@@ -166,7 +127,7 @@ const Navbar: React.FC = () => {
           href="#contact"
           className="hidden lg:block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-lg hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 text-center"
         >
-          {buttonText}
+          Enquire Now
         </Link>
       </div>
 
@@ -175,10 +136,9 @@ const Navbar: React.FC = () => {
         {isMobileMenuOpen && (
           <motion.div
             ref={menuRef}
-            variants={menuVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
             className="lg:hidden absolute right-4 top-full bg-black w-64 shadow-lg z-10 rounded-lg border border-gray-800"
           >
@@ -187,9 +147,8 @@ const Navbar: React.FC = () => {
                 {NAV_ITEMS.map((item, index) => (
                   <motion.li
                     key={index}
-                    variants={itemVariants}
-                    initial="hidden"
-                    animate="visible"
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
                   >
                     <a
@@ -208,11 +167,11 @@ const Navbar: React.FC = () => {
 
               {/* Mobile CTA Button */}
               <Link
-                href="/application-form"
+                href="#contact"
                 className="block w-full mt-6 bg-[#ff0000] text-white px-4 py-2 rounded-lg hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 text-center"
                 onClick={closeMobileMenu}
               >
-                {buttonText}
+                Enquire Now
               </Link>
             </div>
           </motion.div>

@@ -1,8 +1,7 @@
-// NavbarComponents.tsx
+// components/NavbarComponents.tsx
 
 import React from 'react';
-import { Capsule } from '../../../../types/navbar'; // Ensure this path is correct based on your project structure
-import Link from "next/link";
+import { Capsule } from '../../../../types/navbar'; // Adjust the path as necessary
 
 // ProgramCard Component
 export const ProgramCard: React.FC<Capsule> = ({ name, outcome, badge, duration, price }) => (
@@ -14,7 +13,7 @@ export const ProgramCard: React.FC<Capsule> = ({ name, outcome, badge, duration,
     <div className="flex flex-wrap gap-1 md:gap-2 mt-1">
       <span className="text-xs md:text-sm text-white">🏅 {badge}</span>
       <span className="text-xs md:text-sm text-white">⏱️ {duration}</span>
-      <span className="text-xs md:text-sm text-white">💰 ₹{price}</span>
+      {price && <span className="text-xs md:text-sm text-white">💰 ₹{price}</span>}
     </div>
   </div>
 );
