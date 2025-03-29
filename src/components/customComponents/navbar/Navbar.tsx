@@ -141,7 +141,7 @@ const Navbar: React.FC = () => {
               href="#timeline"
               className="text-white hover:text-[#ff0000] transition-colors duration-200"
             >
-              AI Worrior Program
+              AI Worrior Projects
             </a>
           </ul>
         </nav>
