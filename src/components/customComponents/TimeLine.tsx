@@ -109,17 +109,17 @@ export function TimelineDemo() {
                     </div>
                   )}
 
-                  {capsule.link ? (
-                    <Link href={capsule.link} className="cursor-pointer">
+                  
+                    <Link href={capsule.href} className="cursor-pointer">
                       <h3 className="text-lg md:text-xl font-semibold mb-2 mt-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
                         <div className="font-bold text-2xl">{capsule.name}</div>
                       </h3>
                     </Link>
-                  ) : (
-                    <h3 className="text-lg md:text-xl font-semibold mb-2 mt-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
+                 
+                    {/* <h3 className="text-lg md:text-xl font-semibold mb-2 mt-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
                       <div className="font-bold text-2xl">{capsule.name}</div>
                     </h3>
-                  )}
+                */}
 
                   <p className="text-md md:text-lg font-semibold mb-2 text-gray-300">
                     <span className="font-bold">Key Outcome:</span> {capsule.outcome}
