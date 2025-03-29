@@ -17,7 +17,7 @@ interface ResponseData {
 }
 
 export async function POST(request: NextRequest) {
-  const smtpUser: string = process.env.SMTP_USER || "linuxworld.certificates@gmail.com";
+  const smtpUser: string = process.env.EMAIL_USER || "linuxworld.certificates@gmail.com";
   const smtpPass: string = process.env.EMAIL_PASS || "vkaa fbfm qdfk whws";
   const smtpHost: string = "smtp.gmail.com";
   const smtpPort: number = 587;
