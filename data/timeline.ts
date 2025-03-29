@@ -6,8 +6,8 @@ export const roadmapData = [
           name: "Foundation in Machine Learning",
           outcome: "ML fundamentals, data handling, and model training",
           badge: "ML Explorer",
-          duration: "8 hrs",
-          price: "999 +Taxes",
+          duration: "12 hrs",
+          price: "2000 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -18,7 +18,7 @@ export const roadmapData = [
           outcome: "Hyperparameter tuning, EDA, evaluation metrics",
           badge: "ML Practitioner",
           duration: "14 hrs",
-          price: "2500 +Taxes",
+          price: "2999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -28,8 +28,8 @@ export const roadmapData = [
           name: "Deep Learning with Neural Networks",
           outcome: "CNNs, RNNs, and LSTMs",
           badge: "Deep Learning Pro",
-          duration: "8 hrs",
-          price: "5500 +Taxes",
+          duration: "14 hrs",
+          price: "4999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -55,7 +55,7 @@ export const roadmapData = [
           name: "Advanced Computer Vision",
           outcome: "Object detection, GANs, Style Transfer",
           badge: "Vision Expert",
-          duration: "8 hrs",
+          duration: "12 hrs",
           price: "2999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
@@ -99,7 +99,7 @@ export const roadmapData = [
           outcome: "GANs, VAEs, and StyleGAN",
           badge: "GenAI Innovator",
           duration: "8 hrs",
-          price: "1999 +Taxes",
+          price: "2999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -109,8 +109,8 @@ export const roadmapData = [
           name: "Advanced Generative Models",
           outcome: "Prompt engineering, Pix2Pix, CycleGAN",
           badge: "GenAI Master",
-          duration: "8 hrs",
-          price: "2999 +Taxes",
+          duration: "12 hrs",
+          price: "3999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -125,8 +125,8 @@ export const roadmapData = [
           name: "Agentic AI & Autonomous Systems",
           outcome: "Agents, LLM integration, autonomy",
           badge: "Agentic AI Explorer",
-          duration: "12 hrs",
-          price: "2400 +Taxes",
+          duration: "14 hrs",
+          price: "2999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -136,8 +136,8 @@ export const roadmapData = [
           name: "Advanced Agentic AI",
           outcome: "Multi-agent systems, fine-tuning",
           badge: "Agentic AI Architect",
-          duration: "8 hrs",
-          price: "2999 +Taxes",
+          duration: "14 hrs",
+          price: "4999 +Taxes",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
