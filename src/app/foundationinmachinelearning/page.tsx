@@ -15,7 +15,7 @@ export default function Home() {
    {/* todo add project section */}
    <ContactForm/>
     <CertificateDisplay/>
-   <FAQ/>
+   {/* <FAQ/> */}
 
    </> 
 

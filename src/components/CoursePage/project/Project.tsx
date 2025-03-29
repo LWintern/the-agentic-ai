@@ -358,9 +358,9 @@ const tracks = [
     <section className="w-full bg-black text-white py-16 px-4" id="timeline">
   <div className="max-w-5xl mx-auto">
     <div className="text-center mb-12">
-      <h2 className="text-sm uppercase tracking-wider mb-2">AI Warrior Projects:</h2>
-      <h1 className="text-4xl md:text-5xl font-bold mb-4"> Sharpen Your Skills with 36+ Battles</h1>
-      <p className="text-lg">Master AI by working on 36+ real-world projects—building, innovating, and solving challenges to prepare for the fast-moving industry.</p>
+      <h2 className="text-sm uppercase tracking-wider mb-2">ML Explorer Projects:</h2>
+      <h1 className="text-4xl md:text-5xl font-bold mb-4"> Sharpen Your Skills with 4+ Battles</h1>
+      <p className="text-lg">Master AI by working on 4+ real-world projects—building, innovating, and solving challenges to prepare for the fast-moving industry.</p>
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -380,12 +380,12 @@ const tracks = [
             </CardContent>
           </div>
           <CardFooter className="mt-auto">
-            <Button
+            {/* <Button
               variant="outline"
               className="w-full text-white font-bold hover:text-white bg-gradient-to-r from-purple-600 to-pink-600"
             >
               Know More
-            </Button>
+            </Button> */}
           </CardFooter>
         </Card>
       ))}
