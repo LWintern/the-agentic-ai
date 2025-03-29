@@ -1,40 +1,112 @@
-// pages/api/contact2.ts
+// app/api/contact3/route.ts (for App Router)
+// or pages/api/contact3.ts (for Pages Router)
 
-import { NextApiRequest, NextApiResponse } from 'next';
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
+import { NextResponse, NextRequest } from "next/server";
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Method not allowed' });
+interface ContactFormData {
+  fullName: string;
+  phoneNumber: string;
+  email: string;
+  message: string; // Example additional field
+}
+
+interface ResponseData {
+  success?: boolean;
+  message?: string;
+  error?: string;
+  info?: string;
+}
+
+export async function POST(request: NextRequest) {
+  const smtpUser: string = process.env.SMTP_USER || "your-email@gmail.com";
+  const smtpPass: string = process.env.EMAIL_PASS || "your-email-password";
+  const smtpHost: string = "smtp.gmail.com";
+  const smtpPort: number = 587;
+  const recipientEmail: string = "recipient-email@example.com";
+
+  if (!smtpUser || !smtpPass || !recipientEmail) {
+    console.error("Server misconfiguration: Missing email credentials.");
+    return NextResponse.json<ResponseData>(
+      { error: "Server misconfiguration: Missing email credentials." },
+      { status: 500 }
+    );
   }
 
-  const { fullName, phoneNumber, email } = req.body;
-
-  if (!fullName || !phoneNumber || !email) {
-    return res.status(400).json({ message: 'All fields are required' });
+  let body: ContactFormData;
+  try {
+    body = await request.json();
+  } catch (err) {
+    console.log(err);
+    return NextResponse.json<ResponseData>(
+      { error: "Invalid JSON payload in the request body." },
+      { status: 400 }
+    );
   }
 
-  // Configure the transporter
+  const { fullName, phoneNumber, email, message } = body;
+
+  if (!fullName || !phoneNumber || !email || !message) {
+    return NextResponse.json<ResponseData>(
+      { error: "Full name, phone number, email, and message are required." },
+      { status: 400 }
+    );
+  }
+
+  if (!/^\d{10,15}$/.test(phoneNumber)) {
+    return NextResponse.json<ResponseData>(
+      { error: "Phone number must be a valid numeric string between 10 and 15 digits." },
+      { status: 400 }
+    );
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return NextResponse.json<ResponseData>(
+      { error: "Invalid email format." },
+      { status: 400 }
+    );
+  }
+
   const transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    host: smtpHost,
+    port: smtpPort,
+    secure: false,
     auth: {
-      user: process.env.EMAIL_USER, // Your email
-      pass: process.env.EMAIL_PASS, // Your email password or app password
+      user: smtpUser,
+      pass: smtpPass,
     },
   });
 
   try {
-    // Send the email
-    await transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: 'bhupesh7750@gmail.com', // Replace with your email
-      subject: 'New Contact Form Submission for agentic ai',
-      text: `Name: ${fullName}\nPhone: ${phoneNumber}\nEmail: ${email}`,
-    });
+    const mailOptions = {
+      from: `"${fullName}" <${smtpUser}>`,
+      to: recipientEmail,
+      subject: `New Contact Form Submission from ${fullName}`,
+      text: `
+        You have received a new message:
 
-    res.status(200).json({ message: 'Email sent successfully' });
-  } catch (error) {
-    console.error('Error sending email:', error);
-    res.status(500).json({ message: 'Error sending email' });
+        Full Name: ${fullName}
+        Phone Number: ${phoneNumber}
+        Email: ${email}
+        Message: ${message}
+      `.trim(),
+    };
+
+    const info = await transporter.sendMail(mailOptions);
+
+    return NextResponse.json<ResponseData>(
+      {
+        success: true,
+        message: "Email sent successfully!",
+        info: info.messageId,
+      },
+      { status: 200 }
+    );
+  } catch (error: any) {
+    console.error("Error sending email:", error.message);
+    return NextResponse.json<ResponseData>(
+      { error: "Failed to send email. Please try again later." },
+      { status: 500 }
+    );
   }
 }
