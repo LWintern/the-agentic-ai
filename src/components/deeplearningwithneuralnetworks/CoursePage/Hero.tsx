@@ -23,13 +23,13 @@ export default function Hero() {
         {/* Main heading */}
         <h1 className="text-[3.5rem] leading-[1.1] sm:text-7xl font-bold mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-transparent">
        
-        Agentic AI & {" "}
-          <span className="block"> Autonomous Systems </span>
+        Deep Learning {" "}
+          <span className="block">with Neural Networks  </span>
         </h1>
 
         {/* Subheading */}
         <p className="text-xl mb-6 text-zinc-200/90">
-        Agents, LLM integration, autonomy
+        Understand the architecture, working principles, and real-world applications of CNNs, RNNs, and LSTMs.
 
 
 
@@ -41,12 +41,12 @@ export default function Hero() {
         <div className="flex gap-4 mb-10">
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
             <span className="text-zinc-400">⏱️ Duration:</span>
-            <span className="ml-2 text-white">12 hrs</span>
+            <span className="ml-2 text-white">16 hrs</span>
           </div>
           
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
             <span className="text-zinc-400">💰 Fee:</span>
-            <span className="ml-2 text-white">2400 + Taxes</span>
+            <span className="ml-2 text-white">₹ 4999 + Taxes</span>
           </div>
           
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
