@@ -23,13 +23,15 @@ export default function Hero() {
         {/* Main heading */}
         <h1 className="text-[3.5rem] leading-[1.1] sm:text-7xl font-bold mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-transparent">
        
-        Foundation in{" "}
-          <span className="block"> Machine Learning </span>
+        Agentic AI & {" "}
+          <span className="block"> Autonomous Systems </span>
         </h1>
 
         {/* Subheading */}
         <p className="text-xl mb-6 text-zinc-200/90">
-        ML fundamentals, data handling, and model training
+        Agents, LLM integration, autonomy
+
+
 
 
         </p>
@@ -44,7 +46,7 @@ export default function Hero() {
           
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
             <span className="text-zinc-400">💰 Fee:</span>
-            <span className="ml-2 text-white">2000 + Taxes</span>
+            <span className="ml-2 text-white">2400 + Taxes</span>
           </div>
           
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
@@ -54,7 +56,7 @@ export default function Hero() {
         </div>
 
         {/* CTA Button */}
-        <a href="https://rzp.io/rzp/xyR6udr" target="blank">
+        <a href="https://rzp.io/rzp/bFrKdIZ" target="blank">
         <Button
           variant="outline"
           className="rounded-full px-8 py-6 h-auto text-[15px] font-medium 
