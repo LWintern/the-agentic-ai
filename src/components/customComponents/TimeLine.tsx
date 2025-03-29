@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { roadmapData } from "../../../data/timeline";
-
+import Link from "next/link";
 export function TimelineDemo() {
   return (
     <div className="w-full">
@@ -32,11 +32,11 @@ export function TimelineDemo() {
                       {capsule.badge}
                     </div>
                   )}
-
+          <Link href="/foundationinmachinelearning" className="coursor-pointer">
                   <h3 className="text-lg md:text-xl font-semibold mb-2 mt-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
                     <div className="font-bold text-2xl">{capsule.name}</div>
                   </h3>
-
+                  </Link>
                   <p className="text-md md:text-lg font-semibold mb-2 text-gray-300">
                     <span className="font-bold">Key Outcome:</span> {capsule.outcome}
                   </p>
