@@ -2,16 +2,15 @@ import { Button } from "@/components/ui/button"
 
 export default function Hero() {
   return (
-    <div className="relative w-full min-h-[50vh] bg-[linear-gradient(to_bottom_right,#8b2fd3,#040106,#ca2571)]">
-      {/* todo I want gradent of these three color
+    <div className="relative w-full min-h-[50vh] bg-[linear-gradient(to_bottom_right,#8b2fd3CC_0%,#040106_25%,#040106_75%,#ca2571CC_100%)]">
+      {/* todo decrease the opacaity of the gradient color */}
+      {/* 
       ca2571
-      040106
+      040106, todo spred this color more in the middle, 
       8b2fd3
       */}
       {/* Background Gradients */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom_right,#8b2fd3,#040106,#ca2571)]"></div>
-      {/* <div className="absolute top-0 right-0 w-96 h-96 bg-purple-600 rounded-full filter blur-[120px] opacity-20 -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-600 rounded-full filter blur-[120px] opacity-20 -z-10"></div>  */}
+      
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-800 rounded-full filter blur-[150px] opacity-10 -z-10"></div>
       <div className="relative mx-auto max-w-6xl px-6 pt-24 pb-20">
         {/* Announcement text */}
@@ -23,22 +22,39 @@ export default function Hero() {
 
         {/* Main heading */}
         <h1 className="text-[3.5rem] leading-[1.1] sm:text-7xl font-bold mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-transparent">
-          Master Data Science &{" "}
-          <span className="block">Artificial Intelligence</span>
+       
+        Foundation in{" "}
+          <span className="block"> Machine Learning </span>
         </h1>
 
         {/* Subheading */}
         <p className="text-xl mb-6 text-zinc-200/90">
-          Transform your career in a 6 month program.
-        </p>
+        ML fundamentals, data handling, and model training
 
-        {/* Description */}
-        <p className="text-base text-zinc-400/90 mb-10 max-w-2xl leading-relaxed">
-          Structured learning and a curated community in one membership where you learn to analyse data, build predictive
-          models, and apply AI techniques to solve real-world problems.
+
         </p>
+{/* todo remove descripton add 3 badges, which will display duration , cost, and badge name */}
+        {/* Description */}
+        {/* Course Badges */}
+        <div className="flex gap-4 mb-10">
+          <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
+            <span className="text-zinc-400">⏱️ Duration:</span>
+            <span className="ml-2 text-white">12 hrs</span>
+          </div>
+          
+          <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
+            <span className="text-zinc-400">💰 Fee:</span>
+            <span className="ml-2 text-white">2000 + Taxes</span>
+          </div>
+          
+          <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
+            <span className="text-zinc-400">🎯</span>
+            <span className="ml-2 text-white">Weekend batch</span>
+          </div>
+        </div>
 
         {/* CTA Button */}
+        <a href="https://rzp.io/rzp/xyR6udr" target="blank">
         <Button
           variant="outline"
           className="rounded-full px-8 py-6 h-auto text-[15px] font-medium 
@@ -49,6 +65,7 @@ export default function Hero() {
         >
           Apply Now
         </Button>
+        </a>
       </div>
     </div>
   )
