@@ -8,7 +8,6 @@ interface ContactFormData {
   fullName: string;
   phoneNumber: string;
   email: string;
-  message: string; // Example additional field
 }
 
 interface ResponseData {
@@ -19,11 +18,11 @@ interface ResponseData {
 }
 
 export async function POST(request: NextRequest) {
-  const smtpUser: string = process.env.SMTP_USER || "your-email@gmail.com";
-  const smtpPass: string = process.env.EMAIL_PASS || "your-email-password";
+  const smtpUser: string = process.env.EMAIL_USER || "linuxworld.certificates@gmail.com";
+  const smtpPass: string = process.env.EMAIL_PASS || "vkaa fbfm qdfk whws";
   const smtpHost: string = "smtp.gmail.com";
   const smtpPort: number = 587;
-  const recipientEmail: string = "recipient-email@example.com";
+  const recipientEmail: string = "chandak.preeti@gmail.com";
 
   if (!smtpUser || !smtpPass || !recipientEmail) {
     console.error("Server misconfiguration: Missing email credentials.");
@@ -44,11 +43,11 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const { fullName, phoneNumber, email, message } = body;
+  const { fullName, phoneNumber, email } = body;
 
-  if (!fullName || !phoneNumber || !email || !message) {
+  if (!fullName || !phoneNumber || !email) {
     return NextResponse.json<ResponseData>(
-      { error: "Full name, phone number, email, and message are required." },
+      { error: "Full name, phone number, and email are required." },
       { status: 400 }
     );
   }
@@ -81,14 +80,13 @@ export async function POST(request: NextRequest) {
     const mailOptions = {
       from: `"${fullName}" <${smtpUser}>`,
       to: recipientEmail,
-      subject: `New Contact Form Submission from ${fullName}`,
+      subject: `New Contact Form Submission from ${fullName} for agentic AI Becomme a warrior`,
       text: `
         You have received a new message:
 
         Full Name: ${fullName}
         Phone Number: ${phoneNumber}
         Email: ${email}
-        Message: ${message}
       `.trim(),
     };
 

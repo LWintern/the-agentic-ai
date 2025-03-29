@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from 'react';
 
@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/contact2', {
+      const response = await fetch('/api/contact2', { // Ensure this matches your API route
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
