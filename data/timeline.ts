@@ -37,7 +37,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/BYWPl4Sn",
           duration: "14 hrs",
           price: "4999 +Taxes",
-          href:"/link to page",
+          href:"/deeplearningwithneuralnetworks",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
