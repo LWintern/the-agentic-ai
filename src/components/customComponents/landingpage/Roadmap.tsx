@@ -1,32 +1,29 @@
-
 "use client"
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 
 // Define types
-type Capsule = {
+interface Capsule {
   name: string;
-  outcome: string;
+  outcome: string[] | string;
   badge: string;
   icon: string;
-};
+}
 
-type Module = {
+interface ModuleData {
   level: number;
   title: string;
   capsules: Capsule[];
-};
+}
 
-type RoadmapData = Module[];
-
-type CapsuleCardProps = {
+interface CapsuleCardProps {
   capsule: Capsule;
   level: number;
-};
+}
 
-type ModuleSectionProps = {
-  moduleData: Module;
-};
+interface ModuleSectionProps {
+  moduleData: ModuleData;
+}
 
 // Utility functions
 const getLevelColor = (level: number): string => {
@@ -60,13 +57,17 @@ const CapsuleCard: React.FC<CapsuleCardProps> = ({ capsule, level }) => {
   return (
     <div className="rounded-xl bg-gray-900/60 p-5 transition-all hover:bg-gray-800/70 border border-gray-800 flex flex-col">
       <div className="flex items-start justify-between mb-2">
-        <div className={`w-8 h-8 rounded-md ${iconBgColor} flex items-center justify-center text-lg`}>
-          {capsule.icon}
+        <div className="flex items-center gap-3">
+          <div className={`w-8 h-8 rounded-md ${iconBgColor} flex items-center justify-center text-lg`}>
+            {capsule.icon}
+          </div>
+          <h3 className="text-md font-medium text-white">{capsule.name}</h3>
         </div>
         <div className="text-xs text-gray-400">{capsule.badge}</div>
       </div>
-      <h3 className="text-md font-medium text-white mt-2 mb-1">{capsule.name}</h3>
-      <p className="text-sm text-gray-400 flex-grow">{capsule.outcome}</p>
+      <p className="text-sm text-gray-400 flex-grow mt-2">
+        {Array.isArray(capsule.outcome) ? capsule.outcome.join(', ') : capsule.outcome}
+      </p>
     </div>
   );
 };
@@ -81,7 +82,6 @@ const ModuleSection: React.FC<ModuleSectionProps> = ({ moduleData }) => {
         <span className="text-xs text-gray-400">Module {moduleData.level}</span>
       </div>
       <h2 className="text-xl font-semibold text-white mb-6">{moduleData.title}</h2>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {moduleData.capsules.map((capsule, index) => (
           <CapsuleCard key={index} capsule={capsule} level={moduleData.level} />
@@ -92,123 +92,112 @@ const ModuleSection: React.FC<ModuleSectionProps> = ({ moduleData }) => {
 };
 
 const AIRoadmap: React.FC = () => {
-  const roadmapData = [
+ 
+  const roadmapData: ModuleData[] = [
     {
       level: 1,
-      title: "Foundation in Machine Learning",
+      title: "Introduction to Machine Learning",
       capsules: [
         {
-          name: "Foundation in Machine Learning",
-          outcome: "ML fundamentals, data handling, and model training",
-          badge: "ML Explorer",
-          icon: "🔮"
+          name: "What is Machine Learning?",
+          outcome: ["ML vs. Traditional Programming", "Supervised, Unsupervised, and Reinforcement Learning"],
+          badge: " ML Explorer",
+          icon: "🎓"
         },
         {
-          name: "Advanced ML Techniques",
-          outcome: "Hyperparameter tuning, EDA, evaluation metrics",
-          badge: "ML Practitioner",
+          name: "Applications of ML",
+          outcome: ["Healthcare", "Finance", "E-commerce", "and more"],
+          badge: " ML Explorer",
+          icon: "🌟"
+        },
+        {
+          name: "Types of Datasets",
+          outcome: ["Structured vs. Unstructured", "Labeled vs. Unlabeled data"],
+          badge: "ML Explorer",
           icon: "📊"
         },
         {
-          name: "Deep Learning with Neural Networks",
-          outcome: "CNNs, RNNs, and LSTMs",
-          badge: "Deep Learning Pro",
-          icon: "🧠"
+          name: "ML Lifecycle",
+          outcome: ["Data Collection → Preprocessing → Model Training → Evaluation → Deployment"],
+          badge: "Lifecycle",
+          icon: "🔄"
         }
       ]
     },
     {
       level: 2,
-      title: "Computer Vision",
+      title: "Data Preprocessing",
       capsules: [
         {
-          name: "Computer Vision Fundamentals",
-          outcome: "Image processing, CNNs, OpenCV",
-          badge: "Vision Novice",
-          icon: "👁️"
+          name: "Data Cleaning",
+          outcome: ["Handling missing values (Imputation Techniques)", "Dealing with outliers"],
+          badge: "ML Explorer",
+          icon: "🧹"
         },
         {
-          name: "Advanced Computer Vision",
-          outcome: "Object detection, GANs, Style Transfer",
-          badge: "Vision Expert",
-          icon: "🔍"
+          name: "Feature Engineering",
+          outcome: ["One-Hot Encoding", "Feature Scaling (Standardization & Normalization)"],
+          badge: "ML Explorer",
+          icon: "⚙️"
+        },
+        {
+          name: "Splitting Data",
+          outcome: ["Train-test split", "K-Fold Cross-Validation"],
+          badge: "ML Explorer",
+          icon: "✂️"
         }
       ]
     },
     {
       level: 3,
-      title: "Natural Language Processing",
+      title: "Supervised Learning",
       capsules: [
         {
-          name: "NLP Fundamentals",
-          outcome: "Text processing, tokenization, NER",
-          badge: "NLP Explorer",
-          icon: "💬"
+          name: "Linear Regression",
+          outcome: ["Concepts: Line of best fit", "Cost function, gradient descent", "Implementation in Python (scikit-learn)"],
+          badge: "ML Explorer",
+          icon: "📈"
         },
         {
-          name: "Advanced NLP Techniques",
-          outcome: "LLMs, Transformers, LangChain",
-          badge: "NLP Specialist",
-          icon: "📖"
+          name: "Classification Models",
+          outcome: ["Logistic Regression", "Decision Trees", "Random Forest"],
+          badge: "ML Explorer",
+          icon: "🎯"
+        },
+        {
+          name: "Model Evaluation",
+          outcome: ["Accuracy, Precision, Recall, F1-Score", "Confusion Matrix"],
+          badge: "ML Explorer",
+          icon: "📊"
         }
       ]
     },
     {
       level: 4,
-      title: "Generative AI",
+      title: "Unsupervised Learning",
       capsules: [
         {
-          name: "Generative AI Basics",
-          outcome: "GANs, VAEs, and StyleGAN",
-          badge: "GenAI Innovator",
-          icon: "🎨"
+          name: "Clustering",
+          outcome: ["K-means clustering", "Hierarchical clustering"],
+          badge: "ML Explorer",
+          icon: "🔮"
         },
         {
-          name: "Advanced Generative Models",
-          outcome: "Prompt engineering, Pix2Pix, CycleGAN",
-          badge: "GenAI Master",
-          icon: "🖌️"
-        }
-      ]
-    },
-    {
-      level: 5,
-      title: "Agentic AI",
-      capsules: [
-        {
-          name: "Agentic AI & Autonomous Systems",
-          outcome: "Agents, LLM integration, autonomy",
-          badge: "Agentic AI Explorer",
-          icon: "🤖"
+          name: "Dimensionality Reduction",
+          outcome: ["Principal Component Analysis (PCA)"],
+          badge: "ML Explorer",
+          icon: "📉"
         },
         {
-          name: "Advanced Agentic AI",
-          outcome: "Multi-agent systems, fine-tuning",
-          badge: "Agentic AI Architect",
-          icon: "🏗️"
+          name: "Applications",
+          outcome: ["Customer segmentation", "Anomaly detection"],
+          badge: "ML Explorer",
+          icon: "💡"
         }
       ]
-    },
-    {
-      level: 6,
-      title: "AI Operations",
-      capsules: [
-        {
-          name: "AI Ops & MLOps",
-          outcome: "Model deployment, DevOps, CI/CD",
-          badge: "AI Ops Specialist",
-          icon: "⚙️"
-        },
-        {
-          name: "Cloud & MLOps Integration",
-          outcome: "AWS, Docker, Kubernetes, OpenShift",
-          badge: "Cloud AI Engineer",
-          icon: "☁️"
-        }
-      ]
+       
     }
   ];
-      
 
   return (
     <div className="bg-black text-white h-full p-6 md:p-8">
