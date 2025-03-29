@@ -61,7 +61,8 @@ export default function ContactForm() {
         setExperience("0-3yrs");
         setWhatsappUpdates(false);
       } else {
-        alert("Failed to submit form");
+        const errorData = await response.json();
+        alert(`Failed to submit form: ${errorData.error || "Unknown error"}`);
       }
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -73,8 +74,7 @@ export default function ContactForm() {
     <div className="w-full bg-black" id="contact">
       <div className="h-full max-w-5xl mx-auto text-white flex flex-col items-center justify-center p-4">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-2"> Connect with Us: Begin Your AI Warrior Journey
-        </h1>
+          <h1 className="text-3xl font-bold mb-2"> Connect with Us: Begin Your AI Warrior Journey</h1>
           <p className="text-gray-300">
             Take the first step towards mastering AI and innovation with LW India. Your transformation into an AI Warrior starts here!
           </p>
@@ -85,12 +85,11 @@ export default function ContactForm() {
           <Card className="flex-1 bg-zinc-900/50 border-zinc-800 text-white">
             <CardHeader className="text-center">
               <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-              Upskill, Reskill, Rise as a Warrior
+                Upskill, Reskill, Rise as a Warrior
               </h2>
             </CardHeader>
 
             <CardContent className="space-y-8">
-
               <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
@@ -183,14 +182,14 @@ export default function ContactForm() {
                     Send WhatsApp Updates
                   </label>
                 </div>
-                </form>
+                <CardFooter className="flex justify-center">
+                  <Button type="submit" className="w-1/3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-6">
+                    Submit Your Query
+                  </Button>
+                </CardFooter>
+              </form>
             </CardContent>
-            <CardFooter className="flex justify-center">
-            <Button className="w-1/3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-6">
-              Submit Your Query
-            </Button>
-          </CardFooter>
-        </Card>
+          </Card>
 
           {/* Expert Guidance Section */}
           <div className="flex-1 lg:max-w-xs space-y-8 pt-8">
@@ -212,24 +211,24 @@ export default function ContactForm() {
                 </div>
               </div>
 
-            <div className="flex items-center gap-4">
-              <div className="bg-zinc-800 p-3 rounded-full">
-                <Mail className="h-5 w-5 text-white" />
-              </div>
-              <div>
-                <a
-                  href="mailto:support@lwindia.com "
-                  className="text-indigo-400 font-medium hover:underline break-all"
-                >
-                  support@lwindia.com 
-                </a>
-                <p className="text-sm text-gray-400">You&apos;ll hear back in 24 hours</p>
+              <div className="flex items-center gap-4">
+                <div className="bg-zinc-800 p-3 rounded-full">
+                  <Mail className="h-5 w-5 text-white" />
+                </div>
+                <div>
+                  <a
+                    href="mailto:support@lwindia.com"
+                    className="text-indigo-400 font-medium hover:underline break-all"
+                  >
+                    support@lwindia.com
+                  </a>
+                  <p className="text-sm text-gray-400">You&apos;ll hear back in 24 hours</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import nodemailer from "nodemailer";
 import { NextResponse, NextRequest } from "next/server";
 
-// Define the structure for the request body
 interface ContactFormData {
   fullName: string;
   phoneNumber: string;
@@ -10,7 +9,6 @@ interface ContactFormData {
   whatsappUpdates: boolean;
 }
 
-// Define the structure of the API response
 interface ResponseData {
   success?: boolean;
   message?: string;
@@ -19,18 +17,11 @@ interface ResponseData {
 }
 
 export async function POST(request: NextRequest) {
-  // Retrieve and validate environment variables
-  // crfn nino pkub dlgh
-  // tonystark83033@gmail.com
-  // const smtpUser: string = process.env.SMTP_USER || "linuxworld.certificates@gmail.com";
-  // const smtpPass: string = process.env.EMAIL_PASS || "vkaa fbfm qdfk whws";
-
-  const smtpUser: string = process.env.SMTP_USER || "crfn nino pkub dlgh";
-  const smtpPass: string = process.env.EMAIL_PASS || "tonystark83033@gmail.com";
-
+  const smtpUser: string = process.env.SMTP_USER || "linuxworld.certificates@gmail.com";
+  const smtpPass: string = process.env.EMAIL_PASS || "vkaa fbfm qdfk whws";
   const smtpHost: string = "smtp.gmail.com";
   const smtpPort: number = 587;
-  const recipientEmail: string = "bhupesh7750@example.com";
+  const recipientEmail: string = "bhupesh7750@gmail.com";
 
   if (!smtpUser || !smtpPass || !recipientEmail) {
     console.error("Server misconfiguration: Missing email credentials.");
@@ -40,7 +31,6 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  // Parse request body
   let body: ContactFormData;
   try {
     body = await request.json();
@@ -54,7 +44,6 @@ export async function POST(request: NextRequest) {
 
   const { fullName, phoneNumber, email, experience, whatsappUpdates } = body;
 
-  // Validate required fields
   if (!fullName || !phoneNumber || !email || !experience) {
     return NextResponse.json<ResponseData>(
       { error: "Full name, phone number, email, and experience are required." },
@@ -62,7 +51,6 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  // Validate phone number (must be numeric and between 10 and 15 digits)
   if (!/^\d{10,15}$/.test(phoneNumber)) {
     return NextResponse.json<ResponseData>(
       { error: "Phone number must be a valid numeric string between 10 and 15 digits." },
@@ -70,7 +58,6 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  // Validate email format
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return NextResponse.json<ResponseData>(
       { error: "Invalid email format." },
@@ -78,7 +65,6 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  // Create nodemailer transporter
   const transporter = nodemailer.createTransport({
     host: smtpHost,
     port: smtpPort,
@@ -90,11 +76,10 @@ export async function POST(request: NextRequest) {
   });
 
   try {
-    // Email options
     const mailOptions = {
       from: `"${fullName}" <${smtpUser}>`,
       to: recipientEmail,
-      subject: `New Contact Form Submission from ${fullName}`,
+      subject: `New Contact Form Submission from ${fullName} for agentic AI`,
       text: `
         You have received a new message:
 
