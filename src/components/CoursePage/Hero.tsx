@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button"
 
 export default function Hero() {
   return (
-    <div className="relative w-full min-h-[50vh] bg-[linear-gradient(to_bottom_right,#8b2fd3_0%,#040106_30%,#040106_70%,#ca2571_100%)]">
+    <div className="relative w-full min-h-[50vh] bg-[linear-gradient(to_bottom_right,#8b2fd3CC_0%,#040106_25%,#040106_75%,#ca2571CC_100%)]">
+      {/* todo decrease the opacaity of the gradient color */}
       {/* 
       ca2571
       040106, todo spred this color more in the middle, 
