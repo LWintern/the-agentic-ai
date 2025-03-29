@@ -124,16 +124,16 @@ export const roadmapData: RoadmapLevel[] = [
         },
       ],
     },
-    {
-      level: "Completion",
-      capsules: [
-        {
-          name: "Completion",
-          outcome: "After completing all levels",
-          badge: "AI Master Practitioner",
-          duration: "3 month",
-          price: "",
-        },
-      ],
-    },
+    // {
+    //   level: "Completion",
+    //   capsules: [
+    //     {
+    //       name: "Completion",
+    //       outcome: "After completing all levels",
+    //       badge: "AI Master Practitioner",
+    //       duration: "3 month",
+    //       price: "",
+    //     },
+    //   ],
+    // },
   ];
