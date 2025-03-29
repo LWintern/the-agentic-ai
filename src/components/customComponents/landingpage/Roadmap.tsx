@@ -117,9 +117,9 @@ const AIRoadmap: React.FC = () => {
           icon: "📊"
         },
         {
-          name: "ML Lifecycle",
+          name: "ML Explorer",
           outcome: ["Data Collection → Preprocessing → Model Training → Evaluation → Deployment"],
-          badge: "Lifecycle",
+          badge: "ML Explorer",
           icon: "🔄"
         }
       ]
@@ -215,14 +215,14 @@ const AIRoadmap: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-12 p-6 border border-gray-800 rounded-xl text-center bg-gradient-to-b from-gray-900/40 to-gray-900/10">
+        {/* <div className="mt-12 p-6 border border-gray-800 rounded-xl text-center bg-gradient-to-b from-gray-900/40 to-gray-900/10">
           <h3 className="text-xl font-bold mb-2">AI Master Practitioner</h3>
           <p className="text-sm text-gray-400">Complete all levels to achieve the ultimate certification</p>
           <button className="mt-4 px-4 py-2 bg-white text-black rounded-md font-medium flex items-center mx-auto hover:bg-gray-200 transition-colors">
             Start your journey
             <ChevronRight size={16} className="ml-1" />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
