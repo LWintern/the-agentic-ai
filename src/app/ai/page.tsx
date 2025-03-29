@@ -4,11 +4,13 @@ import AIRoadmap from "@/components/customComponents/landingpage/Roadmap";
 
 import FAQ from '@/components/customComponents/Faq';
 import ContactForm from '@/components/customComponents/landingpage/Contact'
+import ProgramsSection from "../../components/CoursePage/project/Project"
 export default function Home() {
   return (
    <>
    <Hero/>
    <AIRoadmap/>
+   <ProgramsSection/>
    {/* todo add project section */}
    <ContactForm/>
    <FAQ/>

@@ -9,7 +9,7 @@ const tracks = [
   // First 4 tracks with specific colors as requested
   {
     id: 1,
-    number: "01",
+    number: "ML Explorer",
     title: "Price Prediction",
     titleColor: "text-orange-300",
     experience: "",
@@ -17,7 +17,7 @@ const tracks = [
   },
   {
     id: 2,
-    number: "02",
+    number: "ML Explorer",
     title: "Spam Detection",
     titleColor: "text-purple-300",
     experience: "",
@@ -25,7 +25,7 @@ const tracks = [
   },
   {
     id: 3,
-    number: "03",
+    number: "ML Explorer",
     title: "Customer Segmentation",
     titleColor: "text-green-300",
     experience: "",
@@ -33,7 +33,7 @@ const tracks = [
   },
   {
     id: 4,
-    number: "04",
+    number: "ML Explorer",
     title: "Anomaly Detection",
     titleColor: "text-amber-300",
     experience: "",
@@ -346,7 +346,7 @@ const tracks = [
   // },
   // {
   //   id: 43,
-  //   number: "43",
+  //   number: "",
   //   title: "Model Retraining",
   //   titleColor: "text-green-300",
   //   experience: "",
@@ -356,42 +356,48 @@ const tracks = [
 
   return (
     <section className="w-full bg-black text-white py-16 px-4" id="timeline">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-sm uppercase tracking-wider mb-2">AI Warrior Projects:</h2>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4"> Sharpen Your Skills with 36+ Battles</h1>
-          <p className="text-lg">Master AI by working on 36+ real-world projects—building, innovating, and solving challenges to prepare for the fast-moving industry.</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {tracks.map((track, index) => (
-  <Card 
-    key={index} 
-    className="bg-black border border-gray-800 rounded-lg overflow-hidden flex flex-col min-h-[290px]"
-  >
-    <div className="flex-grow">
-      <CardHeader className="pb-2">
-        <p className="text-sm text-gray-400">TRACK {track.number}</p>
-        <CardTitle className={`text-2xl font-bold ${track.titleColor}`}>{track.title}</CardTitle>
-        <p className="text-sm text-gray-300">{track.experience}</p>
-      </CardHeader>
-      <CardContent className="pb-6">
-        <p className="text-sm text-gray-300">{track.description}</p>
-      </CardContent>
+  <div className="max-w-5xl mx-auto">
+    <div className="text-center mb-12">
+      <h2 className="text-sm uppercase tracking-wider mb-2">AI Warrior Projects:</h2>
+      <h1 className="text-4xl md:text-5xl font-bold mb-4"> Sharpen Your Skills with 36+ Battles</h1>
+      <p className="text-lg">Master AI by working on 36+ real-world projects—building, innovating, and solving challenges to prepare for the fast-moving industry.</p>
     </div>
-    <CardFooter className="mt-auto">
-      <Button
-        variant="outline"
-        className="w-full text-white font-bold hover:text-white bg-gradient-to-r from-purple-600 to-pink-600"
-      >
-        Apply now
-      </Button>
-    </CardFooter>
-  </Card>
-))}
-        </div>
-      </div>
-    </section>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {tracks.map((track, index) => (
+        <Card 
+          key={index} 
+          className="bg-black border border-gray-800 rounded-lg overflow-hidden flex flex-col min-h-[290px]"
+        >
+          <div className="flex-grow">
+            <CardHeader className="pb-2">
+              <p className="text-sm text-gray-400"> {track.number}</p>
+              <CardTitle className={`text-2xl font-bold ${track.titleColor}`}>{track.title}</CardTitle>
+              <p className="text-sm text-gray-300">{track.experience}</p>
+            </CardHeader>
+            <CardContent className="pb-6">
+              <p className="text-sm text-gray-300">{track.description}</p>
+            </CardContent>
+          </div>
+          <CardFooter className="mt-auto">
+            <Button
+              variant="outline"
+              className="w-full text-white font-bold hover:text-white bg-gradient-to-r from-purple-600 to-pink-600"
+            >
+              Know More
+            </Button>
+          </CardFooter>
+        </Card>
+      ))}
+    </div>
+
+    {/* "Many more..." text on the right side */}
+    {/* <div className="text-right mt-6 pr-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text text-lg">
+      &mdash; and many more...
+    </div> */}
+  </div>
+</section>
+
   )
 }
 
