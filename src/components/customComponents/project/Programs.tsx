@@ -355,7 +355,7 @@ const tracks = [
 ];
 
   return (
-    <section className="w-full bg-black text-white py-16 px-4">
+    <section className="w-full bg-black text-white py-16 px-4" id="timeline">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-sm uppercase tracking-wider mb-2">AI Warrior Projects:</h2>

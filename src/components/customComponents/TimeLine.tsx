@@ -8,7 +8,7 @@ import { roadmapData } from "../../../data/timeline";
 
 export function TimelineDemo() {
   return (
-    <div className="w-full ">
+    <div className="w-full " >
       <Timeline
         data={roadmapData.map((levelData) => ({
           title: levelData.level,

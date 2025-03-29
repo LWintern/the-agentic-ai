@@ -28,12 +28,13 @@ export default function Home() {
    <>
    <Navbar />
    <HeroSection /> 
-   <Journey/>
+   
    
    
    {/* <App /> */}
    {/* <CardLayout /> */}
    <TimelineDemo />
+   {/* <Journey/> */}
     
    {/* <ProjectsSection/>   */}
    {/* <CardLayout /> */}

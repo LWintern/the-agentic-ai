@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/assets/LW@4x1.png"
+            src="/assets/LW-logo-white.png"
             alt="Logo"
             width={96}
             height={18}
@@ -138,10 +138,10 @@ const Navbar: React.FC = () => {
               </li>
             ))}
             <a
-              href="/application-form"
+              href="#timeline"
               className="text-white hover:text-[#ff0000] transition-colors duration-200"
             >
-              Apply Now
+              AI Worrior Program
             </a>
           </ul>
         </nav>
