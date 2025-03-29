@@ -34,7 +34,7 @@ export function TimelineDemo() {
                     </div>
                   )}
 
-                  <Link href="/foundationinmachinelearning" className="cursor-pointer">
+                  <Link href={capsule.href} className="cursor-pointer">
                     <h3 className="text-lg md:text-xl font-semibold mb-2 mt-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
                       <div className="font-bold text-2xl">{capsule.name}</div>
                     </h3>

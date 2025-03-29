@@ -2,6 +2,7 @@ export const roadmapData = [
     {
       level: "Srishti" , 
       subtitle: "(The Birth of Intelligence)",
+
       capsules: [
         {
           name: "Foundation in Machine Learning",
@@ -10,7 +11,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/xyR6udr",
           duration: "12 hrs",
           price: "2000 +Taxes",
-          
+          href:"/foundationinmachinelearning",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -23,6 +24,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/nQYlezEa",
           duration: "14 hrs",
           price: "2999 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -35,6 +37,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/BYWPl4Sn",
           duration: "14 hrs",
           price: "4999 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -53,6 +56,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/r0Jgt0l0",
           duration: "8 hrs",
           price: "1299 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -65,6 +69,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/yl3TTvM",
           duration: "12 hrs",
           price: "2999 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -83,6 +88,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/dpbkLD1",
           duration: "12 hrs",
           price: "1999 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -95,6 +101,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/SUeAHEB",
           duration: "12 hrs",
           price: "2999 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -113,6 +120,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/2tWnCB7",
           duration: "8 hrs",
           price: "2999 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -125,6 +133,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/2tWnCB7",
           duration: "12 hrs",
           price: "3999 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -143,6 +152,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/bFrKdIZ",
           duration: "14 hrs",
           price: "2999 +Taxes",
+          href:"/agenticaiautonomoussystems",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -155,6 +165,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/lOLC1zs",
           duration: "14 hrs",
           price: "4999 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -173,6 +184,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/w3Qz9tI",
           duration: "15 hrs",
           price: "12999 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -185,6 +197,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/Lh5yQpew",
           duration: "14 hrs",
           price: "9999 +Taxes",
+          href:"/link to page",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
