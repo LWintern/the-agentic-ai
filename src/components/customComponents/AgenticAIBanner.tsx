@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
       
       <main className="flex flex-col items-center text-center z-10 px-4">
         <h1 className="text-5xl md:text-5xl pt-20 font-bold tracking-wider">
-        AI Warrior : The <span className="text-[#FF3366]">MasterStroke </span> Program
+        AI Warrior : The <span className=" bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">MasterStroke </span> Program
         </h1>
         <p className="mt-4 text-xl text-gray-300"> 12 AI Capsules: The Brahmastra Training of AI
         </p>
@@ -76,9 +76,9 @@ const HeroSection: React.FC = () => {
         </div> */}
       </main>
 
-      <div className="absolute top-6 right-6 px-4 py-2 bg-yellow-400 text-black rounded-lg font-semibold">
+      {/* <div className="absolute top-6 right-6 px-4 py-2 bg-yellow-400 text-black rounded-lg font-semibold">
         AI Breakthrough Offer →
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -60,12 +60,12 @@ const  Footer= () => {
               
               <div className="mb-4">
                 <button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors">
-                  Apply Now
+                  Become an AI Warrior
                 </button>
               </div>
               
               <div className="text-xs text-gray-400">
-                <p>Applications close on March 31st, 2025</p>
+                {/* <p>Applications close on March 31st, 2025</p> */}
                 <p className="mt-1">Only a limited number of spots are available</p>
               </div>
             </div>

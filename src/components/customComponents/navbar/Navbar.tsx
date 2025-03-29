@@ -15,16 +15,18 @@ import { RoadmapLevel, Capsule, RouteConfig } from '../../../../types/navbar';
 
 // Navigation Items
 const NAV_ITEMS = [
-  { href: "#Projects", text: "Levels" },
+  { href: "#Projects", text: "AI Training Programs" },
 ];
 
 // Route Configuration
 const ROUTE_CONFIG: Record<string, RouteConfig> = {
   '/students': {
-    buttonText: 'Enquire Now'
+    buttonText: '#contact',
+    href:"#contact"
   },
   'default': {
-    buttonText: 'Enquire Now'
+    buttonText: 'Enquire Now',
+    href:"#contact"
   }
 };
 
@@ -109,7 +111,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src=""
+            src="/assets/LW-logo-white.png"
             alt="Logo"
             width={96}
             height={18}
@@ -136,10 +138,10 @@ const Navbar: React.FC = () => {
               </li>
             ))}
             <a
-              href="/application-form"
+              href="#timeline"
               className="text-white hover:text-[#ff0000] transition-colors duration-200"
             >
-              Apply Now
+              AI Worrior Program
             </a>
           </ul>
         </nav>
@@ -159,7 +161,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop CTA Button */}
         <Link
-          href="#query"
+          href="#contact"
           className="hidden lg:block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-lg hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 text-center"
         >
           {buttonText}
