@@ -192,22 +192,22 @@ export const roadmapData = [
         },
       ],
     },
-    {
-      level: "Completion",
-      subtitle: "(AI Expert)",
-      capsules: [
-        {
-          name: "Completion",
-          outcome: "After completing all levels",
-          badge: "AI Master Practitioner",
-          badgeLink: "https://example.com",
-          duration: "1 month",
-          price: "5500 +Taxes",
-          images: [
-            "https://via.placeholder.com/500",
-            "https://via.placeholder.com/500",
-          ],
-        },
-      ],
-    },
+    // {
+    //   level: "Completion",
+    //   subtitle: "(AI Expert)",
+    //   capsules: [
+    //     {
+    //       name: "Completion",
+    //       outcome: "After completing all levels",
+    //       badge: "AI Master Practitioner",
+    //       badgeLink: "https://example.com",
+    //       duration: "",
+    //       price: "",
+    //       images: [
+    //         "https://via.placeholder.com/500",
+    //         "https://via.placeholder.com/500",
+    //       ],
+    //     },
+    //   ],
+    // },
   ];
