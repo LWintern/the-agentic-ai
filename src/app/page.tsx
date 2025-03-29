@@ -22,6 +22,7 @@ import ProgramsSection from '@/components/customComponents/project/Programs'
 
 import AIJOB from "@/components/customComponents/Market/AIJOB"
 import { GiJourney } from 'react-icons/gi'
+import CertificateMainPage from "@/components/customComponents/landingpage/cert"
 // import Navbar from '@/components/customComponents/Navbar'
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
     {/* <Projects /> */}
     <ProgramsSection />
     {/* <AIJOB /> */}
+    <CertificateMainPage />
     <ContactForm />
     <Footer />
    </>  )
