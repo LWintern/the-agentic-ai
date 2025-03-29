@@ -1,4 +1,4 @@
-import Hero from "@/components/CoursePage/foundation-in-ml/Hero";
+import Hero from "@/components/CoursePage/advance-ml-techniques/Hero";
 
 import AIRoadmap from "@/components/customComponents/landingpage/Roadmap";
 

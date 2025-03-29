@@ -16,3 +16,14 @@ export interface Capsule {
 export interface CourseModuleProps {
   capsules: Capsule[];
 }
+
+// types.ts
+export interface HeroData {
+  title: string;
+  subtitle: string;
+  description: string;
+  duration: string;
+  fee: string;
+  batch: string;
+  ctaLink: string;
+}
