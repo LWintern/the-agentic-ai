@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
   const smtpPass: string = process.env.EMAIL_PASS || "vkaa fbfm qdfk whws";
   const smtpHost: string = "smtp.gmail.com";
   const smtpPort: number = 587;
-  const recipientEmail: string = "bhupesh7750@gmail.com";
+  const recipientEmail: string = "chandak.preeti@gmail.com";
 
   if (!smtpUser || !smtpPass || !recipientEmail) {
     console.error("Server misconfiguration: Missing email credentials.");
