@@ -44,7 +44,7 @@ export default function Hero() {
           
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
             <span className="text-zinc-400">💰 Fee:</span>
-            <span className="ml-2 text-white">₹ 2500 + Taxes</span>
+            <span className="ml-2 text-white">₹ 2999 + Taxes</span>
           </div>
           
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">

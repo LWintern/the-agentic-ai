@@ -94,118 +94,189 @@ const ModuleSection: React.FC<ModuleSectionProps> = ({ moduleData }) => {
 const AIRoadmap: React.FC = () => {
  
   const roadmapData: ModuleData[] = [
-    {
-      level: 1,
-      title: "Introduction to Agentic AI",
-      capsules: [
-        {
-          name: "What is Agentic AI?",
-          outcome: [
-            "Definition and characteristics of autonomous agents",
-            "Difference between traditional AI and Agentic AI"
-          ],
-          badge: " Agentic AI Explorer",
-          icon: "🤖"
-        },
-        {
-          name: "Applications of Agentic AI",
-          outcome: [
-            "Autonomous task execution (e.g., AutoGPT)",
-            "AI-powered personal assistants",
-            "Automated research agents"
-          ],
-          badge: " Agentic AI Explorer",
-          icon: "🚀"
-        }
-      ]
-    },
-    {
-      level: 2,
-      title: "LangChain Basics",
-      capsules: [
-        {
-          name: "Introduction to LangChain",
-          outcome: [
-            "What is LangChain?",
-            "Key components: Chains, Memory, Agents"
-          ],
-          badge: " Agentic AI Explorer",
-          icon: "⛓️"
-        },
-        {
-          name: "Building Simple Agents",
-          outcome: [
-            "Creating a basic agent",
-            "Adding memory for context awareness"
-          ],
-          badge: " Agentic AI Explorer",
-          icon: "🏗️"
-        },
-        {
-          name: "Data Flow in LangChain",
-          outcome: [
-            "How LangChain handles input, output, and agent interactions"
-          ],
-          badge: " Agentic AI Explorer",
-          icon: "🔄"
-        }
-      ]
-    },
-    {
-      level: 3,
-      title: "Memory & Persistence",
-      capsules: [
-        {
-          name: "Agent Memory Types",
-          outcome: [
-            "Short-term memory (Session-based)",
-            "Long-term memory (Vector databases)"
-          ],
-          badge: " Agentic AI Explorer",
-          icon: "🧠"
-        },
-        {
-          name: "Memory Management",
-          outcome: [
-            "Storing conversation history",
-            "Using embeddings for context recall"
-          ],
-          badge: " Agentic AI Explorer",
-          icon: "🗃️"
-        }
-      ]
-    },
-    {
-      level: 4,
-      title: "Basic Planning Models",
-      capsules: [
-        {
-          name: "What is Planning in AI?",
-          outcome: [
-            "Planning vs. reasoning"
-          ],
-          badge: " Agentic AI Explorer",
-          icon: "📝"
-        },
-        {
-          name: "Simple Planning Models",
-          outcome: [
-            "Goal-oriented planning",
-            "Decision trees for task execution"
-          ],
-          badge: " Agentic AI Explorer",
-          icon: "🌳"
-        },
-        {
-          name: "Implementing Basic Planners",
-          outcome: [
-            "Using LangChain's planner module"
-          ],
-          badge: " Agentic AI Explorer",
-          icon: "⚙️"
-        }
-      ]
-    }
+  {
+    "level": 1,
+    "title": "Introduction to Deep Learning",
+    "capsules": [
+      {
+        "name": "Concepts",
+        "outcome": [
+          "What is Deep Learning?",
+          "Difference between Machine Learning and Deep Learning",
+          "Why Deep Learning is effective for large datasets"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "🧠"
+      },
+      {
+        "name": "Applications",
+        "outcome": [
+          "Self-driving cars (Object detection)",
+          "Voice assistants (Speech recognition)",
+          "Generative AI (Text, image, and music generation)"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "🚗"
+      }
+    ]
+  },
+  {
+    "level": 2,
+    "title": "Neural Network",
+    "capsules": [
+      {
+        "name": "Concepts",
+        "outcome": [
+          "Neural Network architecture (Input, Hidden, and Output layers)",
+          "Forward propagation and backpropagation",
+          "Weight optimization using loss functions"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "🔗"
+      },
+      {
+        "name": "Working Principle",
+        "outcome": [
+          "Weighted sum of inputs",
+          "Activation functions (ReLU, Sigmoid, Tanh)",
+          "Error minimization through backpropagation"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "⚙️"
+      }
+    ]
+  },
+  {
+    "level": 3,
+    "title": "Key Components of Neural Networks",
+    "capsules": [
+      {
+        "name": "Activation Functions",
+        "outcome": [
+          "ReLU (Rectified Linear Unit)",
+          "Sigmoid",
+          "Tanh",
+          "Softmax (for multi-class classification)"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "🔢"
+      },
+      {
+        "name": "Loss Functions",
+        "outcome": [
+          "Mean Squared Error (MSE) – Regression",
+          "Cross-Entropy Loss – Classification"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "📉"
+      },
+      {
+        "name": "Optimization Algorithms",
+        "outcome": [
+          "Gradient Descent",
+          "Adam Optimizer"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "🚀"
+      },
+      {
+        "name": "Model Tuning",
+        "outcome": [
+          "Learning rate adjustments",
+          "Epochs and batch size optimization"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "🎛️"
+      }
+    ]
+  },
+  {
+    "level": 4,
+    "title": "Types of Neural Networks",
+    "capsules": [
+      {
+        "name": "Feedforward Neural Networks (FNN)",
+        "outcome": [
+          "Structure with unidirectional data flow",
+          "Used for structured data tasks (regression, classification)"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "➡️"
+      },
+      {
+        "name": "Convolutional Neural Networks (CNN)",
+        "outcome": [
+          "Specialized for image processing",
+          "Uses filters and pooling layers",
+          "Applications: Image classification, object detection"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "🖼️"
+      },
+      {
+        "name": "Recurrent Neural Networks (RNN)",
+        "outcome": [
+          "Designed for sequential data (time series, text)",
+          "Memory cells retain previous information",
+          "Applications: Language models, speech recognition"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "🔁"
+      },
+      {
+        "name": "Transformers",
+        "outcome": [
+          "State-of-the-art architecture for NLP and Gen AI",
+          "Self-attention mechanism for context understanding",
+          "Applications: ChatGPT, BERT, DALL·E"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "✨"
+      }
+    ]
+  },
+  {
+    "level": 5,
+    "title": "Deep Learning Applications",
+    "capsules": [
+      {
+        "name": "Image Processing",
+        "outcome": [
+          "CNNs for image classification and face detection",
+          "Applications: Medical imaging, autonomous vehicles"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "📷"
+      },
+      {
+        "name": "Natural Language Processing (NLP)",
+        "outcome": [
+          "RNNs and Transformers for text generation and translation",
+          "Applications: Chatbots, sentiment analysis"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "💬"
+      },
+      {
+        "name": "Generative AI",
+        "outcome": [
+          "GANs and Diffusion Models for content generation",
+          "Applications: Deepfakes, AI-generated art"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "🎨"
+      },
+      {
+        "name": "Autonomous Systems",
+        "outcome": [
+          "Deep learning for self-driving cars (object detection)",
+          "AI-powered robotics and drones"
+        ],
+        "badge": "ML Practitioner",
+        "icon": "🤖"
+      }
+    ]
+  }
   ];
 
   return (
