@@ -165,7 +165,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/lOLC1zs",
           duration: "14 hrs",
           price: "4999 +Taxes",
-          href:"/link to page",
+          href:"/advancedagenticai",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
