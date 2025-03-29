@@ -14,11 +14,11 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-800 rounded-full filter blur-[150px] opacity-10 -z-10"></div>
       <div className="relative mx-auto max-w-6xl px-6 pt-24 pb-20">
         {/* Announcement text */}
-        <div className="mb-10">
+        {/* <div className="mb-10">
           <p className="text-sm font-medium text-zinc-400/90">
             Next cohort starts on April 2nd, 2025 <span className="ml-1">🎉</span>
           </p>
-        </div>
+        </div> */}
 
         {/* Main heading */}
         <h1 className="text-[3.5rem] leading-[1.1] sm:text-7xl font-bold mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-transparent">
@@ -63,7 +63,7 @@ export default function Hero() {
           text-white hover:text-white/90 
           transition-all duration-200"
         >
-          Apply Now
+          Book your seat now
         </Button>
         </a>
       </div>
