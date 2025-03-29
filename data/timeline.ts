@@ -10,7 +10,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/xyR6udr",
           duration: "12 hrs",
           price: "2000 +Taxes",
-          
+          link:"/foundationinmachinelearning",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -23,6 +23,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/nQYlezEa",
           duration: "14 hrs",
           price: "2999 +Taxes",
+          link:"/advancemltechniques",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -35,6 +36,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/BYWPl4Sn",
           duration: "14 hrs",
           price: "4999 +Taxes",
+          link:"/deep-learning-with-neural-network",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -53,6 +55,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/r0Jgt0l0",
           duration: "8 hrs",
           price: "1299 +Taxes",
+          link:"/computer-vision-fundamentals",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -65,6 +68,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/yl3TTvM",
           duration: "12 hrs",
           price: "2999 +Taxes",
+          link:"/advance-computer-vision",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -83,6 +87,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/dpbkLD1",
           duration: "12 hrs",
           price: "1999 +Taxes",
+          link:"/nlp-fundamentals",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -95,6 +100,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/SUeAHEB",
           duration: "12 hrs",
           price: "2999 +Taxes",
+          link:"/advance-nlp-techniques",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -113,6 +119,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/2tWnCB7",
           duration: "8 hrs",
           price: "2999 +Taxes",
+          link:"/generative-ai-basics",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -125,6 +132,8 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/2tWnCB7",
           duration: "12 hrs",
           price: "3999 +Taxes",
+          link:"/advance-generative-models",
+
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -143,6 +152,8 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/bFrKdIZ",
           duration: "14 hrs",
           price: "2999 +Taxes",
+          link:"/agentic-ai-and-autonomous-system",
+
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
