@@ -56,7 +56,7 @@ export default function Hero() {
         </div>
 
         {/* CTA Button */}
-        <a href="https://rzp.io/rzp/bFrKdIZ" target="blank">
+        <a href="https://rzp.io/rzp/BYWPl4Sn" target="blank">
         <Button
           variant="outline"
           className="rounded-full px-8 py-6 h-auto text-[15px] font-medium 
