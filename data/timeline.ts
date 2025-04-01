@@ -194,7 +194,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/w3Qz9tI",
           duration: "15 hrs",
           price: "12999 +Taxes",
-          href:"/link to page",
+          href:"/ai-ops-and-mlops",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",
@@ -207,7 +207,7 @@ export const roadmapData = [
           badgeLink: "https://rzp.io/rzp/Lh5yQpew",
           duration: "14 hrs",
           price: "9999 +Taxes",
-          href:"/link to page",
+          href:"/cloud-and-mlops-integration",
           images: [
             "https://via.placeholder.com/500",
             "https://via.placeholder.com/500",

@@ -1,11 +1,11 @@
-import Hero from "@/components/CoursePage/advance-computer-vision/Hero";
+import Hero from "@/components/advancecomputervision/CoursePage/Hero";
 
-import AIRoadmap from "@/components/customComponents/landingpage/Roadmap";
+import AIRoadmap from "@/components/advancecomputervision/CoursePage/Roadmap";
 
 import FAQ from '@/components/customComponents/Faq';
 import ContactForm from '@/components/customComponents/landingpage/Contact';
-import ProgramsSection from "../../components/CoursePage/foundation-in-ml/project/Project";
-import CertificateDisplay from "@/components/CoursePage/foundation-in-ml/Cert";
+import ProgramsSection from "../../components/advancecomputervision/CoursePage/project/Project";
+import CertificateDisplay from "@/components/advancecomputervision/CoursePage/Cert";
 export default function Home() {
   return (
    <>
