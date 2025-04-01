@@ -29,7 +29,9 @@ export default function Hero() {
 
         {/* Subheading */}
         <p className="text-xl mb-6 text-zinc-200/90">
-        Multi-agent systems, fine-tuning
+        Text processing, tokenization, NER
+
+
 
 
 

@@ -1,6 +1,6 @@
 import Hero from "@/components/nlpfundamentals/CoursePage/Hero";
 
-import AIRoadmap from "@/components/customComponents/landingpage/Roadmap";
+import AIRoadmap from "@/components/nlpfundamentals/CoursePage/Roadmap";
 
 import FAQ from '@/components/customComponents/Faq';
 import ContactForm from '@/components/customComponents/landingpage/Contact';

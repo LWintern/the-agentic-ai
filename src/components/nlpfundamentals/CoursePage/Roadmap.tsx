@@ -96,122 +96,171 @@ const AIRoadmap: React.FC = () => {
   const roadmapData: ModuleData[] = [
     {
       level: 1,
-      title: "Autonomous Reasoning with Agents",
+      title: "Introduction to NLP",
       capsules: [
         {
-          name: "Agentic Reasoning",
+          name: "What is NLP?",
           outcome: [
-            "Decision-making capabilities of autonomous agents",
+            "Key applications: Sentiment analysis, machine translation, chatbots",
+            "NLP in voice assistants (Siri, Alexa)",
+            "Emerging trends in LLM-powered NLP"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🧠"
+          badge: "NLP Explorer",
+          icon: "💬"
         },
         {
-          name: "Tools for Reasoning",
+          name: "Text Representation",
           outcome: [
-            "LangChain ReAct (Reason + Act) pattern",
+            "Bag of Words (BoW) limitations",
+            "TF-IDF mathematics and implementation",
+            "Context window concepts"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🛠️"
+          badge: "NLP Explorer",
+          icon: "📝"
         },
         {
-          name: "Multi-Agent Collaboration",
+          name: "NLP Explorer",
           outcome: [
-            "Coordinating multiple agents for complex workflows",
+            "NLTK for education/research",
+            "SpaCy for production pipelines",
+            "TextBlob for quick prototyping"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🤝"
+          badge: "NLP Beginner",
+          icon: "📚"
         }
       ]
     },
     {
       level: 2,
-      title: "AutoGPT & BabyAGI",
+      title: "Text Preprocessing",
       capsules: [
         {
-          name: "Introduction to AutoGPT",
+          name: "Tokenization",
           outcome: [
-            "What is AutoGPT?",
-            "How it uses GPT for autonomous task execution"
+            "Word vs. subword tokenization",
+            "SpaCy's rule-based tokenizer",
+            "Handling multilingual text"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🤖"
+          badge: "NLP Explorer",
+          icon: "✂️"
         },
         {
-          name: "BabyAGI Framework",
+          name: "Stemming & Lemmatization",
           outcome: [
-            "Using BabyAGI for iterative task management"
+            "Porter vs. Snowball stemmers",
+            "SpaCy's lemmatization (with POS tags)",
+            "When to use each approach"
           ],
-          badge: "Autonomous Agent Developer",
-          icon: "👶"
-        },
-        {
-          name: "Task Decomposition",
-          outcome: [
-            "Splitting complex tasks into smaller, manageable subtasks"
-          ],
-          badge: "Agentic AI Specialist",
+          badge: "NLP Explorer",
           icon: "🔍"
+        },
+        {
+          name: "Text Cleaning",
+          outcome: [
+            "Regex patterns for noise removal",
+            "Unicode normalization",
+            "Handling emojis/special characters"
+          ],
+          badge: "NLP Explorer",
+          icon: "🧹"
         }
       ]
     },
     {
       level: 3,
-      title: "Task Chaining & Advanced Memory",
+      title: "Text Classification",
       capsules: [
         {
-          name: "Chained Agent Pipelines",
+          name: "Naive Bayes Classifier",
           outcome: [
-            "Multi-step workflows with agents"
+            "MultinomialNB for text",
+            "Sentiment analysis on product reviews",
+            "Bayesian probability refresher"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "⛓️"
+          badge: "NLP Explorer",
+          icon: "🎯"
         },
         {
-          name: "Vector Database for Long-Term Memory",
+          name: "Logistic Regression for NLP",
           outcome: [
-            "Using Pinecone, Weaviate, or ChromaDB"
+            "TF-IDF vectorization + LR pipeline",
+            "Hyperparameter tuning (C parameter)",
+            "Feature importance analysis"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🗄️"
+          badge: "NLP Explorer",
+          icon: "📊"
         },
         {
-          name: "Persistent Memory in Agents",
+          name: "Classification Pipeline",
           outcome: [
-            "Storing and recalling task history"
+            "End-to-end sklearn pipeline",
+            "Custom transformers for text",
+            "Model persistence with pickle"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🔁"
+          badge: "NLP Explorer",
+          icon: "⚙️"
         }
       ]
     },
     {
       level: 4,
-      title: "Real-World Applications of Agentic AI",
+      title: "Basic NLP Models",
       capsules: [
         {
-          name: "Automated Research Agents",
+          name: "Word Embeddings",
           outcome: [
-            "Continuous web research"
+            "Word2Vec (CBOW vs Skip-gram)",
+            "GloVe pretrained vectors",
+            "Visualizing embeddings with t-SNE"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🔬"
+          badge: "NLP Explorer",
+          icon: "🧩"
         },
         {
-          name: "Autonomous Code Generators",
+          name: "Named Entity Recognition",
           outcome: [
-            "AutoGPT for code generation"
+            "SpaCy's entity ruler",
+            "Custom entity training",
+            "BERT-based NER comparison"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "💻"
+          badge: "NLP Explorer",
+          icon: "🏷️"
+        }
+      ]
+    },
+    {
+      level: 5,
+      title: "Audio & Speech Processing",
+      capsules: [
+        {
+          name: "Speech Features",
+          outcome: [
+            "MFCC extraction steps",
+            "Spectrogram interpretation",
+            "Audio data augmentation"
+          ],
+          badge: "NLP Explorer",
+          icon: "🎙️"
         },
         {
-          name: "AI-Powered Data Analysts",
+          name: "Speech-to-Text Models",
           outcome: [
-            "Agents for data processing and visualization"
+            "Whisper architecture overview",
+            "DeepSpeech CTC loss",
+            "Real-time transcription"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "📊"
+          badge: "NLP Explorer",
+          icon: "📄"
+        },
+        {
+          name: "NLP for ASR",
+          outcome: [
+            "Language modeling for ASR",
+            "Error correction techniques",
+            "Multimodal voice assistants"
+          ],
+          badge: "NLP Explorer",
+          icon: "🤖"
         }
       ]
     }

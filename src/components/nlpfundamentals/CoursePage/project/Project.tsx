@@ -9,15 +9,15 @@ const tracks = [
   // First 4 tracks with specific colors as requested
   {
     id: 1,
-    number: "Sentiment Analysis",
-    title: "Research Agent",
+    number: "NLP Explorer",
+    title: "Sentiment Analysis ",
     titleColor: "text-orange-300",
     experience: "",
     description: "Building a robust sentiment analysis model using ensemble learning techniques.",
   },
   {
     id: 2,
-    number: "Agentic AI Specialist",
+    number: "NLP Explorer",
     title: "Resume Parsing",
     titleColor: "text-purple-300",
     experience: "",
@@ -25,7 +25,7 @@ const tracks = [
   },
   {
     id: 3,
-    number: "Agentic AI Specialist",
+    number: "NLP Explorer",
     title: "Text Summarization ",
     titleColor: "text-green-300",
     experience: "",
@@ -33,7 +33,7 @@ const tracks = [
   },
   {
     id: 4,
-    number: "Agentic AI Specialist",
+    number: "NLP Explorer",
     title: "Speech Transcription ",
     titleColor: "text-amber-300",
     experience: "",
