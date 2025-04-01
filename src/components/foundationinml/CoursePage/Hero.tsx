@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="relative w-full min-h-[50vh] bg-[linear-gradient(to_bottom_right,#8b2fd3CC_0%,#040106_25%,#040106_75%,#ca2571CC_100%)]">
+    <div className="relative w-full h-[600px] overflow-x-hidden bg-[linear-gradient(to_bottom_right,#8b2fd3CC_0%,#040106_25%,#040106_75%,#ca2571CC_100%)]">
       {/* Background Gradients */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] bg-purple-800 rounded-full filter blur-[150px] opacity-10 -z-10"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-full md:w-[800px] md:h-[800px] bg-purple-800 rounded-full filter blur-[150px] opacity-10 -z-10"></div>
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 pt-16 sm:pt-24 pb-16 sm:pb-20">
         {/* Main heading */}
-        <h1 className="md:text-6xl lg:text-6xl text-4xl  leading-tight sm:leading-[1.1] font-bold mb-4 sm:mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-transparent">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl leading-tight sm:leading-[1.1] font-bold mb-4 sm:mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-transparent">
           Foundation in{" "}
           <span className="block">Machine Learning</span>
         </h1>
