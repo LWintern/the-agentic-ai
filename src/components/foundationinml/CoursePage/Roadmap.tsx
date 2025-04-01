@@ -55,7 +55,7 @@ const CapsuleCard: React.FC<CapsuleCardProps> = ({ capsule, level }) => {
   const iconBgColor = getIconBgColor(level);
 
   return (
-    <div className="rounded-xl bg-gray-900/60 p-5 transition-all hover:bg-gray-800/70 border border-gray-800 flex flex-col">
+    <div className="rounded-xl bg-gray-900/60 p-4 md:p-5 transition-all hover:bg-gray-800/70 border border-gray-800 flex flex-col">
       <div className="flex items-start justify-between mb-2">
         <div className="flex items-center gap-3">
           <div className={`w-8 h-8 rounded-md ${iconBgColor} flex items-center justify-center text-lg`}>
@@ -76,13 +76,13 @@ const ModuleSection: React.FC<ModuleSectionProps> = ({ moduleData }) => {
   const levelColor = getLevelColor(moduleData.level);
 
   return (
-    <div className="mb-12">
-      <div className="flex items-center mb-3">
+    <div className="mb-8 md:mb-12">
+      <div className="flex items-center mb-2 md:mb-3">
         <div className={`w-4 h-4 rotate-45 ${levelColor} mr-2`}></div>
         <span className="text-xs text-gray-400">Module {moduleData.level}</span>
       </div>
-      <h2 className="text-xl font-semibold text-white mb-6">{moduleData.title}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <h2 className="text-lg md:text-xl font-semibold text-white mb-4 md:mb-6">{moduleData.title}</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {moduleData.capsules.map((capsule, index) => (
           <CapsuleCard key={index} capsule={capsule} level={moduleData.level} />
         ))}
@@ -251,16 +251,16 @@ const AIRoadmap: React.FC = () => {
     }
   ];
   return (
-    <div className="bg-black text-white h-full p-6 md:p-8">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-2xl font-bold mb-2">View our curriculum</h1>
+    <div className="bg-black text-white h-full p-4 md:p-6 lg:p-8">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-8 md:mb-12">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">View our curriculum</h1>
           <p className="text-sm text-gray-400 max-w-md mx-auto">
             The entire program leads to mastery in the field and is intended to give future practitioners a complete curriculum.
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {roadmapData.map((module) => (
             <ModuleSection key={module.level} moduleData={module} />
           ))}

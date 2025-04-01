@@ -59,7 +59,7 @@ const  Footer= () => {
               </h2>
               
               <div className="mb-4">
-                <button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors">
+                <button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded text-sm font-medium transition-colors">
                   Become an AI Warrior
                 </button>
               </div>
