@@ -282,13 +282,12 @@ const AIRoadmap: React.FC = () => {
   return (
     <div className="bg-black text-white h-full p-6 md:p-8">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-2xl font-bold mb-2">View our curriculum</h1>
+      <div className="text-center mb-8 md:mb-12">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">View our curriculum</h1>
           <p className="text-sm text-gray-400 max-w-md mx-auto">
             The entire program leads to mastery in the field and is intended to give future practitioners a complete curriculum.
           </p>
         </div>
-
         <div className="space-y-8">
           {roadmapData.map((module) => (
             <ModuleSection key={module.level} moduleData={module} />
