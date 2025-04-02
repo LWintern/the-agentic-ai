@@ -105,7 +105,7 @@ const AIRoadmap: React.FC = () => {
             "Google Vertex AI",
             "Azure Machine Learning"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "☁️"
         },
         {
@@ -114,7 +114,7 @@ const AIRoadmap: React.FC = () => {
             "Deploying models on cloud servers",
             "Serverless inference options"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "🚀"
         },
         {
@@ -123,7 +123,7 @@ const AIRoadmap: React.FC = () => {
             "Using S3 and Block storage",
             "Managing large datasets in cloud"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "🗄️"
         }
       ]
@@ -138,7 +138,7 @@ const AIRoadmap: React.FC = () => {
             "Automating cloud infrastructure",
             "Managing ML environments as code"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "🛠️"
         },
         {
@@ -147,7 +147,7 @@ const AIRoadmap: React.FC = () => {
             "Infrastructure deployment pipelines",
             "CI/CD for AI infrastructure"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "⚙️"
         }
       ]
@@ -162,7 +162,7 @@ const AIRoadmap: React.FC = () => {
             "Real-time monitoring of AI pipelines",
             "Custom metrics for ML models"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "📊"
         },
         {
@@ -171,7 +171,7 @@ const AIRoadmap: React.FC = () => {
             "Retraining triggers",
             "Statistical drift detection methods"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "🔄"
         },
         {
@@ -180,7 +180,7 @@ const AIRoadmap: React.FC = () => {
             "Real-time anomaly monitoring",
             "Alerting systems for AI services"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "⚠️"
         }
       ]
@@ -195,7 +195,7 @@ const AIRoadmap: React.FC = () => {
             "Federated learning architectures",
             "Decentralized model training"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "🔐"
         },
         {
@@ -205,7 +205,7 @@ const AIRoadmap: React.FC = () => {
             "Homomorphic encryption",
             "Secure multi-party computation"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "🕵️"
         }
       ]
@@ -220,7 +220,7 @@ const AIRoadmap: React.FC = () => {
             "Model optimization for edge devices",
             "Hardware considerations"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "📱"
         },
         {
@@ -229,7 +229,7 @@ const AIRoadmap: React.FC = () => {
             "Developing for IoT AI applications",
             "On-device learning techniques"
           ],
-          badge: "AI Cloud Master",
+          badge: "Cloud AI Engineer",
           icon: "⚡"
         }
       ]
