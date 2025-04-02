@@ -103,7 +103,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Deploying and managing AI microservices efficiently"
           ],
-          badge: "Deployment Engineer",
+          badge: "Agentic AI Specialist",
           icon: "🖥️"
         },
         {
@@ -111,7 +111,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Hosting AI applications on a scalable cloud infrastructure"
           ],
-          badge: "Cloud Architect",
+          badge: "Agentic AI Specialist",
           icon: "☁️"
         },
         {
@@ -119,7 +119,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Scaling agents bottlenecked by the self-attention mechanism"
           ],
-          badge: "Attention Optimizer",
+          badge: "Agentic AI Specialist",
           icon: "⚡"
         },
         {
@@ -127,7 +127,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Enhancing agent focus on different parts of input sequences simultaneously"
           ],
-          badge: "Attention Specialist",
+          badge: "Agentic AI Specialist",
           icon: "👀"
         }
       ]
@@ -141,7 +141,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Implementing prompt filtering, PII detection, and safety mechanisms"
           ],
-          badge: "Safety Engineer",
+          badge: "Agentic AI Specialist",
           icon: "🛡️"
         },
         {
@@ -149,7 +149,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Customizing pre-trained LLMs for specific use cases"
           ],
-          badge: "Fine-Tuning Expert",
+          badge: "Agentic AI Specialist",
           icon: "🎛️"
         },
         {
@@ -157,7 +157,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Fine-tuning open-source LLMs for distillation tasks"
           ],
-          badge: "Distillation Specialist",
+          badge: "Agentic AI Specialist",
           icon: "🧪"
         },
         {
@@ -165,7 +165,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Adding custom Low-Rank Adaptation (LoRA) layers to LLMs"
           ],
-          badge: "LoRA Engineer",
+          badge: "Agentic AI Specialist",
           icon: "📊"
         },
         {
@@ -173,7 +173,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Deploying multi-LoRA LLMs with dynamic routing"
           ],
-          badge: "Multi-LoRA Architect",
+          badge: "Agentic AI Specialist",
           icon: "🔄"
         }
       ]
@@ -187,7 +187,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Evaluating AI-generated responses using AI"
           ],
-          badge: "AI Evaluator",
+          badge: "Agentic AI Specialist",
           icon: "⚖️"
         },
         {
@@ -195,7 +195,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Enhancing AI reliability and accuracy"
           ],
-          badge: "Perplexity Analyst",
+          badge: "Agentic AI Specialist",
           icon: "📈"
         },
         {
@@ -203,7 +203,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Enhancing LLM capabilities with Neo4j Graph DB"
           ],
-          badge: "Graph DB Specialist",
+          badge: "Agentic AI Specialist",
           icon: "🗂️"
         }
       ]
@@ -217,7 +217,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             `Understanding the "Attention Is All You Need" white paper`
           ],
-          badge: "Transformer Expert",
+          badge: "Agentic AI Specialist",
           icon: "🏗️"
         },
         {
@@ -225,7 +225,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Traditional sequential memory for AI models"
           ],
-          badge: "Memory Architect",
+          badge: "Agentic AI Specialist",
           icon: "🧠"
         }
       ]
