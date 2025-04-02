@@ -142,7 +142,7 @@ const AIRoadmap: React.FC = () => {
           outcome: [
             "Using BabyAGI for iterative task management"
           ],
-          badge: "Autonomous Agent Developer",
+          badge: "Agentic AI Specialist",
           icon: "👶"
         },
         {
