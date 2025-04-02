@@ -1,5 +1,5 @@
-import Hero from "@/components/advancedagenticai/CoursePage/Hero";
-
+// import Hero from "@/components/advancedagenticai/CoursePage/Hero";
+import HeroSection from "@/components/advancedagenticai/CoursePage/Hero";
 // import AIRoadmap from "@/components/customComponents/";
 import AIRoadmap from "../../components/advancedagenticai/CoursePage/Roadmap";
 import FAQ from '@/components/customComponents/Faq';
@@ -9,7 +9,8 @@ import CertificateDisplay from "@/components/advancedagenticai/CoursePage/Cert";
 export default function Home() {
   return (
    <>
-   <Hero/>
+   <HeroSection/>
+
    <AIRoadmap/>
    <ProgramsSection/>
    {/* todo add project section */}
