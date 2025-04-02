@@ -96,113 +96,151 @@ const AIRoadmap: React.FC = () => {
   const roadmapData: ModuleData[] = [
     {
       level: 1,
-      title: "Introduction to Agentic AI",
+      title: "Foundations of LLMs & Generative AI",
       capsules: [
         {
-          name: "What is Agentic AI?",
+          name: "Introduction to LLM and Generative AI",
           outcome: [
-            "Definition and characteristics of autonomous agents",
-            "Difference between traditional AI and Agentic AI"
+            "Understanding the fundamentals of LLMs and their capabilities"
           ],
-          badge: " Agentic AI Explorer",
+          badge: "Agentic AI Explorer",
+          icon: "🧠"
+        },
+        {
+          name: "AI Agents and Agentic Workflows",
+          outcome: [
+            "Implementing intelligent, autonomous AI agents"
+          ],
+          badge: "Agentic AI Explorer",
           icon: "🤖"
         },
         {
-          name: "Applications of Agentic AI",
+          name: "Multi-Modal LLM Applications",
           outcome: [
-            "Autonomous task execution (e.g., AutoGPT)",
-            "AI-powered personal assistants",
-            "Automated research agents"
+            "Integrating text, images, and other data modalities"
           ],
-          badge: " Agentic AI Explorer",
-          icon: "🚀"
+          badge: "Agentic AI Explorer",
+          icon: "🖼️"
         }
       ]
     },
     {
       level: 2,
-      title: "LangChain Basics",
+      title: "Advanced Retrieval & Context Handling",
       capsules: [
         {
-          name: "Introduction to LangChain",
+          name: "Chat Over Large Documents",
           outcome: [
-            "What is LangChain?",
-            "Key components: Chains, Memory, Agents"
+            "Leveraging vector stores (Qdrant DB, PG Vector, Pinecone) for document retrieval"
           ],
-          badge: " Agentic AI Explorer",
-          icon: "⛓️"
+          badge: "Agentic AI Explorer",
+          icon: "📚"
         },
         {
-          name: "Building Simple Agents",
+          name: "Retrieval-Augmented Generation (RAG)",
           outcome: [
-            "Creating a basic agent",
-            "Adding memory for context awareness"
+            "Enhancing AI responses with dynamic information retrieval"
           ],
-          badge: " Agentic AI Explorer",
-          icon: "🏗️"
+          badge: "Agentic AI Explorer",
+          icon: "🔍"
         },
         {
-          name: "Data Flow in LangChain",
+          name: "Context-Aware AI Applications",
           outcome: [
-            "How LangChain handles input, output, and agent interactions"
+            "Developing AI solutions that adapt to different contexts"
           ],
-          badge: " Agentic AI Explorer",
-          icon: "🔄"
+          badge: "Agentic AI Explorer",
+          icon: "🌐"
         }
       ]
     },
     {
       level: 3,
-      title: "Memory & Persistence",
+      title: "Memory & Knowledge Representation",
       capsules: [
         {
-          name: "Agent Memory Types",
+          name: "Memory-Aware AI Agents",
           outcome: [
-            "Short-term memory (Session-based)",
-            "Long-term memory (Vector databases)"
+            "Utilizing Qdrant DB and Neo4j Graph for persistent AI memory"
           ],
-          badge: " Agentic AI Explorer",
+          badge: "Agentic AI Explorer",
           icon: "🧠"
         },
         {
-          name: "Memory Management",
+          name: "Document-to-Graph DB and Embeddings",
           outcome: [
-            "Storing conversation history",
-            "Using embeddings for context recall"
+            "Transforming structured/unstructured data into graph-based representations"
           ],
-          badge: " Agentic AI Explorer",
-          icon: "🗃️"
+          badge: "Agentic AI Explorer",
+          icon: "📊"
         }
       ]
     },
     {
       level: 4,
-      title: "Basic Planning Models",
+      title: "Security, Control & Deployment",
       capsules: [
         {
-          name: "What is Planning in AI?",
+          name: "Security and Guardrails",
           outcome: [
-            "Planning vs. reasoning"
+            "Implementing self-hosted models (Llama-3, Gemma) for safety and compliance"
           ],
-          badge: " Agentic AI Explorer",
-          icon: "📝"
+          badge: "Agentic AI Explorer",
+          icon: "🛡️"
         },
         {
-          name: "Simple Planning Models",
+          name: "Autonomous vs. Controlled Workflows",
           outcome: [
-            "Goal-oriented planning",
-            "Decision trees for task execution"
+            "Understanding different agent workflow strategies"
           ],
-          badge: " Agentic AI Explorer",
-          icon: "🌳"
+          badge: "Agentic AI Explorer",
+          icon: "⚖️"
         },
         {
-          name: "Implementing Basic Planners",
+          name: "Human-in-the-Loop Interruptions",
           outcome: [
-            "Using LangChain's planner module"
+            "Allowing human oversight in AI-driven decisions"
           ],
-          badge: " Agentic AI Explorer",
-          icon: "⚙️"
+          badge: "Agentic AI Explorer",
+          icon: "👥"
+        }
+      ]
+    },
+    {
+      level: 5,
+      title: "Agent Orchestration & Scalability",
+      capsules: [
+        {
+          name: "AI Agent Orchestration with LangGraph",
+          outcome: [
+            "Managing multiple AI agents and workflows"
+          ],
+          badge: "Agentic AI Explorer",
+          icon: "🎼"
+        },
+        {
+          name: "Checkpointing in LangGraph",
+          outcome: [
+            "Ensuring fault tolerance and reproducibility in AI pipelines"
+          ],
+          badge: "Agentic AI Explorer",
+          icon: "✅"
+        },
+        {
+          name: "Tool Binding and API Calling",
+          outcome: [
+            "Enabling AI agents to interact with external tools/services"
+          ],
+          badge: "Agentic AI Explorer",
+          icon: "🔗"
+        },
+        {
+          name: "Intro to MCP Servers",
+          outcome: [
+            "Deploying and managing AI microservices efficiently"
+          ],
+          badge: "Agentic AI Explorer",
+          icon: "🚀"
         }
       ]
     }

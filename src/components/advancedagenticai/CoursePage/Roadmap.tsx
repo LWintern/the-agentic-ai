@@ -96,122 +96,137 @@ const AIRoadmap: React.FC = () => {
   const roadmapData: ModuleData[] = [
     {
       level: 1,
-      title: "Autonomous Reasoning with Agents",
+      title: "AI Model Deployment & Scalability",
       capsules: [
         {
-          name: "Agentic Reasoning",
+          name: "MCP Servers",
           outcome: [
-            "Decision-making capabilities of autonomous agents",
+            "Deploying and managing AI microservices efficiently"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🧠"
+          badge: "Deployment Engineer",
+          icon: "🖥️"
         },
         {
-          name: "Tools for Reasoning",
+          name: "Deployment on AWS",
           outcome: [
-            "LangChain ReAct (Reason + Act) pattern",
+            "Hosting AI applications on a scalable cloud infrastructure"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🛠️"
+          badge: "Cloud Architect",
+          icon: "☁️"
         },
         {
-          name: "Multi-Agent Collaboration",
+          name: "Flash Attention",
           outcome: [
-            "Coordinating multiple agents for complex workflows",
+            "Scaling agents bottlenecked by the self-attention mechanism"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🤝"
+          badge: "Attention Optimizer",
+          icon: "⚡"
+        },
+        {
+          name: "Multi-head Attention",
+          outcome: [
+            "Enhancing agent focus on different parts of input sequences simultaneously"
+          ],
+          badge: "Attention Specialist",
+          icon: "👀"
         }
       ]
     },
     {
       level: 2,
-      title: "AutoGPT & BabyAGI",
+      title: "AI Safety & Customization",
       capsules: [
         {
-          name: "Introduction to AutoGPT",
+          name: "Guardrails for AI Models",
           outcome: [
-            "What is AutoGPT?",
-            "How it uses GPT for autonomous task execution"
+            "Implementing prompt filtering, PII detection, and safety mechanisms"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🤖"
+          badge: "Safety Engineer",
+          icon: "🛡️"
         },
         {
-          name: "BabyAGI Framework",
+          name: "Model Fine-Tuning",
           outcome: [
-            "Using BabyAGI for iterative task management"
+            "Customizing pre-trained LLMs for specific use cases"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "👶"
+          badge: "Fine-Tuning Expert",
+          icon: "🎛️"
         },
         {
-          name: "Task Decomposition",
+          name: "STF (Fine-Tuning for Distill Use Case)",
           outcome: [
-            "Splitting complex tasks into smaller, manageable subtasks"
+            "Fine-tuning open-source LLMs for distillation tasks"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🔍"
+          badge: "Distillation Specialist",
+          icon: "🧪"
+        },
+        {
+          name: "LoRA Layers",
+          outcome: [
+            "Adding custom Low-Rank Adaptation (LoRA) layers to LLMs"
+          ],
+          badge: "LoRA Engineer",
+          icon: "📊"
+        },
+        {
+          name: "Multi-LoRA Setup",
+          outcome: [
+            "Deploying multi-LoRA LLMs with dynamic routing"
+          ],
+          badge: "Multi-LoRA Architect",
+          icon: "🔄"
         }
       ]
     },
     {
       level: 3,
-      title: "Task Chaining & Advanced Memory",
+      title: "Advanced AI Evaluation & Retrieval",
       capsules: [
         {
-          name: "Chained Agent Pipelines",
+          name: "LLM as a Judge Technique",
           outcome: [
-            "Multi-step workflows with agents"
+            "Evaluating AI-generated responses using AI"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "⛓️"
+          badge: "AI Evaluator",
+          icon: "⚖️"
         },
         {
-          name: "Vector Database for Long-Term Memory",
+          name: "Perplexity Sonar API",
           outcome: [
-            "Using Pinecone, Weaviate, or ChromaDB"
+            "Enhancing AI reliability and accuracy"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🗄️"
+          badge: "Perplexity Analyst",
+          icon: "📈"
         },
         {
-          name: "Persistent Memory in Agents",
+          name: "Cypher Query Context Retrieval",
           outcome: [
-            "Storing and recalling task history"
+            "Enhancing LLM capabilities with Neo4j Graph DB"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🔁"
+          badge: "Graph DB Specialist",
+          icon: "🗂️"
         }
       ]
     },
     {
       level: 4,
-      title: "Real-World Applications of Agentic AI",
+      title: "Core AI Architectures & Memory",
       capsules: [
         {
-          name: "Automated Research Agents",
+          name: "Transformer Architecture",
           outcome: [
-            "Continuous web research"
+            `Understanding the "Attention Is All You Need" white paper`
           ],
-          badge: "Agentic AI Specialist",
-          icon: "🔬"
+          badge: "Transformer Expert",
+          icon: "🏗️"
         },
         {
-          name: "Autonomous Code Generators",
+          name: "LSTM (Long Short-Term Memory)",
           outcome: [
-            "AutoGPT for code generation"
+            "Traditional sequential memory for AI models"
           ],
-          badge: "Agentic AI Specialist",
-          icon: "💻"
-        },
-        {
-          name: "AI-Powered Data Analysts",
-          outcome: [
-            "Agents for data processing and visualization"
-          ],
-          badge: "Agentic AI Specialist",
-          icon: "📊"
+          badge: "Memory Architect",
+          icon: "🧠"
         }
       ]
     }
