@@ -105,7 +105,7 @@ const AIRoadmap: React.FC = () => {
           "Difference between Machine Learning and Deep Learning",
           "Why Deep Learning is effective for large datasets"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "🧠"
       },
       {
@@ -115,7 +115,7 @@ const AIRoadmap: React.FC = () => {
           "Voice assistants (Speech recognition)",
           "Generative AI (Text, image, and music generation)"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "🚗"
       }
     ]
@@ -131,7 +131,7 @@ const AIRoadmap: React.FC = () => {
           "Forward propagation and backpropagation",
           "Weight optimization using loss functions"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "🔗"
       },
       {
@@ -141,7 +141,7 @@ const AIRoadmap: React.FC = () => {
           "Activation functions (ReLU, Sigmoid, Tanh)",
           "Error minimization through backpropagation"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "⚙️"
       }
     ]
@@ -158,7 +158,7 @@ const AIRoadmap: React.FC = () => {
           "Tanh",
           "Softmax (for multi-class classification)"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "🔢"
       },
       {
@@ -167,7 +167,7 @@ const AIRoadmap: React.FC = () => {
           "Mean Squared Error (MSE) – Regression",
           "Cross-Entropy Loss – Classification"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "📉"
       },
       {
@@ -176,7 +176,7 @@ const AIRoadmap: React.FC = () => {
           "Gradient Descent",
           "Adam Optimizer"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "🚀"
       },
       {
@@ -185,7 +185,7 @@ const AIRoadmap: React.FC = () => {
           "Learning rate adjustments",
           "Epochs and batch size optimization"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "🎛️"
       }
     ]
@@ -200,7 +200,7 @@ const AIRoadmap: React.FC = () => {
           "Structure with unidirectional data flow",
           "Used for structured data tasks (regression, classification)"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "➡️"
       },
       {
@@ -210,7 +210,7 @@ const AIRoadmap: React.FC = () => {
           "Uses filters and pooling layers",
           "Applications: Image classification, object detection"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "🖼️"
       },
       {
@@ -220,7 +220,7 @@ const AIRoadmap: React.FC = () => {
           "Memory cells retain previous information",
           "Applications: Language models, speech recognition"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "🔁"
       },
       {
@@ -230,7 +230,7 @@ const AIRoadmap: React.FC = () => {
           "Self-attention mechanism for context understanding",
           "Applications: ChatGPT, BERT, DALL·E"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "✨"
       }
     ]
@@ -245,7 +245,7 @@ const AIRoadmap: React.FC = () => {
           "CNNs for image classification and face detection",
           "Applications: Medical imaging, autonomous vehicles"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "📷"
       },
       {
@@ -254,7 +254,7 @@ const AIRoadmap: React.FC = () => {
           "RNNs and Transformers for text generation and translation",
           "Applications: Chatbots, sentiment analysis"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "💬"
       },
       {
@@ -263,7 +263,7 @@ const AIRoadmap: React.FC = () => {
           "GANs and Diffusion Models for content generation",
           "Applications: Deepfakes, AI-generated art"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "🎨"
       },
       {
@@ -272,7 +272,7 @@ const AIRoadmap: React.FC = () => {
           "Deep learning for self-driving cars (object detection)",
           "AI-powered robotics and drones"
         ],
-        "badge": "ML Practitioner",
+        "badge": "Deep Learning Pro",
         "icon": "🤖"
       }
     ]

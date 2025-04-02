@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="relative w-full h-[600px] md:h-screen overflow-x-hidden bg-[linear-gradient(to_bottom_right,#8b2fd3CC_0%,#040106_25%,#040106_75%,#ca2571CC_100%)]">
+    <div className="relative w-full h-[600px] md:h-full overflow-x-hidden bg-[linear-gradient(to_bottom_right,#8b2fd3CC_0%,#040106_25%,#040106_75%,#ca2571CC_100%)]">
       {/* Background Gradients */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[500px] md:w-[800px] md:h-[500px] bg-purple-800 rounded-full filter blur-[150px] opacity-10 -z-10"></div>
       
@@ -12,7 +12,10 @@ export default function Hero() {
           Foundation in{" "}
           <span className="block">Machine Learning</span>
         </h1>
-
+   {/* Subheading */}
+   <p className="text-xl mb-6 text-zinc-200/90">
+   ML fundamentals, data handling, and model training
+    </p>
         {/* Course Badges */}
         <div className="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-10">
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
