@@ -21,7 +21,7 @@ export default function Hero() {
           </div>
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
             <span className="text-zinc-400">💰 Fee:</span>
-            <span className="ml-2 text-white">4999 + Taxes</span>
+            <span className="ml-2 text-white">2000 + Taxes</span>
           </div>
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50">
             <span className="text-zinc-400">🎯</span>
@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
 
         {/* CTA Button */}
-        <a href="https://rzp.io/rzp/lOLC1zs" target="_blank" rel="noopener noreferrer">
+        <a href="https://rzp.io/rzp/xyR6udr" target="_blank" rel="noopener noreferrer">
           <Button
             variant="outline"
             className="rounded-full px-6 sm:px-8 py-4 sm:py-6 h-auto text-[14px] sm:text-[15px] font-medium 
