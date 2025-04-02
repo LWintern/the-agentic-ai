@@ -60,22 +60,43 @@ const HeroSection: React.FC = () => {
               Trusted outcomes, adaptable behavior, scalable deployment.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-10">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-2 md:mb-2">
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
             <span className="text-zinc-400">⏱️ Duration:</span>
             <span className="ml-2 text-white">45 hrs</span>
           </div>
-          
-          <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
-            <span className="text-zinc-400">💰 Fee:</span>
-            <span className="ml-2 text-white">50000 + Taxes</span>
-          </div>
-          
-          <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
-            <span className="text-zinc-400">🎯</span>
-            <span className="ml-2 text-white">Weekend batch</span>
-          </div>
+     
         </div>
+        {/* second button */}
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-2 md:mb-2">
+        
+          
+        <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
+  <span className="text-zinc-400">💰 Fee:</span>
+  <span className="ml-2">
+    <span className="text-zinc-400 line-through">₹1,00,000</span>{" "}
+    <span className="text-white">₹50,000 + Taxes</span>
+  </span>
+</div>
+        
+      
+      </div>
+
+
+      {/* third button */}
+
+      <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-4 md:mb-4">
+        
+          
+         
+          
+        <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
+          <span className="text-zinc-400">🎯Mode</span>
+          <span className="ml-2 text-white">Live Weekend batch</span>
+        </div>
+      </div>
+
+
 
 
             {/* CTA Buttons */}
