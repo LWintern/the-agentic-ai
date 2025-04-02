@@ -105,7 +105,7 @@ const AIRoadmap: React.FC = () => {
             "Supervised, Unsupervised, and Reinforcement Learning",
             "Real-world analogies for each paradigm"
           ],
-          badge: "ML Beginner",
+          badge: "ML Explorer",
           icon: "🤖"
         },
         {
@@ -116,7 +116,7 @@ const AIRoadmap: React.FC = () => {
             "E-commerce: Recommendation systems",
             "Autonomous vehicles"
           ],
-          badge: "ML Beginner",
+          badge: "ML Explorer",
           icon: "🌐"
         },
         {
@@ -126,7 +126,7 @@ const AIRoadmap: React.FC = () => {
             "Labeled vs. Unlabeled data",
             "Common dataset sources (Kaggle, UCI)"
           ],
-          badge: "ML Beginner",
+          badge: "ML Explorer",
           icon: "📊"
         },
         {
@@ -136,7 +136,7 @@ const AIRoadmap: React.FC = () => {
             "Data Collection → Preprocessing → Model Training → Evaluation → Deployment",
             "Iterative nature of ML projects"
           ],
-          badge: "ML Beginner",
+          badge: "ML Explorer",
           icon: "🔄"
         }
       ]
