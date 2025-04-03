@@ -98,7 +98,7 @@ const HeroSection: React.FC = () => {
                  
                     
                  <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
-                   <span className="text-zinc-400">Mode:🎯</span>
+                   <span className="text-zinc-400">🎯 Mode:</span>
                    <span className="ml-2 text-white">Live Weekend batch</span>
                  </div>
                </div>
