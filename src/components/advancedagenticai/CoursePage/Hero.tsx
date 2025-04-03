@@ -75,7 +75,7 @@ const HeroSection: React.FC = () => {
   <span className="text-zinc-400">💰 Fee:</span>
   <span className="ml-2">
     
-    <span className="text-white">₹50,000 + Taxes</span>{" "}
+    <span className="text-white">₹50,000 + Taxes</span> {" "}
     <span className="text-zinc-400 line-through">₹1,00,000</span>
   </span>
 </div>
