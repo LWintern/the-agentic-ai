@@ -50,9 +50,9 @@ const HeroSection: React.FC = () => {
           {/* Left side - Hero content */}
           <div className="flex-1">
             {/* Main heading */}
-            <h1 className="text-2xl leading-[1.0] sm:text-6xl  mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
+            <h1 className="text-3xl leading-[1.0] sm:text-3xl  mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
             Next-Level Intelligence{" "}
-              <span className="block text-[4rem] text-white sm:text-8xl">Advanced Agentic AI Training</span>
+              <span className="block text-6xl text-white sm:text-6xl">Advanced Agentic AI Training</span>
             </h1>
 
             {/* Subheading */}
@@ -104,12 +104,7 @@ const HeroSection: React.FC = () => {
         <a href="https://rzp.io/rzp/2SOJBNi" target="_blank" rel="noopener noreferrer" className="block w-full sm:w-auto">
           <Button
             variant="outline"
-            className="w-full sm:w-auto rounded-lg px-4 md:px-8 py-5 md:py-6 h-auto text-[14px] md:text-[15px] font-medium 
-            bg-gradient-to-r from-purple-600 to-pink-600
-    hover:from-purple-700 hover:bg-zinc-700/50 
-            border-zinc-700/50 hover:border-zinc-600/50
-            text-white hover:text-white/90 
-            transition-all duration-200"
+            className="w-auto py-3 border-none bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity text-white"
           >
             Book your seat now
           </Button>

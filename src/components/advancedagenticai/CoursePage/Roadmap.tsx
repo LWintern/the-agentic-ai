@@ -258,12 +258,7 @@ const AIRoadmap: React.FC = () => {
           >
             {/* todo remove blink animation in the button */}
             <button
-  className="px-8 py-4 text-lg font-semibold rounded-lg
-    bg-gradient-to-r from-purple-600 to-pink-600
-    hover:from-purple-700 hover:to-pink-700
-    transform hover:scale-105 transition-all duration-200
-    text-white shadow-lg hover:shadow-xl
-    border border-purple-500/30"
+  className="w-auto py-3 px-4 border-none bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity text-white"
 >
   🚀 Book Your Seat Now
 </button>
