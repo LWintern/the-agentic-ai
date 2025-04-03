@@ -262,6 +262,28 @@ const AIRoadmap: React.FC = () => {
           ))}
         </div>
 
+{/* Call to action button */}
+<div className="mt-12 flex justify-center">
+          <a 
+            href="https://rzp.io/rzp/6a3oxdP" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            {/* todo remove blink animation in the button */}
+            <button
+  className="px-8 py-4 text-lg font-semibold rounded-full
+    bg-gradient-to-r from-purple-600 to-pink-600
+    hover:from-purple-700 hover:to-pink-700
+    transform hover:scale-105 transition-all duration-200
+    text-white shadow-lg hover:shadow-xl
+    border border-purple-500/30"
+>
+  🚀 Book Your Seat Now
+</button>
+          </a>
+        </div>
+    
         {/* <div className="mt-12 p-6 border border-gray-800 rounded-xl text-center bg-gradient-to-b from-gray-900/40 to-gray-900/10">
           <h3 className="text-xl font-bold mb-2">AI Master Practitioner</h3>
           <p className="text-sm text-gray-400">Complete all levels to achieve the ultimate certification</p>
