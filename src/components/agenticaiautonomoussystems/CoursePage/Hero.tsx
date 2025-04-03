@@ -112,7 +112,7 @@ const HeroSection: React.FC = () => {
                   <a href="https://rzp.io/rzp/6a3oxdP" target="_blank" rel="noopener noreferrer" className="block w-full sm:w-auto">
                     <Button
                       variant="outline"
-                      className="w-full sm:w-auto rounded-full px-6 md:px-8 py-5 md:py-6 h-auto text-[14px] md:text-[15px] font-medium 
+                      className="w-full sm:w-auto rounded-lg px-4 md:px-8 py-5 md:py-6 h-auto text-[14px] md:text-[15px] font-semibold
                       bg-gradient-to-r from-purple-600 to-pink-600
     hover:from-purple-700 hover:bg-zinc-700/50 
                       border-zinc-700/50 hover:border-zinc-600/50

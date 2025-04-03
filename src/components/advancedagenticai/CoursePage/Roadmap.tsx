@@ -258,7 +258,7 @@ const AIRoadmap: React.FC = () => {
           >
             {/* todo remove blink animation in the button */}
             <button
-  className="px-8 py-4 text-lg font-semibold rounded-full
+  className="px-8 py-4 text-lg font-semibold rounded-lg
     bg-gradient-to-r from-purple-600 to-pink-600
     hover:from-purple-700 hover:to-pink-700
     transform hover:scale-105 transition-all duration-200
