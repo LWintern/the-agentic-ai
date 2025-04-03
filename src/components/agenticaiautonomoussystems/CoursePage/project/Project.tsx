@@ -3,6 +3,13 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination,Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+
 export default function ProgramsSection() {
   // components/programs-data.ts
 const tracks = [
@@ -362,34 +369,68 @@ const tracks = [
       <h1 className="text-4xl md:text-5xl font-bold mb-4"> Sharpen Your Skills with 4+ Battles</h1>
       <p className="text-lg">Master AI by working on 4+ real-world projects—building, innovating, and solving challenges to prepare for the fast-moving industry.</p>
     </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {tracks.map((track, index) => (
-        <Card 
-          key={index} 
-          className="bg-black border border-gray-800 rounded-lg overflow-hidden flex flex-col min-h-[290px]"
-        >
-          <div className="flex-grow">
-            <CardHeader className="pb-2">
-              <p className="text-sm text-gray-400"> {track.number}</p>
-              <CardTitle className={`text-2xl font-bold ${track.titleColor}`}>{track.title}</CardTitle>
-              <p className="text-sm text-gray-300">{track.experience}</p>
-            </CardHeader>
-            <CardContent className="pb-6">
-              <p className="text-sm text-gray-300">{track.description}</p>
-            </CardContent>
-          </div>
-          <CardFooter className="mt-auto">
-            {/* <Button
-              variant="outline"
-              className="w-full text-white font-bold hover:text-white bg-gradient-to-r from-purple-600 to-pink-600"
-            >
-              Know More
-            </Button> */}
-          </CardFooter>
-        </Card>
-      ))}
-    </div>
+    <Swiper
+  modules={[Navigation, Pagination, Autoplay]}
+  spaceBetween={24}
+  navigation={false} // Hide navigation buttons
+  pagination={{ 
+    clickable: true,
+    dynamicBullets: true
+  }}
+  autoplay={{
+    delay: 1000, // 3 seconds delay between slides
+    disableOnInteraction: false, // Continue autoplay after user interaction
+    pauseOnMouseEnter: true // Pause on mouse hover
+  }}
+  loop={true} // Enable infinite loop
+  breakpoints={{
+    // Mobile
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // Tablet
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24
+    },
+    // Desktop
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 24
+    }
+  }}
+  className="w-full"
+>
+   
+  {tracks.map((track, index) => (
+    <SwiperSlide key={index}>
+      <Card 
+        className="bg-black border border-gray-800 rounded-lg overflow-hidden flex flex-col min-h-[290px]"
+      >
+        <div className="flex-grow">
+          <CardHeader className="pb-2">
+            <p className="text-sm text-gray-400">{track.number}</p>
+            <CardTitle className={`text-2xl font-bold ${track.titleColor}`}>{track.title}</CardTitle>
+            <p className="text-sm text-gray-300">{track.experience}</p>
+          </CardHeader>
+          <CardContent className="pb-6">
+            <p className="text-sm text-gray-300">{track.description}</p>
+          </CardContent>
+        </div>
+        <CardFooter className="mt-auto">
+          {/* Uncomment if you want to add the button back
+          <Button
+            variant="outline"
+            className="w-full text-white font-bold hover:text-white bg-gradient-to-r from-purple-600 to-pink-600"
+          >
+            Know More
+          </Button> */}
+        </CardFooter>
+      </Card>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
     {/* "Many more..." text on the right side */}
     {/* <div className="text-right mt-6 pr-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text text-lg">
