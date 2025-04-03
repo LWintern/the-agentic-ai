@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
           {/* Left side - Hero content */}
           <div className="flex-1">
             {/* Main heading */}
-            <h1 className="text-3xl leading-[1.0] sm:text-3xl  mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
+            <h1 className="text-3xl leading-[1.0] sm:text-3xl  mb-4 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
             Next-Level Intelligence{" "}
               <span className="block text-6xl text-white sm:text-6xl">Advanced Agentic AI Training</span>
             </h1>
@@ -60,7 +60,7 @@ const HeroSection: React.FC = () => {
             Develop AI agents that operate independently and solve complex challenges.  
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-2 md:mb-2">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-4 md:mb-4">
           <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
             <span className="text-zinc-400">⏱️ Duration:</span>
             <span className="ml-2 text-white">45 hrs</span>
@@ -86,7 +86,7 @@ const HeroSection: React.FC = () => {
 
       {/* third button */}
 
-      <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-2 md:mb-2">
+      <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-6">
         
           
          
