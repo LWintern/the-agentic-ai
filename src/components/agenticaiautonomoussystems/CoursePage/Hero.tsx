@@ -82,8 +82,9 @@ const HeroSection: React.FC = () => {
 <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
   <span className="text-zinc-400">💰 Fee:</span>
   <span className="ml-2">
-    <span className="text-zinc-400 line-through">₹50,000</span>{" "}
-    <span className="text-white">₹25000 + Taxes</span>
+    
+    <span className="text-white">₹25000 + Taxes</span>{" "}
+    <span className="text-zinc-400 line-through">₹50,000</span>
   </span>
 </div>
                  
@@ -123,7 +124,7 @@ const HeroSection: React.FC = () => {
 
           {/* Right side - Form */}
           <div className="flex-1 w-full max-w-md backdrop-blur-lg bg-black/30 p-6 rounded-lg border border-zinc-800/50">
-            <h2 className="text-2xl font-bold mb-6 text-white">Become an AI Warrior</h2>
+            <h2 className="text-2xl font-bold mb-6 text-white">Step into the World of AI Agents</h2>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <input
                 type="text"
