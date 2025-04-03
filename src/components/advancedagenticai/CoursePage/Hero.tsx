@@ -117,7 +117,7 @@ const HeroSection: React.FC = () => {
 
           {/* Right side - Form */}
           <div className="flex-1 w-full max-w-md backdrop-blur-lg bg-black/30 p-6 rounded-lg border border-zinc-800/50">
-            <h2 className="text-2xl font-bold mb-6 text-white">  Become an AI Autonomy Expert</h2>
+            <h2 className="text-2xl font-bold mb-6 text-white">Become an AI Autonomy Expert</h2>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <input
                 type="text"

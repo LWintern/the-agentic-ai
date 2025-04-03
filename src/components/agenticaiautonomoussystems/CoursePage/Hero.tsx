@@ -50,14 +50,14 @@ const HeroSection: React.FC = () => {
           {/* Left side - Hero content */}
           <div className="flex-1">
             {/* Main heading */}
-            <h1 className="text-3xl leading-[1.0] sm:text-3xl  mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
-            Real-World Ready{" "}
-              <span className="block text-4xl text-white sm:text-6xl">HandsOn Agentic AI Training </span>
+            <h1 className="text-3xl leading-[1.0] sm:text-3xl  mb-4 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
+            Real-World Ready HandsOn{" "}
+              <span className="block text-4xl text-white sm:text-6xl">Agentic AI Training </span>
             </h1>
 
             {/* Subheading */}
             <p className="text-xl mb-6 text-zinc-200/90">
-            Learn to design, train, and deploy intelligent autonomous systems
+            Learn to design, train, & deploy intelligent autonomous systems
             </p>
 
           
@@ -95,7 +95,7 @@ const HeroSection: React.FC = () => {
 
                
 
-    <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-2 md:mb-2">
+    <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-4 md:mb-4">
                  
                     
                  <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
@@ -113,7 +113,7 @@ const HeroSection: React.FC = () => {
                   <a href="https://rzp.io/rzp/6a3oxdP" target="_blank" rel="noopener noreferrer" className="block w-full sm:w-auto">
                     <Button
                       variant="outline"
-                      className="w-auto py-3 border-none bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity text-white"
+                      className="w-auto py-3 ml-4 border-none bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity text-white"
                     >
                       Book your seat now
                     </Button>
