@@ -74,8 +74,9 @@ const HeroSection: React.FC = () => {
         <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
   <span className="text-zinc-400">💰 Fee:</span>
   <span className="ml-2">
-    <span className="text-zinc-400 line-through">₹1,00,000</span>{" "}
-    <span className="text-white">₹50,000 + Taxes</span>
+    
+    <span className="text-white">₹50,000 + Taxes</span>{" "}
+    <span className="text-zinc-400 line-through">₹1,00,000</span>
   </span>
 </div>
         
@@ -85,7 +86,7 @@ const HeroSection: React.FC = () => {
 
       {/* third button */}
 
-      <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-4 md:mb-4">
+      <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-2 md:mb-2">
         
           
          

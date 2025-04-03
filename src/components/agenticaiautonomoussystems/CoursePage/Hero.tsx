@@ -82,8 +82,9 @@ const HeroSection: React.FC = () => {
 <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
   <span className="text-zinc-400">💰 Fee:</span>
   <span className="ml-2">
-    <span className="text-zinc-400 line-through">₹50,000</span>{" "}
-    <span className="text-white">₹25000 + Taxes</span>
+    
+    <span className="text-white">₹25000 + Taxes</span>{" "}
+    <span className="text-zinc-400 line-through">₹50,000</span>
   </span>
 </div>
                  
@@ -94,7 +95,7 @@ const HeroSection: React.FC = () => {
 
                
 
-    <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-10">
+    <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-2 md:mb-2">
                  
                     
                  <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
@@ -123,58 +124,54 @@ const HeroSection: React.FC = () => {
 
           {/* Right side - Form */}
           <div className="flex-1 w-full max-w-md backdrop-blur-lg bg-black/30 p-6 rounded-lg border border-zinc-800/50">
-            <h2 className="text-2xl font-bold mb-6 text-white">Become an AI Warrior</h2>
-            <form className="space-y-4 w-full max-w-full sm:max-w-md mx-auto" onSubmit={handleSubmit}>
-  <input
-    type="text"
-    name="fullName"
-    value={formData.fullName}
-    onChange={handleChange}
-    placeholder="Your Full Name"
-    className="w-full px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white text-base sm:text-lg"
-    aria-label="Full Name"
-  />
-  
-  {/* Phone number container with responsive flex */}
-  <div className="flex flex-col sm:flex-row gap-4">
-    <div className="w-full sm:w-1/3">
-      <select
-        name="countryCode"
-        className="w-full px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white text-base sm:text-lg"
-        aria-label="Country Code"
-        onChange={handleChange}
-      >
-        <option value="+91">🇮🇳 +91</option>
-      </select>
-    </div>
-    <input
-      type="tel"
-      name="phoneNumber"
-      value={formData.phoneNumber}
-      onChange={handleChange}
-      placeholder="Your Phone Number"
-      className="w-full sm:flex-1 px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white text-base sm:text-lg"
-      aria-label="Phone Number"
-    />
-  </div>
-
-  <input
-    type="email"
-    name="email"
-    value={formData.email}
-    onChange={handleChange}
-    placeholder="Your Email Id"
-    className="w-full px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white text-base sm:text-lg"
-    aria-label="Email"
-  />
-  
-  <button
-    type="submit"
-    className="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity text-white text-base sm:text-lg"
-  >
-    Get a Call Back
-  </button>
-</form>
+            <h2 className="text-2xl font-bold mb-6 text-white">Step into the World of AI Agents</h2>
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                placeholder="Your Full Name"
+                className="w-full px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white"
+                aria-label="Full Name"
+              />
+              <div className="flex gap-4">
+                <div className="flex-1">
+                  <select
+                    name="countryCode"
+                    className="w-full px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white"
+                    aria-label="Country Code"
+                    onChange={handleChange}
+                  >
+                    <option value="+91">🇮🇳 +91</option>
+                  </select>
+                </div>
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
+                  placeholder="Your Phone Number"
+                  className="flex-[2] px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white"
+                  aria-label="Phone Number"
+                />
+              </div>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Your Email Id"
+                className="w-full px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white"
+                aria-label="Email"
+              />
+              <button
+                type="submit"
+                className="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity text-white"
+              >
+                Get a Call Back
+              </button>
+            </form>
             {message && <p className="mt-4 text-center text-sm text-gray-400">{message}</p>}
           </div>
         </div>
