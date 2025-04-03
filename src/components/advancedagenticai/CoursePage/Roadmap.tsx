@@ -247,7 +247,7 @@ const AIRoadmap: React.FC = () => {
           ))}
         </div>
 
-        {/* todo add Book you seat button in the center it is call to action button think how we can hilight this button */}
+     
  {/* Call to action button */}
  <div className="mt-12 flex justify-center">
           <a 

@@ -91,7 +91,7 @@ const HeroSection: React.FC = () => {
          
           
         <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
-          <span className="text-zinc-400">🎯Mode</span>
+          <span className="text-zinc-400">🎯Mode:</span>
           <span className="ml-2 text-white">Live Weekend batch</span>
         </div>
       </div>
@@ -105,7 +105,8 @@ const HeroSection: React.FC = () => {
           <Button
             variant="outline"
             className="w-full sm:w-auto rounded-full px-6 md:px-8 py-5 md:py-6 h-auto text-[14px] md:text-[15px] font-medium 
-            bg-zinc-800/50 hover:bg-zinc-700/50 
+            bg-gradient-to-r from-purple-600 to-pink-600
+    hover:from-purple-700 hover:bg-zinc-700/50 
             border-zinc-700/50 hover:border-zinc-600/50
             text-white hover:text-white/90 
             transition-all duration-200"
