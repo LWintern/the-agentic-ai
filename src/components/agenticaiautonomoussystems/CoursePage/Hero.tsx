@@ -75,7 +75,7 @@ const HeroSection: React.FC = () => {
 
           {/* second button */}
 
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-2 md:mb-2">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-4 md:mb-4">
                  
                
 
