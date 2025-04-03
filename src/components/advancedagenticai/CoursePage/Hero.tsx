@@ -51,13 +51,13 @@ const HeroSection: React.FC = () => {
           <div className="flex-1">
             {/* Main heading */}
             <h1 className="text-2xl leading-[1.0] sm:text-6xl  mb-6 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
-              Production-ready{" "}
-              <span className="block text-[4rem] text-white sm:text-8xl">AI Agents</span>
+            Next-Level Intelligence{" "}
+              <span className="block text-[4rem] text-white sm:text-8xl">Advanced Agentic AI Training</span>
             </h1>
 
             {/* Subheading */}
             <p className="text-xl mb-6 text-zinc-200/90">
-              Trusted outcomes, adaptable behavior, scalable deployment.
+            Develop AI agents that operate independently and solve complex challenges.  
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-2 md:mb-2">
@@ -104,7 +104,7 @@ const HeroSection: React.FC = () => {
         <a href="https://rzp.io/rzp/2SOJBNi" target="_blank" rel="noopener noreferrer" className="block w-full sm:w-auto">
           <Button
             variant="outline"
-            className="w-full sm:w-auto rounded-full px-6 md:px-8 py-5 md:py-6 h-auto text-[14px] md:text-[15px] font-medium 
+            className="w-full sm:w-auto rounded-lg px-4 md:px-8 py-5 md:py-6 h-auto text-[14px] md:text-[15px] font-medium 
             bg-gradient-to-r from-purple-600 to-pink-600
     hover:from-purple-700 hover:bg-zinc-700/50 
             border-zinc-700/50 hover:border-zinc-600/50
@@ -121,7 +121,7 @@ const HeroSection: React.FC = () => {
 
           {/* Right side - Form */}
           <div className="flex-1 w-full max-w-md backdrop-blur-lg bg-black/30 p-6 rounded-lg border border-zinc-800/50">
-            <h2 className="text-2xl font-bold mb-6 text-white">Become an AI Warrior</h2>
+            <h2 className="text-2xl font-bold mb-6 text-white">  Become an AI Autonomy Expert</h2>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <input
                 type="text"
