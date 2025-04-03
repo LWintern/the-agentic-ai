@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
           {/* Left side - Hero content */}
           <div className="flex-1">
             {/* Main heading */}
-            <h1 className="text-3xl leading-[1.0] sm:text-3xl  mb-4 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
+            <h1 className="text-2xl md:text-3xl  leading-[1.0] sm:text-3xl  mb-4 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
             Next-Level Intelligence{" "}
               <span className="block text-6xl text-white sm:text-6xl">Advanced Agentic AI Training</span>
             </h1>
