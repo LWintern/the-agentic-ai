@@ -6,6 +6,7 @@ import FAQ from '@/components/customComponents/Faq';
 import ContactForm from '@/components/customComponents/landingpage/Contact';
 import ProgramsSection from "../../components/agenticaiautonomoussystems/CoursePage/project/Project";
 import CertificateDisplay from "@/components/agenticaiautonomoussystems/CoursePage/Cert";
+import Flow from "@/components/agenticaiautonomoussystems/CoursePage/newComponents/Flow"
 export default function Home() {
   return (
    <>
@@ -13,6 +14,7 @@ export default function Home() {
    <AIRoadmap/>
    <ProgramsSection/>
    {/* todo add project section */}
+   <Flow/>
    <CertificateDisplay/>
    <ContactForm/>
    

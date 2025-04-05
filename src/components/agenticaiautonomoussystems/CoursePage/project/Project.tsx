@@ -74,7 +74,7 @@ const tracks = [
   {
     id: 8,
     number: "Agentic AI Explorer",
-    title: "Recruitmen Agent",
+    title: "Recruitment Agent",
     titleColor: "text-amber-300",
     experience: "",
     description: "TAn AI agent that automates candidate screening, conducts AI-driven interviews, and evaluates resumes.",
