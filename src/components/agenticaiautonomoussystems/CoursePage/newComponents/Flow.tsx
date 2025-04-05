@@ -89,7 +89,7 @@ export default function Flow() {
                 </div>
                 <h2 className="text-5xl font-bold mb-3">Tools</h2>
                 <p className="text-base mb-1">60+ AI functions at your fingertips.</p>
-                <p className="text-blue-400 text-sm mb-6">Specialize your agent's capabilities.</p>
+                <p className="text-blue-400 text-sm mb-6">Specialize your agents capabilities.</p>
                 
                 <div className="flex gap-4">
                   <Button variant="outline" className="bg-green-600 hover:bg-green-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
@@ -153,7 +153,7 @@ export default function Flow() {
                 </div>
                 <h2 className="text-5xl font-bold mb-3">Your apps</h2>
                 <p className="text-base mb-1">Your agents are automatically intelligent.</p>
-                <p className="text-blue-400 text-sm mb-6">Build reliable and safe applications that improve your organization's analysis.</p>
+                <p className="text-blue-400 text-sm mb-6">Build reliable and safe applications that improve your organizations analysis.</p>
                 
                 <Button variant="outline" className="bg-yellow-600 hover:bg-yellow-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
                   Build your agent app
