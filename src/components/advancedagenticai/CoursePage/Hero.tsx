@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
           {/* Left side - Hero content */}
           <div className="flex-1">
             {/* Main heading */}
-            <h1 className="text-3xl leading-[1.0] sm:text-3xl  mb-4 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
+            <h1 className="text-2xl md:text-3xl  leading-[1.0] sm:text-3xl  mb-4 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
             Next-Level Intelligence{" "}
               <span className="block text-6xl text-white sm:text-6xl">Advanced Agentic AI Training</span>
             </h1>
@@ -92,7 +92,7 @@ const HeroSection: React.FC = () => {
          
           
         <div className="px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm md:text-base">
-          <span className="text-zinc-400">🎯Mode:</span>
+          <span className="text-zinc-400">🎯 Mode:</span>
           <span className="ml-2 text-white">Live Weekend batch</span>
         </div>
       </div>
@@ -140,14 +140,14 @@ const HeroSection: React.FC = () => {
                   </select>
                 </div>
                 <input
-                  type="tel"
-                  name="phoneNumber"
-                  value={formData.phoneNumber}
-                  onChange={handleChange}
-                  placeholder="Your Phone Number"
-                  className="flex-[2] px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white"
-                  aria-label="Phone Number"
-                />
+    type="tel"
+    name="phoneNumber"
+    value={formData.phoneNumber}
+    onChange={handleChange}
+    placeholder="Your Phone Number"
+    className="w-full sm:flex-1 px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white"
+    aria-label="Phone Number"
+  />
               </div>
               <input
                 type="email"

@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
           {/* Left side - Hero content */}
           <div className="flex-1">
             {/* Main heading */}
-            <h1 className="text-3xl leading-[1.0] sm:text-3xl  mb-4 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
+            <h1 className="text-2xl  md:text-3xl leading-[1.0] sm:text-3xl  mb-4 tracking-tight bg-gradient-to-b from-white to-white/90 bg-clip-text text-gray-300">
             Real-World Ready HandsOn{" "}
               <span className="block text-4xl text-white sm:text-6xl">Agentic AI Training </span>
             </h1>
@@ -146,15 +146,16 @@ const HeroSection: React.FC = () => {
                     <option value="+91">🇮🇳 +91</option>
                   </select>
                 </div>
+                {/* todo make this input field mobile responsive, in mobile in is tacking tomuch width */}
                 <input
-                  type="tel"
-                  name="phoneNumber"
-                  value={formData.phoneNumber}
-                  onChange={handleChange}
-                  placeholder="Your Phone Number"
-                  className="flex-[2] px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white"
-                  aria-label="Phone Number"
-                />
+    type="tel"
+    name="phoneNumber"
+    value={formData.phoneNumber}
+    onChange={handleChange}
+    placeholder="Your Phone Number"
+    className="w-full sm:flex-1 px-4 py-2 bg-black/50 rounded border border-gray-600 focus:border-purple-500 focus:outline-none text-white"
+    aria-label="Phone Number"
+  />
               </div>
               <input
                 type="email"
