@@ -63,7 +63,7 @@ export default function Flow() {
                 <p className="text-base mb-1">Ready-to-run SDK to build your AI agent.</p>
                 <p className="text-blue-400 text-sm mb-6">Create your own agent in minutes.</p>
                 
-                <Button variant="outline" className="bg-blue-600 hover:bg-blue-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
+                <Button variant="outline" className="bg-orange-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
                   Start coding
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -92,7 +92,7 @@ export default function Flow() {
                 <p className="text-blue-400 text-sm mb-6">Specialize your agents capabilities.</p>
                 
                 <div className="flex gap-4">
-                  <Button variant="outline" className="bg-green-600 hover:bg-green-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
+                  <Button variant="outline" className="bg-purple-700 hover:bg-purple-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
                     Browse tools
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -127,7 +127,7 @@ export default function Flow() {
                 <p className="text-base mb-1">Cognitive load of the team can be distributed.</p>
                 <p className="text-blue-400 text-sm mb-6">Build complex solutions with specialized agents.</p>
                 
-                <Button variant="outline" className="bg-purple-600 hover:bg-purple-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
+                <Button variant="outline" className="bg-green-700 hover:bg-purple-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
                   Learn more
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -155,7 +155,7 @@ export default function Flow() {
                 <p className="text-base mb-1">Your agents are automatically intelligent.</p>
                 <p className="text-blue-400 text-sm mb-6">Build reliable and safe applications that improve your organizations analysis.</p>
                 
-                <Button variant="outline" className="bg-yellow-600 hover:bg-yellow-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
+                <Button variant="outline" className="bg-amber-700 hover:bg-amber-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
                   Build your agent app
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
