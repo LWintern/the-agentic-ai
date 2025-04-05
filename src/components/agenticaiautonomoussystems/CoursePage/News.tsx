@@ -27,7 +27,7 @@ const News = () => {
               <div className="absolute bottom-0 p-3 sm:p-4 md:p-6 w-full">
                 <span className="bg-black/50 text-white px-2 py-1 text-xs sm:text-sm rounded mb-1 sm:mb-2 inline-block">ARTICLE</span>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold mt-1 sm:mt-2 text-white leading-tight">
-                  The 5 Most Common Myths About Artificial Intelligence - What's Really True?
+                  The 5 Most Common Myths About Artificial Intelligence - Whats Really True?
                 </h3>
                 <div className="flex items-center mt-2 sm:mt-3 md:mt-4">
                   <img 
