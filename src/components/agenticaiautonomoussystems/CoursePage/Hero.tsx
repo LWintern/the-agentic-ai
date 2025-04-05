@@ -113,7 +113,7 @@ const HeroSection: React.FC = () => {
                   <a href="https://rzp.io/rzp/6a3oxdP" target="_blank" rel="noopener noreferrer" className="block w-full sm:w-auto">
                     <Button
                       variant="outline"
-                      className="w-auto py-3 ml-4 border-none bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity text-white"
+                      className="w-auto py-3 ml-2 border-none bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity text-white"
                     >
                       Book your seat now
                     </Button>

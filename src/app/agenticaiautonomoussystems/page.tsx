@@ -6,6 +6,7 @@ import FAQ from '@/components/customComponents/Faq';
 import ContactForm from '@/components/customComponents/landingpage/Contact';
 import ProgramsSection from "../../components/agenticaiautonomoussystems/CoursePage/project/Project";
 import CertificateDisplay from "@/components/agenticaiautonomoussystems/CoursePage/Cert";
+import News from "@/components/agenticaiautonomoussystems/CoursePage/News";
 export default function Home() {
   return (
    <>
@@ -14,6 +15,7 @@ export default function Home() {
    <ProgramsSection/>
    {/* todo add project section */}
    <CertificateDisplay/>
+   <News/>
    <ContactForm/>
    
    {/* <FAQ/> */}
