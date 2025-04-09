@@ -57,11 +57,11 @@ export default function Flow() {
               {/* Left Content */}
               <div>
                 <div className="flex items-center gap-2 mb-2 text-sm uppercase text-gray-500 font-medium">
-                  <span>LAUNCH YOUR</span>
+                  <span>UNLEASH YOUR</span>
                 </div>
-                <h2 className="text-5xl font-bold mb-3">Agent</h2>
-                <p className="text-base mb-1">Ready-to-run SDK to build your AI agent.</p>
-                <p className="text-blue-400 text-sm mb-6">Create your own agent in minutes.</p>
+                <h2 className="text-5xl font-bold mb-3">AI Agent</h2>
+                <p className="text-base mb-1">A plug-and-play SDK to bring your AI agent to life.</p>
+                <p className="text-blue-400 text-sm mb-6">Build and deploy your custom agent in just a few minutes.</p>
                 
                 <Button variant="outline" className="bg-orange-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
                   Start coding
@@ -85,11 +85,11 @@ export default function Flow() {
               {/* Left Content */}
               <div>
                 <div className="flex items-center gap-2 mb-2 text-sm uppercase text-gray-500 font-medium">
-                  <span>CUSTOMIZE WITH</span>
+                  <span>TAILOR WITH</span>
                 </div>
-                <h2 className="text-5xl font-bold mb-3">Tools</h2>
-                <p className="text-base mb-1">60+ AI functions at your fingertips.</p>
-                <p className="text-blue-400 text-sm mb-6">Specialize your agents capabilities.</p>
+                <h2 className="text-5xl font-bold mb-3">Smart Tools</h2>
+                <p className="text-base mb-1">Access 60+ powerful AI features instantly.</p>
+                <p className="text-blue-400 text-sm mb-6">Fine-tune your agents skills to match your needs.</p>
                 
                 <div className="flex gap-4">
                   <Button variant="outline" className="bg-purple-700 hover:bg-purple-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
@@ -121,11 +121,11 @@ export default function Flow() {
               {/* Left Content */}
               <div>
                 <div className="flex items-center gap-2 mb-2 text-sm uppercase text-gray-500 font-medium">
-                  <span>COLLABORATE WITH</span>
+                  <span>WORK TOGETHER WITH</span>
                 </div>
-                <h2 className="text-5xl font-bold mb-3">Team of agents</h2>
-                <p className="text-base mb-1">Cognitive load of the team can be distributed.</p>
-                <p className="text-blue-400 text-sm mb-6">Build complex solutions with specialized agents.</p>
+                <h2 className="text-5xl font-bold mb-3">A Network of Agents</h2>
+                <p className="text-base mb-1">Distribute the mental workload across your agent team.</p>
+                <p className="text-blue-400 text-sm mb-6">Create advanced solutions through collaborative intelligence.</p>
                 
                 <Button variant="outline" className="bg-green-700 hover:bg-purple-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
                   Learn more
@@ -149,11 +149,11 @@ export default function Flow() {
               {/* Left Content */}
               <div>
                 <div className="flex items-center gap-2 mb-2 text-sm uppercase text-gray-500 font-medium">
-                  <span>DEPLOY TO</span>
+                  <span>INTEGRATE WITH</span>
                 </div>
-                <h2 className="text-5xl font-bold mb-3">Your apps</h2>
-                <p className="text-base mb-1">Your agents are automatically intelligent.</p>
-                <p className="text-blue-400 text-sm mb-6">Build reliable and safe applications that improve your organizations analysis.</p>
+                <h2 className="text-5xl font-bold mb-3">Your Applications</h2>
+                <p className="text-base mb-1">Your agents come pre-equipped with intelligence.</p>
+                <p className="text-blue-400 text-sm mb-6">Deliver secure, high-performance solutions that enhance your organizations decision-making.</p>
                 
                 <Button variant="outline" className="bg-amber-700 hover:bg-amber-700 text-white border-none flex items-center gap-2 px-4 py-2 h-10">
                   Build your agent app
