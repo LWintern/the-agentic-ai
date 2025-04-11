@@ -94,139 +94,370 @@ const ModuleSection: React.FC<ModuleSectionProps> = ({ moduleData }) => {
 const AIRoadmap: React.FC = () => {
  
   const roadmapData: ModuleData[] = [
+    // Previous levels (1-3) would go here...
     {
       level: 1,
-      title: "AI Model Deployment & Scalability",
+      title: "Retrieval-Augmented Generation (RAG) and Agentic AI Systems",
       capsules: [
         {
-          name: "MCP Servers",
+          name: "RAG Fundamentals: Enhancing LLM Accuracy with External Data",
           outcome: [
-            "Deploying and managing AI microservices efficiently"
+            "Combine static LLMs with dynamic search",
+            "Fetch relevant documents and inject them into prompts",
+            "Improve factual accuracy and reduce hallucinations"
           ],
           badge: "Agentic AI Specialist",
-          icon: "🖥️"
+          icon: "🔍"
         },
         {
-          name: "Deployment on AWS",
+          name: "Building Your Own RAG System",
           outcome: [
-            "Hosting AI applications on a scalable cloud infrastructure"
+            "Ingest domain-specific documents",
+            "Generate vector embeddings",
+            "Perform semantic search and pass results to LLM"
           ],
           badge: "Agentic AI Specialist",
-          icon: "☁️"
+          icon: "🔍"
         },
         {
-          name: "Flash Attention",
+          name: "Understanding Vector Embeddings",
           outcome: [
-            "Scaling agents bottlenecked by the self-attention mechanism"
-          ],
-          badge: "Agentic AI Specialist",
-          icon: "⚡"
-        },
-        {
-          name: "Multi-head Attention",
-          outcome: [
-            "Enhancing agent focus on different parts of input sequences simultaneously"
-          ],
-          badge: "Agentic AI Specialist",
-          icon: "👀"
-        }
-      ]
-    },
-    {
-      level: 2,
-      title: "AI Safety & Customization",
-      capsules: [
-        {
-          name: "Guardrails for AI Models",
-          outcome: [
-            "Implementing prompt filtering, PII detection, and safety mechanisms"
-          ],
-          badge: "Agentic AI Specialist",
-          icon: "🛡️"
-        },
-        {
-          name: "Model Fine-Tuning",
-          outcome: [
-            "Customizing pre-trained LLMs for specific use cases"
-          ],
-          badge: "Agentic AI Specialist",
-          icon: "🎛️"
-        },
-        {
-          name: "STF (Fine-Tuning for Distill Use Case)",
-          outcome: [
-            "Fine-tuning open-source LLMs for distillation tasks"
-          ],
-          badge: "Agentic AI Specialist",
-          icon: "🧪"
-        },
-        {
-          name: "LoRA Layers",
-          outcome: [
-            "Adding custom Low-Rank Adaptation (LoRA) layers to LLMs"
+            "Convert text to high-dimensional vectors",
+            "Explore cosine similarity and vector distance",
+            "Use embeddings for search, clustering, and classification"
           ],
           badge: "Agentic AI Specialist",
           icon: "📊"
         },
         {
-          name: "Multi-LoRA Setup",
+          name: "Intro to LangChain: Framework for RAG Systems",
           outcome: [
-            "Deploying multi-LoRA LLMs with dynamic routing"
+            "Set up chains connecting LLMs to retrievers",
+            "Use agents, tools, and memory modules",
+            "Integrate with OpenAI, Chroma, FAISS"
           ],
           badge: "Agentic AI Specialist",
-          icon: "🔄"
+          icon: "⛓️"
+        },
+        {
+          name: "Text Chunking with LangChain",
+          outcome: [
+            "Use recursive and character-based splitters",
+            "Find optimal chunk size for recall vs. context window",
+            "Tune overlap and granularity"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "✂️"
+        },
+        {
+          name: "Preparing Vector Databases with OpenAI + Chroma",
+          outcome: [
+            "Generate embeddings using OpenAI",
+            "Store in ChromaDB or FAISS",
+            "Query using semantic similarity"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🗄️"
+        },
+        {
+          name: "Advanced Embedding Workflows",
+          outcome: [
+            "Normalize vectors and cache embeddings",
+            "Store vectors with metadata for filtering"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "📊"
+        },
+        {
+          name: "Visualizing Embeddings with t-SNE & UMAP",
+          outcome: [
+            "Use dimensionality reduction to visualize clusters",
+            "Debug poor retrieval with visual feedback"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "📊"
+        },
+        {
+          name: "Complete RAG Pipeline with LangChain",
+          outcome: [
+            "Build a chatbot that retrieves context on demand",
+            "Add memory and tools for dynamic interactions"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🔍"
+        },
+        {
+          name: "Full RAG Agent: LLM + Retriever + Memory",
+          outcome: [
+            "Maintain context over turns",
+            "Dynamically fetch supporting content"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🤖"
+        },
+        {
+          name: "Hands-On RAG Application: Internal Q&A Bot",
+          outcome: [
+            "Build a Q&A bot for docs/support pages",
+            "Run queries in real time and serve responses"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "💬"
+        },
+        {
+          name: "Optimizing RAG for Scale",
+          outcome: [
+            "Use batching, caching, and parallel processing",
+            "Design for low-latency, high-throughput use cases"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "⚡"
+        },
+        {
+          name: "RAG Troubleshooting and Debugging",
+          outcome: [
+            "Improve low-quality retrieval",
+            "Resolve context overflow and token issues"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🐞"
+        },
+        {
+          name: "Vector Store Showdown: FAISS vs. Chroma",
+          outcome: [
+            "Measure speed, accuracy, and scalability",
+            "Choose the right store for project needs"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🗄️"
+        },
+        {
+          name: "LangChain Internals: Custom Chains and Agents",
+          outcome: [
+            "Build custom prompt templates and retrievers",
+            "Modify LangChain components for full control"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "⛓️"
+        },
+        {
+          name: "Personal AI Knowledge Workers with RAG",
+          outcome: [
+            "Summarize research and manage notes",
+            "Generate insights with personal knowledge bases"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🔍"
         }
       ]
     },
     {
-      level: 3,
-      title: "Advanced AI Evaluation & Retrieval",
+      level: 2,
+      title: "Fine-Tuning, PEFT, and Advanced Agentic Architectures",
       capsules: [
         {
-          name: "LLM as a Judge Technique",
+          name: "Introduction to Fine-Tuning: From Prompting to Training Custom LLMs",
           outcome: [
-            "Evaluating AI-generated responses using AI"
+            "Compare prompting, RAG, and fine-tuning",
+            "Choose methods based on cost, control, or customization"
           ],
           badge: "Agentic AI Specialist",
-          icon: "⚖️"
+          icon: "⚙️"
         },
         {
-          name: "Perplexity Sonar API",
+          name: "Designing a Fine-Tuning Pipeline",
           outcome: [
-            "Enhancing AI reliability and accuracy"
+            "Define objectives and KPIs",
+            "Prepare training/evaluation workflows"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "⚙️"
+        },
+        {
+          name: "Collecting and Creating Datasets",
+          outcome: [
+            "Extract/label data from public sources",
+            "Generate synthetic data with GPT"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "📂"
+        },
+        {
+          name: "Data Curation Techniques",
+          outcome: [
+            "Clean and normalize text",
+            "Remove duplicates and irrelevant entries"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "📂"
+        },
+        {
+          name: "Uploading and Managing Datasets on Hugging Face",
+          outcome: [
+            "Structure data for Hugging Face Datasets library",
+            "Version datasets with metadata"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🤗"
+        },
+        {
+          name: "Classic ML Baselines",
+          outcome: [
+            "Train models like BoW + Logistic Regression",
+            "Use TF-IDF or CountVectorizer as baselines"
           ],
           badge: "Agentic AI Specialist",
           icon: "📈"
         },
         {
-          name: "Cypher Query Context Retrieval",
+          name: "Evaluating LLM Performance",
           outcome: [
-            "Enhancing LLM capabilities with Neo4j Graph DB"
+            "Choose metrics: loss, accuracy, F1-score",
+            "Track business-level KPIs"
           ],
           badge: "Agentic AI Specialist",
-          icon: "🗂️"
+          icon: "📊"
+        },
+        {
+          name: "Preparing JSONL Files for OpenAI Fine-Tuning",
+          outcome: [
+            "Format instruction-response schemas",
+            "Ensure consistent training data"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "📝"
+        },
+        {
+          name: "Launching Fine-Tuning Jobs with OpenAI",
+          outcome: [
+            "Upload dataset via CLI/API",
+            "Monitor progress and retrieve models"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "⚙️"
+        },
+        {
+          name: "Tracking Training with Weights & Biases",
+          outcome: [
+            "Visualize metrics and loss",
+            "Compare model runs"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "📊"
+        },
+        {
+          name: "Introduction to PEFT: LoRA and QLoRA",
+          outcome: [
+            "Use Low-Rank Adaptation (LoRA) for efficient training",
+            "Apply QLoRA for 4-bit quantized fine-tuning"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "⚙️"
+        },
+        {
+          name: "QLoRA: 4-bit Quantized Fine-Tuning",
+          outcome: [
+            "Use double quantization (NF4)",
+            "Preserve accuracy while reducing compute"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "⚙️"
+        },
+        {
+          name: "PEFT with Hugging Face Adapters",
+          outcome: [
+            "Integrate adapters with transformers",
+            "Swap between base and fine-tuned weights"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🤗"
+        },
+        {
+          name: "Full Use Case: End-to-End LLM Tuning",
+          outcome: [
+            "Business problem → dataset → model → endpoint",
+            "Deploy and monitor in production"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "⚙️"
         }
       ]
     },
     {
-      level: 4,
-      title: "Core AI Architectures & Memory",
+      level: 3,
+      title: "LLM Engineering, Multi-Agent Systems, and Cloud Deployment",
       capsules: [
         {
-          name: "Transformer Architecture",
+          name: "LLM Engineering Foundations",
           outcome: [
-            `Understanding the "Attention Is All You Need" white paper`
+            "Deploy and monitor production-grade models",
+            "Learn latency, load balancing, and rate limits"
           ],
           badge: "Agentic AI Specialist",
-          icon: "🏗️"
+          icon: "⚙️"
         },
         {
-          name: "LSTM (Long Short-Term Memory)",
+          name: "Serverless Deployment with Modal",
           outcome: [
-            "Traditional sequential memory for AI models"
+            "Set up Modal for inference hosting",
+            "Build Python APIs that scale automatically"
           ],
           badge: "Agentic AI Specialist",
-          icon: "🧠"
+          icon: "☁️"
+        },
+        {
+          name: "Designing Multi-Agent Architectures",
+          outcome: [
+            "Enable negotiation and task delegation",
+            "Use memory and tools across agents"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🤖"
+        },
+        {
+          name: "Building a Scalable Vector Database",
+          outcome: [
+            "Optimize Chroma for write/read performance",
+            "Partition data for parallel search"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🗄️"
+        },
+        {
+          name: "Embedding Visualization in 2D & 3D",
+          outcome: [
+            "Use t-SNE, UMAP, or PCA",
+            "Analyze clusters and semantic proximity"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "📊"
+        },
+        {
+          name: "Structured Agent Outputs with Pydantic",
+          outcome: [
+            "Enforce JSON schema validation",
+            "Prevent malformed responses"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "📝"
+        },
+        {
+          name: "Designing Autonomy in Agents",
+          outcome: [
+            "Implement reflection and self-prompting",
+            "Simulate goal setting and execution"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🤖"
+        },
+        {
+          name: "The LLM Engineer’s Retrospective",
+          outcome: [
+            "Review design choices and trade-offs",
+            "Plan iterative improvements"
+          ],
+          badge: "Agentic AI Specialist",
+          icon: "🔍"
         }
       ]
     }
